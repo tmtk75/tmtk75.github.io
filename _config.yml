@@ -9,8 +9,10 @@ exclude: ["Rakefile", "Gemfile", "index.haml"]
 ## Site preference
 title: Undefined Title
 location: http://tmtk75.github.com
-image:
-  path: ./img
+paths:
+  image: /img
+  vendor: /vendor
+  css: /css
 author:
   name: Tomotaka Sakuma
   emai: noreply
