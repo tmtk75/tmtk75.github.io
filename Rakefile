@@ -15,16 +15,6 @@ EOF
   end
 end
 
-desc "Compile with less."
-task :less do
-  require "less"
-  Dir.glob("**/*.less") do |e|
-    open(e.gsub(/\.less$/, ""), "w") do |f|
-      f.write Less::Engine.new(File.new(e).read, :syntax=>:scss).render
-    end
-  end
-end
-
 desc "Given a title as an argument, create a new post file."
 task :post, [:title] do |t, args|
   filename = "#{Time.now.strftime '%Y-%m-%d'}-#{args.title.gsub(/\s/, '_').downcase}.md"
