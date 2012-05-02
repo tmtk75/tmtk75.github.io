@@ -1,0 +1,13 @@
+-#layout: default
+#recent-posts
+  {% for post in site.posts %}
+  %article.post
+    %header
+      %h2
+        {{post.title}}
+        %small.date {{post.date}}
+    .content {{post.content}}
+  {% endfor %}
+
+%script{src:"{{site.url}}/vendor/jquery.js"}
+%script{src:"{{site.url}}/vendor/bootstrap/docs/assets/js/bootstrap-tooltip.js"}

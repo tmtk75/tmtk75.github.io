@@ -1,0 +1,16 @@
+## Jekyll configuration
+safe: false
+pygments: true
+auto: false
+markdown: kramdown
+permalink: date
+exclude: ["Rakefile", "Gemfile", "index.haml"]
+
+## Site preference
+title: Undefined Title
+location: http://tmtk75.github.com
+image:
+  path: ./img
+author:
+  name: Tomotaka Sakuma
+  emai: noreply

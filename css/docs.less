@@ -1,0 +1,144 @@
+
+@sidebar-width: 256px;
+@article-width: 490px;
+
+//---------------------------------------------------------------- Mixin
+.two-column490 {
+  @w: 240px; @g: 10px;
+  -webkit-column-width: @w; -moz-column-width: @w;
+  -webkit-column-gap: @g;   -moz-column-gap: @g;
+}
+
+//---------------------------------------------------------------- Layout
+body {
+  article.post {
+    margin-bottom: 40px;
+  }
+  footer {
+    nav.social {
+      margin-bottom:1px;
+    }
+  }
+}
+body {
+  padding-top: 20px;
+  margin-left: @sidebar-width;
+  aside#sidebar {
+    width: @sidebar-width;
+    position: fixed;
+    left: 0; top: 20px;
+    .sidebar-inner {
+      padding-left: 20px;
+    }
+  }
+  footer {
+    position: fixed;
+    bottom: 0;
+  }
+  article.post {
+    width: @article-width;
+  }
+  #recent-posts article.post {
+    .content {}
+    &:nth-child(2n+1) {
+      margin-left: 0px + 240 + 10;
+    }
+  }
+  #the {
+    margin-left: 0px + 240/3;
+    article.post {
+      .content {}
+    }
+  }
+}
+
+body {
+  > header, > footer {
+    position: fixed;
+    width: 100%;
+    left: 0;
+  }
+  > header {
+    top: 0;
+    height: 20px;
+  }
+  > footer {
+    margin-left: 20px;
+    padding-bottom: 10px;
+    bottom: 0;
+  }
+}
+
+//---------------------------------------------------------------- Looks
+aside#sidebar {
+  header h1 {
+    font-family: Tahoma;
+    a {
+      color: #333;
+      &, &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+  .sidebar-inner {
+    ul {
+      margin-left: 0;
+    }
+    .recent-posts {
+      li {
+        list-style-type: none;
+      }
+    }
+  }
+}
+
+#rss-link a, #atom-link a {
+  color: white;
+  font-weight: bold;
+  padding: 0px 8px;
+  border-radius: 2px;
+  display: inline-block;
+  background-color: #222;
+}
+
+article {
+  header {
+    h2 small {
+      font-size: small;
+    }
+  }
+}
+
+body {
+  > header {
+    background-image: -webkit-gradient(
+      linear, left bottom, left top,
+      from(rgba(255,255,255,0.0)),
+      to(rgba(255,255,255,1.0))
+    );
+    background-image: -moz-linear-gradient(
+      rgba(255,255,255,1.0) 100%,
+      rgba(255,255,255,0.0) 0%
+    );
+  }
+  > footer {
+    background-image: -webkit-gradient(
+      linear, left top, left bottom,
+      from(rgba(255,255,255,0.0)),
+      to(rgba(255,255,255,1.0))
+    );
+    background-image: -moz-linear-gradient(
+      rgba(255,255,255,0.0) 0%,
+      rgba(255,255,255,1.0) 100%
+    );
+  }
+}
+
+//---------------------------------------------------------------- Behavior
+img:hover {
+  position: relative;
+  left: -1px;
+  top: -1px;
+  box-shadow: 2px 2px 2px rgba(32,32,32,0.77);
+  border-radius: 2px;
+}

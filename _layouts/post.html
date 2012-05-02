@@ -1,0 +1,52 @@
+---
+layout: default
+---
+<div id='the'>
+  <article class='post'>
+    <header>
+      <h2>
+        {{page.title}}
+        <!-- %small.date {{page.date|date_to_string}} -->
+        <small class='date'>{{page.date}}</small>
+      </h2>
+    </header>
+    <div class='content'>
+      {{content}}
+    </div>
+  </article>
+  <nav></nav>
+  <!--
+    {%if page.previous%}
+    <a href='{{site.url}}{{page.previous.url}}' rel='prev' title='{{page.previous.title}}'>
+      {{page.previous.title}}
+    </a>
+    {%endif%}
+    {%if page.next%}
+    <a href='{{site.url}}{{page.next.url}}' rel='next' title='{{page.next.title}}'>
+      {{page.next.title}}
+    </a>
+    {%endif%}
+  -->
+  <aside>
+    <div id='disqus_thread'></div>
+    <script type='text/javascript'>
+      //<![CDATA[
+        var disqus_shortname = 'titleisunfixed'; // required: replace example with your forum shortname
+        
+        (function() {
+        
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        
+            dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        
+        })();
+      //]]>
+    </script>
+    <noscript>
+      Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+    </noscript>
+    <a class='dsq-brlink' href='http://disqus.com'>blog comments powered by <span class="logo-disqus">Disqus</span></a>
+  </aside>
+</div>
