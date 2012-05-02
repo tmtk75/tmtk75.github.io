@@ -15,16 +15,6 @@ EOF
   end
 end
 
-desc "Compile with scss."
-task :scss do
-  require "sass"
-  Dir.glob("**/*.scss") do |e|
-    open(e.gsub(/\.scss$/, ""), "w") do |f|
-      f.write Sass::Engine.new(File.new(e).read, :syntax=>:scss).render
-    end
-  end
-end
-
 desc "Compile with less."
 task :less do
   require "less"
