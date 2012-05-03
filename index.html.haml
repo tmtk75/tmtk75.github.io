@@ -5,8 +5,9 @@
     %header
       %h2
         .title {{post.title}}
-        %small.date {{post.date}}
-    .content {{post.content}}
+        %small.date {{post.creation-date}}
+    .content {{post.content | truncatewords: 40}}
+    %a{href:"{{post.url}}"} more
   {% endfor %}
 
 %script{src:"{{site.paths.vendor}}/jquery.js"}

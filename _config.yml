@@ -8,7 +8,6 @@ exclude: ["Rakefile", "Gemfile", "index.haml"]
 
 ## Site preference
 title: Undefined Title
-location: http://tmtk75.github.com
 paths:
   image: /img
   vendor: /vendor
