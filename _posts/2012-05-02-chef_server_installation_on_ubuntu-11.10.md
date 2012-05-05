@@ -7,6 +7,8 @@ creation-date: 2012-05-02 20:22:19
 I'll explain how to set up chef-server with exact versions.
 They are ruby 1.9.2 and [ubuntu-11.10][ubuntu].
 
+You can absolutely set up chef-server after this post!
+
   [chef-home]: http://wiki.opscode.com/display/chef/Home
   [ubuntu]: http://www.ubuntu.com/
 
