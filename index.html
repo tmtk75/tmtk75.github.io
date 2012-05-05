@@ -10,8 +10,8 @@ layout: default
         <small class='date'>{{post.creation-date}}</small>
       </h2>
     </header>
-    <div class='content'>{{post.content | truncatewords: 40 | remove: "<pre>" | remove: "</pre>" | remove: "<code>" | remove: "</code>"}}</div>
-    <a href='{{post.url}}'>Read More</a>
+    <div class='content'>{{post.content | remove: "<pre>" | remove: "</pre>" | remove: "<code>" | remove: "</code>" | truncatewords: 40 }}</div>
+    <a href='{{post.url}}'>Read more</a>
   </article>
   {% endfor %}
 </div>
