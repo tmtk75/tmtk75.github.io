@@ -6,8 +6,8 @@
       %h2
         .title {{post.title}}
         %small.date {{post.creation-date}}
-    .content {{post.content | truncatewords: 40}}
-    %a{href:"{{post.url}}"} more
+    .content {{post.content | remove: "<pre>" | remove: "</pre>" | remove: "<code>" | remove: "</code>" | truncatewords: 40 }}
+    %a{href:"{{post.url}}"} Read more
   {% endfor %}
 
 %script{src:"{{site.paths.vendor}}/jquery.js"}

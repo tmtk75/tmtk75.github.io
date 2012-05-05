@@ -1,0 +1,59 @@
+---
+layout: post
+title: How to install chef server on ubuntu-11.10 using apt-get
+creation-date: 2012-05-02 20:22:19
+---
+[Chef][chef-home] is one of configuration management system, but it seems hard to install for not rubyist.
+I'll explain how to set up chef-server with exact versions.
+They are ruby 1.9.2 and [ubuntu-11.10][ubuntu].
+
+  [chef-home]: http://wiki.opscode.com/display/chef/Home
+  [ubuntu]: http://www.ubuntu.com/
+
+Initially, install ruby1.9
+
+    $ sudo apt-get update
+    $ sudo apt-get install libstdc++6-4.6-dev g++ ruby1.9.2-full
+
+Create two configuration files of chef.
+
+[~/solo.rb](https://gist.github.com/2600816)
+
+<pre class="prettyprint ruby">
+file_cache_path "/tmp/chef-solo"
+cookbook_path "/tmp/chef-solo/cookbooks"
+</pre>
+
+[~/chef.json](https://gist.github.com/2600821)
+
+<pre class="prettyprint json">
+{
+  "chef_server": {
+    "server_url": "http://localhost:4000",
+    "webui_enabled": true
+  },
+  "run_list": [ "recipe[chef-server::rubygems-install]" ]
+}
+</pre>
+
+Install chef client, and install chef server using chef-solo.
+
+    $ sudo gem install zliby chef-solr --no-ri --no-rdoc
+    $ sudo chef-solo -c ~/solo.rb -j ~/chef.json -r http://s3.amazonaws.com/chef-solo/bootstrap-latest.tar.gz
+
+
+Some scripts in /etc/init.d strangely require /usr/bin/chef-* scripts.
+Make symbolic links for them.
+
+    $ sudo ln -sf /usr/local/bin/chef-* /usr/bin
+
+Start all related services in order.
+
+    $ sudo /etc/init.d/chef-solr start
+    $ sudo /etc/init.d/chef-expander start
+    $ sudo /etc/init.d/chef-server start
+    $ sudo /etc/init.d/chef-server-webui start
+
+
+Congraturation, you finished installing chef server.
+Open <http://localhost:4040> with your browser.
