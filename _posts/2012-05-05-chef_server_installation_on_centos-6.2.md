@@ -3,7 +3,7 @@ layout: post
 title: How to install chef server on CentOS-6.2 using yum
 creation-date: 2012-05-05 15:03:55
 ---
-I posted [how to set up chef server on ubuntu-11.10](http://localhost:4000/2012/05/02/chef_server_installation_on_ubuntu-11.10.html).
+I posted [how to set up chef server on ubuntu-11.10](/2012/05/02/chef_server_installation_on_ubuntu-11.10.html).
 CentOS is a popular Linux distributions. I'll describe how to set it up step by step, too.
 
 Install chef-solr as root.
