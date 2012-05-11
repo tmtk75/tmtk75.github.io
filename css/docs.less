@@ -1,6 +1,7 @@
 
 @sidebar-width: 256px;
 @article-width: 490px;
+@common-bottom-margin: 96px;
 
 //---------------------------------------------------------------- Mixin
 .two-column490 {
@@ -47,13 +48,14 @@ body {
   }
   #the {
     margin-left: 0px + 240/3;
-    padding-bottom: 120px;
+    padding-bottom: @common-bottom-margin;
     article.post {
       .content {}
     }
   }
   aside#disqus_thread_container {
     margin-left: 0px + 240/3;
+    padding-bottom: @common-bottom-margin;
     #disqus_thread {
       width: @article-width;
     }
