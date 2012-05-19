@@ -1,29 +1,12 @@
 
-@sidebar-width: 256px;
-@article-width: 490px;
+@sidebar-width: 240px;
+@article-width: 480px;
 @common-bottom-margin: 96px;
-
-//---------------------------------------------------------------- Mixin
-.two-column490 {
-  @w: 240px; @g: 10px;
-  -webkit-column-width: @w; -moz-column-width: @w;
-  -webkit-column-gap: @g;   -moz-column-gap: @g;
-}
 
 //---------------------------------------------------------------- Layout
 body {
-  article.post {
-    margin-bottom: 40px;
-  }
-  footer {
-    nav.social {
-      margin-bottom:1px;
-    }
-  }
-}
-body {
   padding-top: 20px;
-  margin-left: @sidebar-width;
+  margin-left: @sidebar-width + 240/3;
   aside#sidebar {
     width: @sidebar-width;
     position: fixed;
@@ -33,28 +16,22 @@ body {
       padding-left: 20px;
     }
   }
-  footer {
-    position: fixed;
-    bottom: 0;
+  nav.social {
+    margin-bottom:1px;
   }
+}
+body {
   article.post {
     width: @article-width;
-  }
-  #recent-posts article.post {
-    .content {}
-    &:nth-child(2n+1) {
-      margin-left: 0px + 240 + 10;
-    }
+    margin-bottom: 40px;
   }
   #the {
-    margin-left: 0px + 240/3;
     padding-bottom: @common-bottom-margin;
     article.post {
       .content {}
     }
   }
   aside#disqus_thread_container {
-    margin-left: 0px + 240/3;
     padding-bottom: @common-bottom-margin;
     #disqus_thread {
       width: @article-width;
@@ -73,7 +50,7 @@ body {
     height: 20px;
   }
   > footer {
-    margin-left: 20px;
+    padding-left: 20px;
     padding-bottom: 10px;
     bottom: 0;
   }
