@@ -2,16 +2,20 @@
 @sidebar-width: 240px;
 @article-width: 480px;
 @common-bottom-margin: 96px;
+@navbar-height: 40px;
+@body-top-margin: 10px;
+@span-width: 80px;
 
 //---------------------------------------------------------------- Layout
 body {
-  padding-top: 20px;
-  margin-left: @sidebar-width + 240/3;
+  margin-top: @navbar-height;
+  padding-top: @body-top-margin;
+  margin-left: @sidebar-width + @span-width;
   aside#sidebar {
     width: @sidebar-width;
     position: fixed;
     left: 0;
-    top: 20px;
+    top: @navbar-height + @body-top-margin;
     .sidebar-inner {
       padding-left: 20px;
     }
@@ -130,7 +134,11 @@ nav.social img:hover {
   border-radius: 2px;
 }
 
-//---------------------------------------------------------------- Disable library's style
+//---------------------------------------------------------------- Disable/change library's style
+.navbar .brand {
+  margin-left: -30px;
+}
+
 pre.prettyprint {
   border: 1px solid #ccc;
   padding: 8.5px;

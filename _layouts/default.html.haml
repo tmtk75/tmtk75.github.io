@@ -19,12 +19,16 @@
         var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
       })();
   %body
+    .navbar.navbar-fixed-top
+      .navbar-inner
+        .container
+          %h1
+            %a.brand{href:'/'}{{site.title}}
+          %ul.nav
+            %li
     %header
     %aside#sidebar
       .sidebar-inner
-        %header
-          %h1
-            %a{href:"/"} {{site.title}}
         %nav.recent-posts
           %ul
             {%for post in site.posts%}
