@@ -1,23 +1,26 @@
-
 @sidebar-width: 240px;
 @article-width: 480px;
 @common-bottom-margin: 96px;
 @navbar-height: 40px;
 @body-top-margin: 10px;
-@span-width: 80px;
+@body-left-margin: 20px;
+@span-width: 80px/2;
 
 //---------------------------------------------------------------- Layout
 body {
   margin-top: @navbar-height;
   padding-top: @body-top-margin;
   margin-left: @sidebar-width + @span-width;
+  .navbar .navbar-inner {
+    padding-left: @body-left-margin;
+  }
   aside#sidebar {
     width: @sidebar-width;
     position: fixed;
     left: 0;
     top: @navbar-height + @body-top-margin;
     .sidebar-inner {
-      padding-left: 20px;
+      padding-left: @body-left-margin;
     }
   }
   nav.social {
@@ -31,9 +34,6 @@ body {
   }
   #the {
     padding-bottom: @common-bottom-margin;
-    article.post {
-      .content {}
-    }
   }
   aside#disqus_thread_container {
     padding-bottom: @common-bottom-margin;
@@ -54,23 +54,19 @@ body {
     height: 20px;
   }
   > footer {
-    padding-left: 20px;
+    padding-left: @body-left-margin;
     padding-bottom: 10px;
     bottom: 0;
   }
 }
 
 //---------------------------------------------------------------- Looks
+.navbar .brand {
+  font-family: Tahoma;
+  font-weight: bold;
+}
+
 aside#sidebar {
-  header h1 {
-    font-family: Tahoma;
-    a {
-      color: #333;
-      &, &:hover {
-        text-decoration: none;
-      }
-    }
-  }
   .sidebar-inner {
     ul {
       margin-left: 0;
@@ -135,8 +131,8 @@ nav.social img:hover {
 }
 
 //---------------------------------------------------------------- Disable/change library's style
-.navbar .brand {
-  margin-left: -30px;
+.navbar .container {
+  width: auto;
 }
 
 pre.prettyprint {
