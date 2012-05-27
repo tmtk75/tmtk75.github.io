@@ -9,10 +9,8 @@ I think js-yaml is a good library for loading YAML in Node.js
 
     $ npm install js-yaml
 
-Let's say your yaml file is,
+Let's say your yaml file is as "your.yml",
 
-    your.yaml
-    ---------
     greeting: hello!
     year: 2012
 
@@ -20,7 +18,7 @@ In your .js code,
 
     var yaml = require("js-yaml");
     var fs = require("fs");
-    var e = yaml.load(fs.readFileSync("your.yaml"));
+    var e = yaml.load(fs.readFileSync("your.yml"));
     console.log(e.greeting);
     console.log(e.year);
 
