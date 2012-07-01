@@ -9,3 +9,7 @@ when I see the response with Developer Tools of Webkit.
 
 bitly says we should use v3 API which needs OAuth, but Mh... it's big change...
 
+----
+P.S.
+
+Now v2 API seems working at July 1st =)
