@@ -1,8 +1,10 @@
 ---
 layout: post
-title: Indentation with Jackson in Spring using annotation configuration
+title: Indentation with Jackson in springframework using annotation configuration
 creation-date: 2012-07-03 10:47:20
 ---
+ObjectMapper of jackson has a feature to make indent when deserializing as JSON.
+Here is a way to use it on springframework.
 
     @Configuration
     public class ObjectMapperConfiguration {
@@ -21,4 +23,6 @@ creation-date: 2012-07-03 10:47:20
             return new ConfiguredJacksonJsonProvider();
         }
     }
+
+A keen colleague who is special familiar with spring tought me this =)
 
