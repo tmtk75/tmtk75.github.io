@@ -69,7 +69,7 @@ class Stringify implements EntityVisitor<String, Integer> {
 
 Here is the result of execution.
 
-<pre style='color:white;background-color:black;font-weight:normal;font-family:monaco,monospace,mono'>
+<pre class="terminal">
 $ java Stringify
 Long:123 with 3
 String:123 with 87
