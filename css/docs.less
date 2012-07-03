@@ -1,5 +1,6 @@
 @sidebar-width: 240px;
-@article-width: 480px;
+@article-width: 640px;
+@paragraph-width: 480px;
 @common-bottom-margin: 96px;
 @navbar-height: 40px;
 @body-top-margin: 10px;
@@ -36,6 +37,7 @@ body {
     }
     .content {
       h3 {margin-top:1.5em;}
+      p {width: @paragraph-width;}
     }
   }
   #the {
@@ -44,7 +46,7 @@ body {
   aside#disqus_thread_container {
     padding-bottom: @common-bottom-margin;
     #disqus_thread {
-      width: @article-width;
+      width: @paragraph-width;
     }
   }
 }
@@ -183,7 +185,7 @@ pre.prettyprint {
 .syntaxhighlighter {
   background-color: whiteSmoke !important;
   padding: 8.5px;
-  margin: 0 0 18px;
+  margin: 0 0 18px 0;
   border: 1px solid rgba(0,0,0,0.15);
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;

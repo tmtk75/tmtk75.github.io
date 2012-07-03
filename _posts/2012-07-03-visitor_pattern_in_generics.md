@@ -6,63 +6,72 @@ creation-date: 2012-07-03 10:30:21
 Make an visitor interface for an type, Entity.
 It has two generics types for return-type and optional parameter type.
 
-<pre class="brush: java">
-    interface EntityVisitor<T, K> {
-        T visit(Entity unknown, K args);
-        T visit(LongEntity source, K args);
-        T visit(StringEntity source, K args);
-    }
+<pre class="brush:java">
+interface EntityVisitor<T, K> {
+    T visit(Entity unknown, K args);
+    T visit(LongEntity source, K args);
+    T visit(StringEntity source, K args);
+}
 </pre>
 
 Let's say Entity is like this which has accept.
 Its signature is something a bit complicated because of two generics types.
 
-    abstract class Entity {
-        public <T, K> T accept(EntityVisitor<T, K> visitor, K args) {
-            return visitor.visit(this, args);
-        }
+<pre class="brush:java">
+abstract class Entity {
+    public <T, K> T accept(EntityVisitor<T, K> visitor, K args) {
+        return visitor.visit(this, args);
     }
+}
+</pre>
 
 Entity's sub classes are like this. Make sure overriding accept method =)
 It's important to dispatch.
 
-    abstract class LongEntity extends Entity {
-        Long value;  // snip constructor
-        public <T, K> T accept(EntityVisitor<T, K> visitor, K args) {
-            return visitor.visit(this, args);
-        }
+<pre class="brush:java">
+abstract class LongEntity extends Entity {
+    Long value;  // snip constructor
+    public <T, K> T accept(EntityVisitor<T, K> visitor, K args) {
+        return visitor.visit(this, args);
     }
+}
 
-    abstract class StringEntity extends Entity {
-        String value;  // snip constructor
-        public <T, K> T accept(EntityVisitor<T, K> visitor, K args) {
-            return visitor.visit(this, args);
-        }
+abstract class StringEntity extends Entity {
+    String value;  // snip constructor
+    public <T, K> T accept(EntityVisitor<T, K> visitor, K args) {
+        return visitor.visit(this, args);
     }
+}
+</pre>
 
 And create a concrete visitor.
 It's like adding a new polymorphic method to Entity.
 
-    class Stringify implements EntityVisitor<String, Integer> {
-        public String visit(Entity unknown, Integer args) {
-            throw new IllegalStateException("unknown: " + unknown + " args:" + args);
-        }
-        public String visit(LongEntity source, Integer args) {
-            return "Long:" + source.value + " with " + args;
-        }
-        public String visit(StringEntity source, Integer args) {
-            return "String:" + source.value + " with " + args;
-        }
-        public static void main(String[] args) {
-            Entity a = new LongEntity(123L);
-            Entity b = new StringEntity("123");
-            System.out.println(new Stringify().visit(a, 3));
-            System.out.println(new Stringify().visit(b, 87));
-        }
+<pre class="brush:java">
+class Stringify implements EntityVisitor<String, Integer> {
+    public String visit(Entity unknown, Integer args) {
+        throw new IllegalStateException("unknown: " + unknown + " args:" + args);
     }
+    public String visit(LongEntity source, Integer args) {
+        return "Long:" + source.value + " with " + args;
+    }
+    public String visit(StringEntity source, Integer args) {
+        return "String:" + source.value + " with " + args;
+    }
+    public static void main(String[] args) {
+        Entity a = new LongEntity(123L);
+        Entity b = new StringEntity("123");
+        System.out.println(new Stringify().visit(a, 3));
+        System.out.println(new Stringify().visit(b, 87));
+    }
+}
+</pre>
 
 Here is the result of execution.
 
-    $ java Stringify
-    Long:123 with 3
-    String:123 with 87
+<pre style='color:white;background-color:black;font-weight:normal;font-family:monaco,monospace,mono'>
+$ java Stringify
+Long:123 with 3
+String:123 with 87
+</pre>
+
