@@ -6,11 +6,13 @@ creation-date: 2012-07-03 10:30:21
 Make an visitor interface for an type, Entity.
 It has two generics types for return-type and optional parameter type.
 
+<pre class="brush: java">
     interface EntityVisitor<T, K> {
         T visit(Entity unknown, K args);
         T visit(LongEntity source, K args);
         T visit(StringEntity source, K args);
     }
+</pre>
 
 Let's say Entity is like this which has accept.
 Its signature is something a bit complicated because of two generics types.
