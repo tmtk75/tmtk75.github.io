@@ -17,7 +17,7 @@ String json = _j(
 );
 System.out.println(json);
 public static String _(String left, String right, Object... props) {
-    return "{" + join(props, ", ").replaceAll("'", "\"") + "}";
+    return left + join(props, ", ").replaceAll("'", "\"") + right;
 }
 public static String _j(Object... props) {
     return _("{", "}", props);
@@ -27,4 +27,19 @@ public static String _a(Object... props) {
 }
 </pre>
 
-It's a bit problem that cannot contain "'".
+It's a bit problem that cannot contain "'" in each value though I don't think severe issue.
+
+Here is output (actually no indentation)
+
+<pre class="terminal">
+{
+  "name":"Jhon",
+  "age":23,
+  "pet":{
+    "name":"Coggy",
+    "age":3
+  },
+  "interests":[1, 2, "a", "b", 3]
+}
+</pre>
+
