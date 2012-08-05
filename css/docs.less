@@ -15,9 +15,9 @@ body {
   .navbar .navbar-inner {
     padding-left: @body-left-margin;
   }
-  aside#sidebar {
+  #sidebar {
     width: @sidebar-width;
-    position: fixed;
+    position: absolute;
     left: 0;
     top: @navbar-height + @body-top-margin;
     .sidebar-inner {
@@ -43,7 +43,7 @@ body {
   #the {
     padding-bottom: @common-bottom-margin;
   }
-  aside#disqus_thread_container {
+  #disqus_thread_container {
     padding-bottom: @common-bottom-margin;
     #disqus_thread {
       width: @paragraph-width;
@@ -71,7 +71,8 @@ body {
 //---------------------------------------------------------------- Looks
 .navbar {
   .navbar-inner {
-    background-color: transparent;
+    //background-color: transparent;
+    background-color: rgba(255,255,255,0.8);
     background-image: none;
     box-shadow: none;
     -webkit-box-shadow: none;
