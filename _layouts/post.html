@@ -5,9 +5,13 @@ layout: default
   <article class='post'>
     <header>
       <h2>
+        <div class='date'>
+          <div class="day">{{page.creation-date || date:"%d"}}</div>
+          <div class="month">{{page.creation-date || date:"%b"}}</div>
+          <div class="year">{{page.creation-date || date:"%Y"}}</div>
+        </div>
         <div class='title'>{{page.title}}</div>
         <!-- %small.date {{page.date|date_to_string}} -->
-        <small class='date'>{{page.creation-date}}</small>
       </h2>
     </header>
     <div class='content'>
