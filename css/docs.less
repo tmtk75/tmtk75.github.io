@@ -2,62 +2,64 @@
 @article-width: 640px;
 @paragraph-width: 480px;
 @common-bottom-margin: 96px;
-@navbar-height: 40px;
 @body-top-margin: 10px;
 @body-left-margin: 20px;
 @span-width: 80px/2;
 
-//---------------------------------------------------------------- Layout
+// Layout ---------------------------------------------------------------------
 body {
-  margin-top: @navbar-height;
   padding-top: @body-top-margin;
   margin-left: @sidebar-width + @span-width;
-  .navbar .navbar-inner {
-    padding-left: @body-left-margin;
-  }
   #sidebar {
     width: @sidebar-width;
     position: absolute;
     left: 0;
-    top: @navbar-height + @body-top-margin;
     .sidebar-inner {
       padding-left: @body-left-margin;
     }
   }
-  nav.social {
-    margin-bottom:1px;
-  }
-}
-body {
-  article.post {
-    width: @article-width;
-    margin-bottom: 40px;
-    header {
-      margin-bottom: 3em;
-      h2 {
-        .date {
-          font-size: small;
-          font-weight: normal;
-          color: gray;
-          margin: 0; padding: 0;
-          border-right: dotted 2px gray;
-          padding-right: 4px;
-          margin-right: 14px;
-          float: left;
-          .day {font-weight: bold; font-size: 24px; line-height:26px;}
-          .month {font-weight: bold; font-size: 18px; line-height:22px;}
-          .year {font-weight: bold; font-size: 14px; line-height:18px;}
-        }
-        .title {
-          font-size: 1.2em;
-          line-height: (24+18+14)/2px;
+  aside#sidebar {
+    .sidebar-inner {
+      ul {
+        margin-left: 0;
+      }
+      .recent-posts {
+        li {
+          list-style-type: none;
         }
       }
     }
-    .content {
-      h3 {margin-top:1.5em;}
-      p {width: @paragraph-width;}
+  }
+}
+
+//------------------------------------------------------------------------------
+article.post {
+  width: @article-width;
+  margin-bottom: 40px;
+  header {
+    margin-bottom: 3em;
+    h2 {
+      .date {
+        font-size: small;
+        font-weight: normal;
+        color: gray;
+        margin: 0; padding: 0;
+        border-right: dotted 2px gray;
+        padding-right: 4px;
+        margin-right: 14px;
+        float: left;
+        .day {font-weight: bold; font-size: 24px; line-height:26px;}
+        .month {font-weight: bold; font-size: 18px; line-height:22px;}
+        .year {font-weight: bold; font-size: 14px; line-height:18px;}
+      }
+      .title {
+        font-size: 1.2em;
+      }
     }
+  }
+  .content {
+    h3 {margin-top:1.5em;}
+    p {width: @paragraph-width;}
   }
   #the {
     padding-bottom: @common-bottom-margin;
@@ -70,51 +72,6 @@ body {
   }
 }
 
-body {
-  > header, > footer {
-    position: fixed;
-    width: 100%;
-    left: 0;
-  }
-  > header {
-    top: 0;
-    height: 20px;
-  }
-  > footer {
-    padding-left: @body-left-margin;
-    padding-bottom: 10px;
-    bottom: 0;
-  }
-}
-
-//---------------------------------------------------------------- Looks
-.navbar {
-  .navbar-inner {
-    //background-color: transparent;
-    background-color: rgba(255,255,255,0.8);
-    background-image: none;
-    box-shadow: none;
-    -webkit-box-shadow: none;
-    -moz-box-shadow: none;
-    -o-box-shadow: none;
-  }
-  .brand {
-    color: #4c4c4c;
-  }
-}
-
-aside#sidebar {
-  .sidebar-inner {
-    ul {
-      margin-left: 0;
-    }
-    .recent-posts {
-      li {
-        list-style-type: none;
-      }
-    }
-  }
-}
 
 #rss-link a, #atom-link a {
   color: white;

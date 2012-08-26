@@ -20,16 +20,28 @@
         var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
       })();
   %body
-    .navbar.navbar-fixed-top
-      .navbar-inner
-        .container
-          %h1
-            %a.brand{href:'/'}{{site.title}}
-          %ul.nav
-            %li
     %header
+      %h1
+        %a.brand{href:'/'}{{site.title}}
     %aside#sidebar
       .sidebar-inner
+        .rss-atom
+          %span#rss-link
+            %a{href:"/rss.xml"} RSS
+          %span#atom-link
+            %a{href:"/atom.xml"} ATOM
+        .last-update
+          updated at {{site.time|date_to_string}}
+        .license
+          %a{rel:"license",href:"http://creativecommons.org/licenses/by-nc-nd/3.0/"}
+            %img{alt:"Creative Commons License",style:"border-width:0",src:"http://i.creativecommons.org/l/by-nc-nd/3.0/88x31.png"}
+              %br
+          This work is licensed under a
+          %a{rel:"license",href:"http://creativecommons.org/licenses/by-nc-nd/3.0/"}
+            Creative Commons<br/>
+            Attribution-NonCommercial-NoDerivs
+            3.0 Unported License
+            \.
         %nav.recent-posts
           %ul
             {%for post in site.posts%}
@@ -39,36 +51,6 @@
                 %a{href:"{{post.url}}"} {{post.title}} 
             {%endfor%}
     {{content}}
-    %footer
-    /
-      %nav.social
-        <a href="https://github.com/tmtk75"><img src="{{site.paths.image}}/github.png" alt="Github" /></a>
-        <a href="https://www.facebook.com/tomotaka.sakuma"><img src="{{site.paths.image}}/facebook.png" alt="Facebook" /></a>
-        <a href="https://twitter.com/tmtk75"><img src="{{site.paths.image}}/twitter.png" alt="Twitter" /></a>
-        <a href="http://www.linkedin.com/profile/view?id=88237980"><img src="{{site.paths.image}}/linkedin.png" alt="LinkedIn" /></a>
-        <a href="https://plus.google.com/u/0/112810316775699020282"><img src="{{site.paths.image}}/google_plus.png" alt="Google+" /></a>
-        /
-          <a href="http://zerply.com/tmtk">zerply</a>
-          <a href="https://growbutton.com/tmtk">grow!</a>
-      %div
-        %span#rss-link
-          %a{href:"/rss.xml"} RSS
-        %span#atom-link
-          %a{href:"/atom.xml"} ATOM
-        %span updated at {{site.time|date_to_string}}
-      /
-        %a{rel:"license",href:"http://creativecommons.org/licenses/by-nc-nd/3.0/"}
-          %img{alt:"Creative Commons License",style:"border-width:0",src:"http://i.creativecommons.org/l/by-nc-nd/3.0/88x31.png"}
-          %br
-      This work is licensed under a
-      /
-        %a{rel:"license",href:"http://creativecommons.org/licenses/by-nc-nd/3.0/"}
-          Creative Commons<br/>
-          Attribution-NonCommercial-NoDerivs
-          3.0 Unported License
-        \.
-      %a{rel:"license",href:"http://creativecommons.org/licenses/by-nc-nd/3.0/"}
-        CC-ANN 3.0 Unported License.
   %script{src:"{{site.paths.vendor}}/less.js"}
   %script{src:"{{site.paths.vendor}}/google-code-prettify/prettify.js",type:"text/javascript"}
   :javascript

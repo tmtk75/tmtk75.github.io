@@ -31,21 +31,38 @@
     </script>
   </head>
   <body>
-    <div class='navbar navbar-fixed-top'>
-      <div class='navbar-inner'>
-        <div class='container'>
-          <h1>
-            <a class='brand' href='/'>{{site.title}}</a>
-          </h1>
-          <ul class='nav'>
-            <li></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <header></header>
+    <header>
+      <h1>
+        <a class='brand' href='/'>{{site.title}}</a>
+      </h1>
+    </header>
     <aside id='sidebar'>
       <div class='sidebar-inner'>
+        <div class='rss-atom'>
+          <span id='rss-link'>
+            <a href='/rss.xml'>RSS</a>
+          </span>
+          <span id='atom-link'>
+            <a href='/atom.xml'>ATOM</a>
+          </span>
+        </div>
+        <div class='last-update'>
+          updated at {{site.time|date_to_string}}
+        </div>
+        <div class='license'>
+          <a href='http://creativecommons.org/licenses/by-nc-nd/3.0/' rel='license'>
+            <img alt='Creative Commons License' src='http://i.creativecommons.org/l/by-nc-nd/3.0/88x31.png' style='border-width:0'>
+              <br />
+            </img>
+          </a>
+          This work is licensed under a
+          <a href='http://creativecommons.org/licenses/by-nc-nd/3.0/' rel='license'>
+            Creative Commons<br/>
+            Attribution-NonCommercial-NoDerivs
+            3.0 Unported License
+            .
+          </a>
+        </div>
         <nav class='recent-posts'>
           <ul>
             {%for post in site.posts%}
@@ -61,47 +78,6 @@
       </div>
     </aside>
     {{content}}
-    <footer></footer>
-    <!--
-      <nav class='social'>
-        <a href="https://github.com/tmtk75"><img src="{{site.paths.image}}/github.png" alt="Github" /></a>
-        <a href="https://www.facebook.com/tomotaka.sakuma"><img src="{{site.paths.image}}/facebook.png" alt="Facebook" /></a>
-        <a href="https://twitter.com/tmtk75"><img src="{{site.paths.image}}/twitter.png" alt="Twitter" /></a>
-        <a href="http://www.linkedin.com/profile/view?id=88237980"><img src="{{site.paths.image}}/linkedin.png" alt="LinkedIn" /></a>
-        <a href="https://plus.google.com/u/0/112810316775699020282"><img src="{{site.paths.image}}/google_plus.png" alt="Google+" /></a>
-        <!--
-          <a href="http://zerply.com/tmtk">zerply</a>
-          <a href="https://growbutton.com/tmtk">grow!</a>
-        -->
-      </nav>
-      <div>
-        <span id='rss-link'>
-          <a href='/rss.xml'>RSS</a>
-        </span>
-        <span id='atom-link'>
-          <a href='/atom.xml'>ATOM</a>
-        </span>
-        <span>updated at {{site.time|date_to_string}}</span>
-      </div>
-      <!--
-        <a href='http://creativecommons.org/licenses/by-nc-nd/3.0/' rel='license'>
-          <img alt='Creative Commons License' src='http://i.creativecommons.org/l/by-nc-nd/3.0/88x31.png' style='border-width:0' />
-          <br />
-        </a>
-      -->
-      This work is licensed under a
-      <!--
-        <a href='http://creativecommons.org/licenses/by-nc-nd/3.0/' rel='license'>
-          Creative Commons<br/>
-          Attribution-NonCommercial-NoDerivs
-          3.0 Unported License
-        </a>
-        .
-      -->
-      <a href='http://creativecommons.org/licenses/by-nc-nd/3.0/' rel='license'>
-        CC-ANN 3.0 Unported License.
-      </a>
-    -->
   </body>
   <script src='{{site.paths.vendor}}/less.js'></script>
   <script src='{{site.paths.vendor}}/google-code-prettify/prettify.js' type='text/javascript'></script>
