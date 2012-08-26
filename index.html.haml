@@ -8,7 +8,10 @@
     .content {{post.content}}
     %footer
       %a{href:"{{post.url}}"} Read more
-      %span.date {{post.creation-date}}
+      .date
+        .day {{post.creation-date || date:"%d"}}
+        .month {{post.creation-date || date:"%b"}}
+        .year {{post.creation-date || date:"%Y"}}
   {% endfor %}
 
 %script{src:"{{site.paths.vendor}}/jquery.js"}

@@ -33,17 +33,18 @@
                 %a{href:"{{post.url}}"} {{post.title}} 
             {% endfor %}
     {{content}}
-  %script{src:"{{site.paths.vendor}}/less.js"}
-  %script{src:"{{site.paths.vendor}}/google-code-prettify/prettify.js",type:"text/javascript"}
-  :javascript
-    prettyPrint()
-  %script{src:"{{site.paths.vendor}}/javascripts/syntaxhighlighter/scripts/shCore.js"}
-  %script{src:"{{site.paths.vendor}}/javascripts/syntaxhighlighter/scripts/shBrushJScript.js"}
-  %script{src:"{{site.paths.vendor}}/javascripts/syntaxhighlighter/scripts/shBrushXml.js"}
-  %script{src:"{{site.paths.vendor}}/javascripts/syntaxhighlighter/scripts/shBrushJava.js"}
-  %script{src:"{{site.paths.vendor}}/javascripts/syntaxhighlighter/scripts/shBrushBash.js"}
-  %script{src:"{{site.paths.vendor}}/javascripts/syntaxhighlighter/scripts/shBrushCss.js"}
-  %script{src:"{{site.paths.vendor}}/javascripts/syntaxhighlighter/scripts/shBrushPython.js"}
-  %script{src:"{{site.paths.vendor}}/javascripts/syntaxhighlighter/scripts/shBrushRuby.js"}
-  %script{src:"{{site.paths.vendor}}/jquery.js"}
-  %script{src:"{{site.paths.vendor}}/syntaxhighlighter.js"}
+  #scripts
+    %script{src:"{{site.paths.vendor}}/less.js"}
+    %script{src:"{{site.paths.vendor}}/google-code-prettify/prettify.js",type:"text/javascript"}
+    :javascript
+      prettyPrint()
+    %script{src:"{{site.paths.vendor}}/javascripts/syntaxhighlighter/scripts/shCore.js"}
+    %script{src:"{{site.paths.vendor}}/javascripts/syntaxhighlighter/scripts/shBrushJScript.js"}
+    %script{src:"{{site.paths.vendor}}/javascripts/syntaxhighlighter/scripts/shBrushXml.js"}
+    %script{src:"{{site.paths.vendor}}/javascripts/syntaxhighlighter/scripts/shBrushJava.js"}
+    %script{src:"{{site.paths.vendor}}/javascripts/syntaxhighlighter/scripts/shBrushBash.js"}
+    %script{src:"{{site.paths.vendor}}/javascripts/syntaxhighlighter/scripts/shBrushCss.js"}
+    %script{src:"{{site.paths.vendor}}/javascripts/syntaxhighlighter/scripts/shBrushPython.js"}
+    %script{src:"{{site.paths.vendor}}/javascripts/syntaxhighlighter/scripts/shBrushRuby.js"}
+    %script{src:"{{site.paths.vendor}}/jquery.js"}
+    %script{src:"{{site.paths.vendor}}/syntaxhighlighter.js"}
