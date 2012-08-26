@@ -26,10 +26,8 @@
     %aside#sidebar
       .sidebar-inner
         .rss-atom
-          .rss-link
-            %a{href:"/rss.xml"} RSS
-          .atom-link
-            %a{href:"/atom.xml"} ATOM
+          %a.rss-link{href:"/rss.xml"} RSS
+          %a.atom-link{href:"/atom.xml"} ATOM
         .last-update
           updated at {{site.time|date_to_string}}
         .license
