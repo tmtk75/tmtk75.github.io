@@ -54,11 +54,7 @@ article.post {
     h3 {margin-top:1.5em;}
     p {width: @paragraph-width;}
   }
-  #the {
-    padding-bottom: @common-bottom-margin;
-  }
   #disqus_thread_container {
-    padding-bottom: @common-bottom-margin;
     #disqus_thread {
       width: @paragraph-width;
     }
@@ -76,31 +72,6 @@ article.post {
   }
 }
 
-body {
-  > header {
-    background-image: -webkit-gradient(
-      linear, left bottom, left top,
-      from(rgba(255,255,255,0.0)),
-      to(rgba(255,255,255,1.0))
-    );
-    background-image: -moz-linear-gradient(
-      rgba(255,255,255,1.0) 100%,
-      rgba(255,255,255,0.0) 0%
-    );
-  }
-  > footer {
-    background-image: -webkit-gradient(
-      linear, left top, left bottom,
-      from(rgba(255,255,255,0.0)),
-      to(rgba(255,255,255,1.0))
-    );
-    background-image: -moz-linear-gradient(
-      rgba(255,255,255,0.0) 0%,
-      rgba(255,255,255,1.0) 100%
-    );
-  }
-}
-
 //---------------------------------------------------------------- Effect
 pre.terminal {
   color:white;
@@ -110,19 +81,8 @@ pre.terminal {
 }
 
 //---------------------------------------------------------------- Behavior
-nav.social img:hover {
-  position: relative;
-  left: -1px;
-  top: -1px;
-  box-shadow: 2px 2px 2px rgba(32,32,32,0.77);
-  border-radius: 2px;
-}
 
 //---------------------------------------------------------------- Disable/change library's style
-.navbar .container {
-  width: auto;
-}
-
 pre.prettyprint {
   border: 1px solid #ccc;
   padding: 8.5px;
