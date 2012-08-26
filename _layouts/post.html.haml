@@ -4,6 +4,9 @@
     %header
       %h2
         .date {{page.creation-date}}
+          .day {{page.creation-date || date:"%d"}}
+          .month {{page.creation-date || date:"%b"}}
+          .year {{page.creation-date || date:"%Y"}}
         .title {{page.title}}
         /%small.date {{page.date|date_to_string}}
     .content
