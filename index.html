@@ -2,7 +2,7 @@
 layout: default
 ---
 <div id='recent-posts'>
-  {% for post in site.posts %}
+  {% for post in site.posts limit:2 offset:2 %}
   <article class='post'>
     <header>
       <h2>

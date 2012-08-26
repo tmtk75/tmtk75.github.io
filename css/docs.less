@@ -10,6 +10,11 @@ body {
   margin-left: @sidebar-width + @span-width;
   #header {
     margin-left: -(@sidebar-width + @body-left-margin);
+    h1 {
+      font-size: 20px;
+      font-weight: 200;
+      a {color: #4c4c4c;}
+    }
   }
   #sidebar {
     width: @sidebar-width;
@@ -22,7 +27,6 @@ body {
     }
   }
 }
-
 //------------------------------------------------------------------------------
 article.post {
   width: 640px;
