@@ -34,23 +34,25 @@ body {
     margin-bottom: 40px;
     header {
       margin-bottom: 3em;
-    }
-    header h2 .date {
-      font-size: small;
-      font-weight: normal;
-      color: gray;
-      margin: 0; padding: 0;
-      .day {font-weight: bold; font-size: 24px; line-height:26px;}
-      .month {font-weight: bold; font-size: 18px; line-height:22px;}
-      .year {font-weight: bold; font-size: 14px; line-height:18px;}
-      border-right: dotted 2px gray;
-      padding-right: 4px;
-      margin-right: 14px;
-      float: left;
-    }
-    header h2 .title {
-      font-size: 1.2em;
-      line-height: (24+18+14)/2px;
+      h2 {
+        .date {
+          font-size: small;
+          font-weight: normal;
+          color: gray;
+          margin: 0; padding: 0;
+          border-right: dotted 2px gray;
+          padding-right: 4px;
+          margin-right: 14px;
+          float: left;
+          .day {font-weight: bold; font-size: 24px; line-height:26px;}
+          .month {font-weight: bold; font-size: 18px; line-height:22px;}
+          .year {font-weight: bold; font-size: 14px; line-height:18px;}
+        }
+        .title {
+          font-size: 1.2em;
+          line-height: (24+18+14)/2px;
+        }
+      }
     }
     .content {
       h3 {margin-top:1.5em;}
