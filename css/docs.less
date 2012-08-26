@@ -1,15 +1,12 @@
+// Layout ---------------------------------------------------------------------
+// horizontal
 @sidebar-width: 240px;
-@article-width: 640px;
-@paragraph-width: 480px;
 @span-width: 80px/2;
-
-@common-bottom-margin: 96px;
-@body-top-margin: 10px;
+@paragraph-width: 480px;
 @body-left-margin: 20px;
 
-// Layout ---------------------------------------------------------------------
 body {
-  padding-top: @body-top-margin;
+  padding-top: 10px;
   margin-left: @sidebar-width + @span-width;
   #header {
     margin-left: -(@sidebar-width + @body-left-margin);
@@ -28,7 +25,7 @@ body {
 
 //------------------------------------------------------------------------------
 article.post {
-  width: @article-width;
+  width: 640px;
   margin-bottom: 40px;
   header {
     margin-bottom: 3em;
@@ -37,7 +34,7 @@ article.post {
         font-size: small;
         font-weight: normal;
         color: gray;
-        margin: 0; padding: 0;
+        margin: 0;padding: 0;
         border-right: dotted 2px gray;
         padding-right: 4px;
         margin-right: 14px;
@@ -46,21 +43,14 @@ article.post {
         .month {font-weight: bold; font-size: 18px; line-height:22px;}
         .year {font-weight: bold; font-size: 14px; line-height:18px;}
       }
-      .title {
-        font-size: 1.2em;
-      }
+      .title { font-size: 1.2em; }
     }
   }
   .content {
     h3 {margin-top:1.5em;}
     p,ul {width: @paragraph-width;}
-
   }
-  #disqus_thread_container {
-    #disqus_thread {
-      width: @paragraph-width;
-    }
-  }
+  #disqus_thread { width: @paragraph-width; }
 }
 
 .rss-atom {
@@ -99,18 +89,14 @@ pre.prettyprint {
     }
     .dsq-reply {
       margin-top: auto;
-      .dsq-textarea-reply {
-        margin-bottom: auto;
-      }
+      .dsq-textarea-reply { margin-bottom: auto; }
     }
     h3 {
       margin: auto;
       position: static;
       font-size: 1em;
     }
-    #dsq-footer {
-      margin: auto;
-    }
+    #dsq-footer { margin: auto; }
   }
 }
 
