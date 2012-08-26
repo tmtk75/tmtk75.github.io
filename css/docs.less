@@ -1,3 +1,6 @@
+// Web font -------------------------------------------------------------------
+@import url("http://fonts.googleapis.com/css?family=Questrial|Michroma");
+
 // Layout ---------------------------------------------------------------------
 // horizontal
 @sidebar-width: 240px;
@@ -9,8 +12,9 @@ body {
   #header {
     margin-left: -(@sidebar-width + @body-left-margin);
     h1 {
+      font-family: Michroma;
       font-size: 20px;
-      font-weight: 200;
+      font-weight: 400;
       a {color: #4c4c4c;}
     }
   }
@@ -24,39 +28,41 @@ body {
       .recent-posts { li { list-style-type: none; } }
     }
   }
+  #recent-posts {
+    .content {overflow-x: hidden;}
+  }
 }
+
 .post {
   width: 640px;
+  .content p, .content ul, #disqus_thread { width: 480px; }
+  header h2 {font-family: Questrial;}
 }
-.content p,
-.content ul,
-#disqus_thread { width: 480px; }
-.content {
-  h3 {margin-top:1.5em;}
-}
+.read-more, .date {font-family: Questrial;}
+
 #recent-posts {
   .post {
+    h2 {font-size: 1.2em;}
+    position: relative;
+    overflow-y: hidden;
     height: 160+20px;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
     footer {
       padding-top: 20px;
-      height: 40px;
+      height: 20*2px;
       position: absolute;
       top: 160-20px;
       width: 100%;
       background-image: -webkit-gradient(linear, left top, left bottom,
-                          from(rgba(255, 255, 255, 0)),
+                          from(rgba(255,255,255,0)),
                           color-stop(0.25, rgba(255,255,255,1)),
                           to(white));
       background-image: -moz-linear-gradient(
-                          rgba(255, 255, 255, 0) 0%,
+                          rgba(255,255,255,0) 0%,
                           rgba(255,255,255,1) 25%,
                           white 100%);
       .date, .date>* {display: inline;}
     }
-    h2 {font-size: 1.2em;}
-    position: relative;
-    overflow-y: hidden;
   }
 }
 //------------------------------------------------------------------------------
@@ -66,13 +72,10 @@ article#the.post {
     margin-bottom: 3em;
     h2 {
       .date {
-        font-size: small;
-        font-weight: normal;
         color: gray;
-        margin: 0;padding: 0;
         border-right: dotted 2px gray;
         padding-right: 4px;
-        margin-right: 14px;
+        margin-right: 4px;
         float: left;
         .day {font-weight: bold; font-size: 24px; line-height:26px;}
         .month {font-weight: bold; font-size: 18px; line-height:22px;}
@@ -80,6 +83,8 @@ article#the.post {
       }
     }
   }
+  p:not(:first-child) { margin-top: 40px; }
+  #disqus_thread { margin-top: 60px; }
 }
 
 .rss-atom {

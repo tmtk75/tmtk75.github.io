@@ -12,11 +12,7 @@ layout: default
     <div class='content'>{{post.content}}</div>
     <footer>
       <a href='{{post.url}}'>Read more</a>
-      <div class='date'>
-        <div class='day'>{{post.creation-date || date:"%d"}}</div>
-        <div class='month'>{{post.creation-date || date:"%b"}}</div>
-        <div class='year'>{{post.creation-date || date:"%Y"}}</div>
-      </div>
+      <div class='date'>{{post.creation-date || date:"%d %b %Y"}}</div>
     </footer>
   </article>
   {% endfor %}

@@ -3,9 +3,7 @@ layout: post
 title: MacPorts and Command Line Tools for Xcode
 creation-date: 2012-08-19 11:43:00
 ---
-<p style="margin-bottom: 3em;">
 What I want to say in this post is "Don't forget installation of Command Line Tools if you use MacPorts".
-</p>
 
 
 I ran into the following error when I update meteor to the latest.
