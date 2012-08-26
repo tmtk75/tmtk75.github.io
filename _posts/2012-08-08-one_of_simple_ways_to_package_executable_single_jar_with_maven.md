@@ -35,7 +35,7 @@ It's using two plugins, jar and shade.
 
 And then just type such as
 
-<pre>
+<pre class="terminal">
 $ mvn package
 $ java -jar target/your-artifactId-version.jar
 </pre>
