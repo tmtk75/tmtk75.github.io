@@ -6,7 +6,7 @@
       %h2
         .title {{post.title}}
         %small.date {{post.creation-date}}
-    .content {{post.content | remove: "<pre>" | remove: "</pre>" | remove: "<code>" | remove: "</code>" | truncatewords: 40 }}
+    .content {{post.content}}
     %a{href:"{{post.url}}"} Read more
   {% endfor %}
 
