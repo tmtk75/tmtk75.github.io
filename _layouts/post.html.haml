@@ -3,25 +3,13 @@
   %article.post
     %header
       %h2
-        .date {{page.creation-date}}
+        .date
           .day {{page.creation-date || date:"%d"}}
           .month {{page.creation-date || date:"%b"}}
           .year {{page.creation-date || date:"%Y"}}
         .title {{page.title}}
-        /%small.date {{page.date|date_to_string}}
     .content
       {{content}}
-
-  %nav
-  /
-    {%if page.previous%}
-    %a{href:'{{site.url}}{{page.previous.url}}',rel:'prev',title:'{{page.previous.title}}'}
-      {{page.previous.title}}
-    {%endif%}
-    {%if page.next%}
-    %a{href:'{{site.url}}{{page.next.url}}',rel:'next',title:'{{page.next.title}}'}
-      {{page.next.title}}
-    {%endif%}
 
 %aside#disqus_thread_container
   #disqus_thread
