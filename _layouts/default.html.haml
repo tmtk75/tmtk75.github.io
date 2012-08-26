@@ -26,12 +26,12 @@
           = Haml::Engine.new(File.read "_layouts/_license.haml").render
         %nav.recent-posts
           %ul
-            {%for post in site.posts%}
+            {% for post in site.posts %}
             %li
               .date {{post.date|date:"%Y-%m-%d"}}
               .title
                 %a{href:"{{post.url}}"} {{post.title}} 
-            {%endfor%}
+            {% endfor %}
     {{content}}
   %script{src:"{{site.paths.vendor}}/less.js"}
   %script{src:"{{site.paths.vendor}}/google-code-prettify/prettify.js",type:"text/javascript"}
