@@ -32,11 +32,7 @@
             {%   assign this_month = {{post.date|date:"%m"}} %}
             {%   if this_month != prev_month %}
             {%     assign prev_month = {{this_month}} %}
-            .date {{post.date|date:"%b %Y"}}
-            /.date {{prev_month}}
-            /.date {{post.date|date:"%b %Y"}}
-            /.date {{post.date|date:"%Y-%m-%d"}}
-            /.date {{this_month}}
+            %span.date{class:"month{{this_month}}"} {{post.date|date:"%b %Y"}}
             {% endif %}
             %li
               .title
