@@ -40,12 +40,14 @@
           <ul>
             {% assign prev_month = '' %}
             {% for post in site.posts %}
-            {% assign this_month = {{post.date|date:"%b %Y"}} %}
+            {% assign this_month = {{post.date|date:"%b %y"}} %}
             {% if this_month != prev_month %}
             {%   assign prev_month = {{this_month}} %}
             <div class='date'>{{this_month}}</div>
             <!-- .date {{post.date|date:"%Y-%m-%d"}} -->
             <!-- .date {{this_month}} -->
+            <!-- {{post.date}} -->
+            <!-- {{post.date|date:"%b %y"}} -->
             {% endif %}
             <li>
               <div class='title'>
