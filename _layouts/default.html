@@ -38,13 +38,15 @@
         </div>
         <nav class='recent-posts'>
           <ul>
-            <span class='date month{{post.date|date:"%m"}}'>{{post.date|date:"%b %Y"}}</span>
+            {% for post in site.posts %}
+            <div class='date m{{post.date|date:"%b"}}'>{{post.date|date:"%b %Y"}}</div>
             <li>
               <div class='title'>
                 {{post.date|date:"%d"}}
                 <a href='{{post.url}}'>{{post.title}}</a>
               </div>
             </li>
+            {% endfor %}
           </ul>
         </nav>
       </div>
