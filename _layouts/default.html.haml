@@ -29,11 +29,10 @@
           %ul
             {% assign prev_month = '' %}
             {% for post in site.posts %}
-            {% assign this_month = {{post.date|date:"%Y"}} %}
-            {% if this_month != prev_month %}
-            {%   assign prev_month = {{this_month}} %}
-            / Hack for github!
-            .date 20{{this_month}}
+            {%   assign this_month = {{post.date|date:"%b"}} %}
+            {%   if this_month != prev_month %}
+            {%     assign prev_month = {{this_month}} %}
+            .date {{post.date|date:"%b %Y"}} %}
             /.date {{post.date|date:"%b %Y"}}
             /.date {{post.date|date:"%Y-%m-%d"}}
             /.date {{this_month}}
