@@ -27,13 +27,7 @@
           = Haml::Engine.new(File.read "_layouts/_license.haml").render
         %nav.recent-posts
           %ul
-            {% assign prev_month = '00' %}
-            {% for post in site.posts %}
-            {%   assign this_month = {{post.date|date:"%m"}} %}
-            {%   if this_month != prev_month %}
-            {%     assign prev_month = {{this_month}} %}
-            %span.date{class:"month{{this_month}}"} {{post.date|date:"%b %Y"}}
-            {% endif %}
+            %span.date{class:"month{{post.date|date:"%m"}}"} {{post.date|date:"%b %Y"}}
             %li
               .title
                 {{post.date|date:"%d"}}
