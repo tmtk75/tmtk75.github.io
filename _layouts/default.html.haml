@@ -27,11 +27,17 @@
           = Haml::Engine.new(File.read "_layouts/_license.haml").render
         %nav.recent-posts
           %ul
+            {% assign prev_month = '' %}
             {% for post in site.posts %}
+            {% assign this_month = {{post.date|date:"%b %Y"}} %}
+            {% if this_month != prev_month %}
+            {%   assign prev_month = {{this_month}} %}
+            .date {{this_month}}
+            /.date {{post.date|date:"%Y-%m-%d"}}
+            {% endif %}
             %li
-              /.date {{post.date|date:"%Y-%m-%d"}}
-              .date {{post.date|date:"%d %b %Y"}}
               .title
+                {{post.date|date:"%d"}}
                 %a{href:"{{post.url}}"} {{post.title}} 
             {% endfor %}
     {{content}}

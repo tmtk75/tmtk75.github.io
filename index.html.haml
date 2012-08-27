@@ -4,7 +4,7 @@
   %article.post
     %header
       %h2
-        .title {{post.title}}
+        %a.title{href:"{{post.url}}"} {{post.title}}
     .content {{post.content}}
     %footer
       %a.read-more{href:"{{post.url}}"} Read more

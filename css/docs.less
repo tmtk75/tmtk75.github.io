@@ -25,7 +25,11 @@ body {
     .sidebar-inner {
       padding-left: @body-left-margin;
       ul { margin-left: 0; }
-      .recent-posts { li { list-style-type: none; } }
+      .recent-posts {
+        .date { margin-top: 10px; }
+        .title { margin-bottom: 5px; }
+        li { list-style-type: none; }
+      }
     }
   }
   #recent-posts {
@@ -36,21 +40,23 @@ body {
 .post {
   width: 640px;
   .content p, .content ul, #disqus_thread { width: 480px; }
-  header h2, .read-more, .date {font-family: Questrial;}
 }
+.post header h2, #recent-posts h3, .read-more, .date, #sidebar .title, .license {font-family: Questrial;}
 
 #sidebar {
   .license, .recent-posts {
   margin-top: 20px;
 }}
 
-recent-posts {
+body #recent-posts {
   .post {
-    h2 {font-size: 1.2em;}
     position: relative;
     overflow-y: hidden;
     height: 160+20px;
-    margin-bottom: 40px;
+    margin-bottom: 40+20px;
+    h2 {font-size: 1.2em;}
+    h3 {font-size: 1.1em;}
+    .title {color: #333;}
     footer {
       padding-top: 20px;
       height: 20*2px;
