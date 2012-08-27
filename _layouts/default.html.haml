@@ -34,6 +34,7 @@
             {%   assign prev_month = {{this_month}} %}
             .date {{this_month}}
             /.date {{post.date|date:"%Y-%m-%d"}}
+            /.date {{this_month}}
             {% endif %}
             %li
               .title
