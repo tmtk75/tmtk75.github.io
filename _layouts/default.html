@@ -43,7 +43,7 @@
             {%   assign this_month = {{post.date|date:"%b"}} %}
             {%   if this_month != prev_month %}
             {%     assign prev_month = {{this_month}} %}
-            <div class='date'>{{post.date|date:"%b %Y"}} %}</div>
+            <div class='date'>{{post.date|date:"%b %Y"}}</div>
             <!-- .date {{post.date|date:"%b %Y"}} -->
             <!-- .date {{post.date|date:"%Y-%m-%d"}} -->
             <!-- .date {{this_month}} -->
