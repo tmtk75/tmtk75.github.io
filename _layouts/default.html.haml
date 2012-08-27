@@ -28,7 +28,7 @@
         %nav.recent-posts
           %ul
             {% for post in site.posts %}
-            .date{class:'m{{post.date|date:"%b"}}'} {{post.date|date:"%b %Y"}}
+            .date{class:'m-{{post.date|date:"%b"}} y-{{post.date|date:"%Y"}}'} {{post.date|date:"%b %Y"}}
             %li
               .title
                 {{post.date|date:"%d"}}

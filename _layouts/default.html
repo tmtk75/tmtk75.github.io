@@ -39,7 +39,7 @@
         <nav class='recent-posts'>
           <ul>
             {% for post in site.posts %}
-            <div class='date m{{post.date|date:"%b"}}'>{{post.date|date:"%b %Y"}}</div>
+            <div class='date m-{{post.date|date:"%b"}} y-{{post.date|date:"%Y"}}'>{{post.date|date:"%b %Y"}}</div>
             <li>
               <div class='title'>
                 {{post.date|date:"%d"}}
