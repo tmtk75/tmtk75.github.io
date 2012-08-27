@@ -40,7 +40,7 @@
           <ul>
             {% assign prev_month = '' %}
             {% for post in site.posts %}
-            {% assign this_month = {{post.date}} %}
+            {% assign this_month = "{{post.date}}" %}
             {% if this_month != prev_month %}
             {%   assign prev_month = {{this_month}} %}
             <!-- Hack for github! -->
