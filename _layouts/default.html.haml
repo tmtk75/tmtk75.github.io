@@ -27,7 +27,7 @@
           = Haml::Engine.new(File.read "_layouts/_license.haml").render
         %nav.recent-posts
           %ul
-            %span.date{class:"month{{post.date|date:"%m"}}"} {{post.date|date:"%b %Y"}}
+            %span.date{class:'month{{post.date|date:"%m"}}'} {{post.date|date:"%b %Y"}}
             %li
               .title
                 {{post.date|date:"%d"}}
