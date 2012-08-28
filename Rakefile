@@ -1,3 +1,5 @@
+task :default => :haml
+
 desc "Compile with haml."
 task :haml do
   require "haml"

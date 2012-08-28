@@ -38,8 +38,17 @@
         </div>
         <nav class='recent-posts'>
           <ul>
+            {% assign prev_month = '' %}
             {% for post in site.posts %}
-            <div class='date m-{{post.date|date:"%b"}} y-{{post.date|date:"%Y"}}'>{{post.date|date:"%b %Y"}}</div>
+            {%   assign then = post.date %}
+            {%   assign this_month = {{then|date:'%b'}} %}
+            {%   if prev_month != this_month %}
+            {%     assign prev_month = this_month %}
+            <div class='date'>{{post.date|date:"%b %Y"}}</div>
+            <!-- {{then}} -->
+            <!-- {{this_month}} -->
+            <!-- {{prev_month}} -->
+            {%   endif %}
             <li>
               <div class='title'>
                 {{post.date|date:"%d"}}
