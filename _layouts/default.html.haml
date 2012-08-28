@@ -34,9 +34,6 @@
             {%   if prev_month != this_month %}
             {%     assign prev_month = this_month %}
             .date {{post.date|date:"%b %Y"}}
-            / {{then}}
-            / {{this_month}}
-            / {{prev_month}}
             {%   endif %}
             %li
               .title
