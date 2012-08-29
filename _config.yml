@@ -4,14 +4,14 @@ pygments: true
 auto: false
 markdown: kramdown
 permalink: date
-exclude: ["Rakefile", "Gemfile", "index.haml"]
+exclude: ["Rakefile", "Gemfile", "index.html.haml"]
 
 ## Site preference
 title: Undefined Title
 paths:
-  image: /img
+  image: /assets/img
   vendor: /vendor
-  css: /css
+  css: /assets/css
 author:
   name: Tomotaka Sakuma
   emai: noreply
