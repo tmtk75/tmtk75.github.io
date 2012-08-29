@@ -4,7 +4,7 @@ pygments: true
 auto: false
 markdown: kramdown
 permalink: date
-exclude: ["Rakefile", "Gemfile", "index.html.haml"]
+exclude: ["Rakefile", "Gemfile", "Gemfile.lock", "index.html.haml"]
 
 ## Site preference
 title: Undefined Title
