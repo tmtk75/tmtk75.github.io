@@ -13,9 +13,7 @@ open(path, "r") {|f|
            .sort
            .unshift([[]])
            .reduce {|a, b|
-             if a.last.last == nil
-               a.last << b
-             elsif a.last.last == b
+             if a.last.last == nil or a.last.last == b
                a.last << b
              else
                a << [b]
