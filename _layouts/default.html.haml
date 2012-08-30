@@ -25,12 +25,18 @@
           updated at
           %span.date {{site.time | date:"%d %b %Y"}}
         .social
-          %img.icon{src:"{{site.paths.icon}}/twitter.png"}
-          %img.icon{src:"{{site.paths.icon}}/facebook.png"}
-          %img.icon{src:"{{site.paths.icon}}/github.png"}
-          %img.icon{src:"{{site.paths.icon}}/google.png"}
-          %img.icon{src:"{{site.paths.icon}}/linkedin.png"}
-          %img.icon{src:"{{site.paths.icon}}/zerply.png"}
+          %a{href:"{{site.profile.social.twitter}}"}
+            %img.icon{src:"{{site.paths.icon}}/twitter.png"}
+          %a{href:"{{site.profile.social.facebook}}"}
+            %img.icon{src:"{{site.paths.icon}}/facebook.png"}
+          %a{href:"{{site.profile.social.github}}"}
+            %img.icon{src:"{{site.paths.icon}}/github.png"}
+          %a{href:"{{site.profile.social.googleplus}}"}
+            %img.icon{src:"{{site.paths.icon}}/google.png"}
+          %a{href:"{{site.profile.social.linkedin}}"}
+            %img.icon{src:"{{site.paths.icon}}/linkedin.png"}
+          %a{href:"{{site.profile.social.zerply}}"}
+            %img.icon{src:"{{site.paths.icon}}/zerply.png"}
         .license
           = Haml::Engine.new(File.read "_layouts/_license.haml").render
         %nav.recent-posts

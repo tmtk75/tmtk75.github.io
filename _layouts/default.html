@@ -30,12 +30,24 @@
           <span class='date'>{{site.time | date:"%d %b %Y"}}</span>
         </div>
         <div class='social'>
-          <img class='icon' src='{{site.paths.icon}}/twitter.png' />
-          <img class='icon' src='{{site.paths.icon}}/facebook.png' />
-          <img class='icon' src='{{site.paths.icon}}/github.png' />
-          <img class='icon' src='{{site.paths.icon}}/google.png' />
-          <img class='icon' src='{{site.paths.icon}}/linkedin.png' />
-          <img class='icon' src='{{site.paths.icon}}/zerply.png' />
+          <a href='{{site.profile.social.twitter}}'>
+            <img class='icon' src='{{site.paths.icon}}/twitter.png' />
+          </a>
+          <a href='{{site.profile.social.facebook}}'>
+            <img class='icon' src='{{site.paths.icon}}/facebook.png' />
+          </a>
+          <a href='{{site.profile.social.github}}'>
+            <img class='icon' src='{{site.paths.icon}}/github.png' />
+          </a>
+          <a href='{{site.profile.social.googleplus}}'>
+            <img class='icon' src='{{site.paths.icon}}/google.png' />
+          </a>
+          <a href='{{site.profile.social.linkedin}}'>
+            <img class='icon' src='{{site.paths.icon}}/linkedin.png' />
+          </a>
+          <a href='{{site.profile.social.zerply}}'>
+            <img class='icon' src='{{site.paths.icon}}/zerply.png' />
+          </a>
         </div>
         <div class='license'>
           This work is licensed under a
