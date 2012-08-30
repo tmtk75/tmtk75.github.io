@@ -20,5 +20,6 @@ open(path, "r") {|f|
              end
              a
            }
+           .map {|e| []}
   p words
 }
