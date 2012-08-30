@@ -9,6 +9,7 @@ exclude: ["Rakefile", "Gemfile", "Gemfile.lock", "index.html.haml"]
 ## Site preference
 title: Undefined Title
 paths:
+  icon: /assets/img/icon
   image: /assets/img
   vendor: /vendor
   css: /assets/css

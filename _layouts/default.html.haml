@@ -24,6 +24,13 @@
         .last-update
           updated at
           %span.date {{site.time | date:"%d %b %Y"}}
+        .social
+          %img.icon{src:"{{site.paths.icon}}/twitter.png"}
+          %img.icon{src:"{{site.paths.icon}}/facebook.png"}
+          %img.icon{src:"{{site.paths.icon}}/github.png"}
+          %img.icon{src:"{{site.paths.icon}}/google.png"}
+          %img.icon{src:"{{site.paths.icon}}/linkedin.png"}
+          %img.icon{src:"{{site.paths.icon}}/zerply.png"}
         .license
           = Haml::Engine.new(File.read "_layouts/_license.haml").render
         %nav.recent-posts
