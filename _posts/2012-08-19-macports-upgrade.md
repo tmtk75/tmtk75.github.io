@@ -44,7 +44,7 @@ So I installed it and ran MacPorts again.
 
 Oh, oops, not yet. What do I need…? Ah, yes, [Command Line Tools](https://developer.apple.com/downloads/index.action) is maybe. That guess was right. It's released for Mountain Lion.
 
-<img src="/img/CommandLineTools4MountainLion.png" width="386px"/>
+<img src="{{site.paths.image}}/CommandLineTools4MountainLion.png" width="386px"/>
 
 After installation, I tried upgrade for just expat.
 

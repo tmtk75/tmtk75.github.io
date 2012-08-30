@@ -22,4 +22,4 @@ words = f.read
            a
          }
          .map {|e| [e[0], e.length]}
-pp words.find_all {|e| e[1] > 5 and e[0].length >= 3}
+pp words.find_all {|e| e[1] > 2 and e[0].length >= 3}
