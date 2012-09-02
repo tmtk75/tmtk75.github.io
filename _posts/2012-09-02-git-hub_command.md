@@ -6,7 +6,7 @@ creation-date: 2012-09-02 21:35:02
 It's not useful to open a file you wish on [github.com](http://github.com) through web browser from the top page of repository.
 You have to click and click so much.
 
-[git-hub sub](http://github.com/tmtk75/git-hub) command decreases the efforts, and you can open page you with on github.
+[git-hub](http://github.com/tmtk75/git-hub) sub command decreases the efforts, and you can open page you wish on github.
 Now it supports only MacOS X because of using "open" command.
 
 <https://github.com/tmtk75/git-hub>
