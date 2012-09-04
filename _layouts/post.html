@@ -10,6 +10,7 @@ layout: default
         <div class='year'>{{page.creation-date || date:"%Y"}}</div>
       </div>
       <div class='title'>{{page.title}}</div>
+      {% render_time now is %}
     </h2>
   </header>
   <div class='content'>

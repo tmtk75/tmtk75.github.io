@@ -1,4 +1,9 @@
-task :default => :haml
+task :default => :jekyll
+
+desc "Jekyll"
+task :jekyll, [:haml] do
+  `jekyll`
+end
 
 desc "Compile with haml."
 task :haml do
