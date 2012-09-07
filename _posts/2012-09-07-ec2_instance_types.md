@@ -8,7 +8,7 @@ I format as to be comparable using table. This information is quoted based on th
 
 Standard Instances
 ------------------
-Instances of this family are well suited for most applications.
+<!--Instances of this family are well suited for most applications.-->
 <style>
 table.ec2-instance-type thead {border-bottom: 2px solid #888;}
 .ec2-instance-type ul {list-style:none; margin-left:0px}
@@ -89,12 +89,12 @@ Micro Instances
 </ul></td></tr></tbody>
 </table>
 
-Micro instances (t1.micro) provide a small amount of consistent CPU resources and allow you to increase CPU capacity in short bursts when additional cycles are available. They are well suited for lower throughput applications and web sites that require additional compute cycles periodically. You can learn more about how you can use Micro instances and appropriate applications in the Amazon EC2 documentation
+<!--Micro instances (t1.micro) provide a small amount of consistent CPU resources and allow you to increase CPU capacity in short bursts when additional cycles are available. They are well suited for lower throughput applications and web sites that require additional compute cycles periodically. You can learn more about how you can use Micro instances and appropriate applications in the Amazon EC2 documentation-->
 
 
 High-Memory Instances
 ---------------------
-Instances of this family offer large memory sizes for high throughput applications, including database and memory caching applications.
+<!--Instances of this family offer large memory sizes for high throughput applications, including database and memory caching applications.-->
 
 <table class="ec2-instance-type" width="750px">
 <thead>
@@ -133,7 +133,7 @@ Instances of this family offer large memory sizes for high throughput applicatio
 
 High-CPU Instances
 ------------------
-Instances of this family have proportionally more CPU resources than memory (RAM) and are well suited for compute-intensive applications.
+<!--Instances of this family have proportionally more CPU resources than memory (RAM) and are well suited for compute-intensive applications.-->
 
 <table class="ec2-instance-type">
 <thead>
@@ -162,7 +162,7 @@ Instances of this family have proportionally more CPU resources than memory (RAM
 
 Cluster Compute Instances
 -------------------------
-Instances of this family provide proportionally high CPU resources with increased network performance and are well suited for High Performance Compute (HPC) applications and other demanding network-bound applications. You can learn more about Cluster instance concepts by reading the Amazon EC2 documentation. For more information about specific use cases and cluster management options for HPC, please visit the HPC solutions page.
+<!--Instances of this family provide proportionally high CPU resources with increased network performance and are well suited for High Performance Compute (HPC) applications and other demanding network-bound applications. You can learn more about Cluster instance concepts by reading the Amazon EC2 documentation. For more information about specific use cases and cluster management options for HPC, please visit the HPC solutions page.-->
 
 <table class="ec2-instance-type">
 <thead>
@@ -189,11 +189,11 @@ Instances of this family provide proportionally high CPU resources with increase
 </ul></td></tr></tbody>
 </table>
 
-Cluster Compute, Cluster GPU and High I/O instances do not currently support EBS Optimization, but provide customers with high bandwidth networking and can also be used with EBS Provisioned IOPS volumes for improved consistency and performance.
+<!--Cluster Compute, Cluster GPU and High I/O instances do not currently support EBS Optimization, but provide customers with high bandwidth networking and can also be used with EBS Provisioned IOPS volumes for improved consistency and performance.-->
 
 Cluster GPU Instances
 ---------------------
-Instances of this family provide general-purpose graphics processing units (GPUs) with proportionally high CPU and increased network performance for applications benefitting from highly parallelized processing, including HPC, rendering and media processing applications. While Cluster Compute Instances provide the ability to create clusters of instances connected by a low latency, high throughput network, Cluster GPU Instances provide an additional option for applications that can benefit from the efficiency gains of the parallel computing power of GPUs over what can be achieved with traditional processors. Learn more about use of this instance type for HPC applications.
+<!--Instances of this family provide general-purpose graphics processing units (GPUs) with proportionally high CPU and increased network performance for applications benefitting from highly parallelized processing, including HPC, rendering and media processing applications. While Cluster Compute Instances provide the ability to create clusters of instances connected by a low latency, high throughput network, Cluster GPU Instances provide an additional option for applications that can benefit from the efficiency gains of the parallel computing power of GPUs over what can be achieved with traditional processors. Learn more about use of this instance type for HPC applications.-->
 
 <table class="ec2-instance-type">
 <thead>
@@ -212,11 +212,11 @@ Instances of this family provide general-purpose graphics processing units (GPUs
 </ul></td></tr></tbody>
 </table>
 
-Cluster Compute, Cluster GPU and High I/O instances do not currently support EBS Optimization, but provide customers with high bandwidth networking and can also be used with EBS Provisioned IOPS volumes for improved consistency and performance.
+<!--Cluster Compute, Cluster GPU and High I/O instances do not currently support EBS Optimization, but provide customers with high bandwidth networking and can also be used with EBS Provisioned IOPS volumes for improved consistency and performance.-->
 
 High I/O Instances
 ------------------
-Instances of this family provide very high instance storage I/O performance and are ideally suited for many high performance database workloads. Example applications include NoSQL databases like Cassandra and MongoDB. High I/O instances are backed by Solid State Drives (SSD), and also provide high levels of CPU, memory and network performance.
+<!--Instances of this family provide very high instance storage I/O performance and are ideally suited for many high performance database workloads. Example applications include NoSQL databases like Cassandra and MongoDB. High I/O instances are backed by Solid State Drives (SSD), and also provide high levels of CPU, memory and network performance.-->
 
 <table class="ec2-instance-type">
 <thead>
@@ -235,12 +235,11 @@ Instances of this family provide very high instance storage I/O performance and 
 </ul></td></tr></tbody>
 </table>
 
-
-8 cores + 8 hyperthreads for 16 virtual cores 
+<!--8 cores + 8 hyperthreads for 16 virtual cores 
 
 Using Linux paravirtual (PV) AMIs, High I/O Quadruple Extra Large instances can deliver more than 120,000 4 KB random read IOPS and between 10,000 and 85,000 4 KB random write IOPS (depending on active logical block addressing span) to applications. For hardware virtual machines (HVM) and Windows AMIs, performance is approximately 90,000 4 KB random read IOPS and between 9,000 and 75,000 4 KB random write IOPS. The maximum sequential throughput on all AMI types (Linux PV, Linux HVM, and Windows) per second is approximately 2 GB read and 1.1 GB write. 
 
 For customers using Microsoft Windows Server, High I/O Instances are only supported with the Microsoft Windows Server AMIs for Cluster Instance Type.
-Cluster Compute, Cluster GPU and High I/O instances do not currently support EBS Optimization, but provide customers with high bandwidth networking and can also be used with EBS Provisioned IOPS volumes for improved consistency and performance.
+Cluster Compute, Cluster GPU and High I/O instances do not currently support EBS Optimization, but provide customers with high bandwidth networking and can also be used with EBS Provisioned IOPS volumes for improved consistency and performance.-->
 
 
