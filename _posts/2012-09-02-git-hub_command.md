@@ -49,4 +49,4 @@ Now it supports only MacOS X because of using "open" command.
 
       graphs:                                        network:
         git hub graphs                                 git hub network
-
+{:.terminal}

@@ -12,6 +12,7 @@ I ran into the following error when I update meteor to the latest.
     dyld: Library not loaded: /opt/local/lib/libexpat.1.dylib
       Referenced from: /opt/local/libexec/git-core/git-remote-https
       Reason: Incompatible library version: git-remote-https requires version 8.0.0 or later, but libexpat.1.dylib provides version 7.0.0
+{:.terminal}
 
 I thought I updated git with [MacPorts](http://www.macports.org/) and did selfupdate of MacPorts.
 
@@ -24,6 +25,7 @@ I thought I updated git with [MacPorts](http://www.macports.org/) and did selfup
     Installing new MacPorts release in /opt/local as root:admin; permissions 0755; Tcl-Package in /Library/Tcl
     
     Error: /opt/local/bin/port: port selfupdate failed: Error installing new MacPorts base: command execution failed
+{:.terminal}
 
 Then I faced another error.
 
@@ -41,6 +43,7 @@ So I installed it and ran MacPorts again.
     Error: Unable to upgrade port: 1
     To report a bug, follow the instructions in the guide:
     http://guide.macports.org/#project.tickets
+{:.terminal}
 
 Oh, oops, not yet. What do I need…? Ah, yes, [Command Line Tools](https://developer.apple.com/downloads/index.action) is maybe. That guess was right. It's released for Mountain Lion.
 
@@ -70,6 +73,7 @@ After installation, I tried upgrade for just expat.
     --->  Dependencies to be installed: apr
     --->  Configuring apr
     ...
+{:.terminal}
 
 Yep, looks working well.
 
@@ -79,6 +83,7 @@ Yep, looks working well.
     --->  Applying patches to subversion
     --->  Configuring subversion
     --->  Building subversion
+{:.terminal}
 
 Mh...? Why does port install subversion...? I've not already used it...
 
@@ -113,4 +118,5 @@ BTW, that's OK I was able to fetch the latest of meteor =)
     From https://github.com/meteor/meteor
      * [new tag]         v0.3.7     -> v0.3.7
      * [new tag]         v0.3.8     -> v0.3.8
+{:.terminal}
 
