@@ -9,7 +9,7 @@ This is an easy way to try hadoop with one host, but you cannot access to HDFS f
 [1]: https://hadoop.apache.org/docs/r0.20.2/quickstart.html#PseudoDistributed
 
 To improve it, change a bit thing as
-describing fs.default.name of core-site.xml
+describing `fs.default.name` of `core-site.xml`
 with IP address to be accessible from another host.
 
 Let's say IP address of your host hadoop running is 192.168.10.20,
