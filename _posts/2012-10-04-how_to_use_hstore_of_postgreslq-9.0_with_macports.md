@@ -36,7 +36,7 @@ From now, will express how to make sure hstore setup.
 
 Initialize a database directory, start a new server process and create a new database.
 
-    $ sudo mkdir -p /opt/local/var/db/postgresql90/defaultdbsudo
+    $ sudo mkdir -p /opt/local/var/db/postgresql90/defaultdb
     $ chown postgres:postgres /opt/local/var/db/postgresql90/defaultdb
     $ sudo su postgres -c '/opt/local/lib/postgresql90/bin/initdb -D /opt/local/var/db/postgresql90/defaultdb'
     $ create database yourdb |  psql -h localhost -U postgres
