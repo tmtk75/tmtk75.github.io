@@ -3,7 +3,8 @@ layout: post
 title: node-jquery which supports dom, jquery and xhr on node
 creation-date: 2012-10-09 18:25:08
 ---
-I wrote a node module to support dom, jquery and xhr.
+I wrote a node module to support dom, jquery and xhr.  
+[node-jquery](https://npmjs.org/package/node-jquery)  
 You can use many jQuery methods including $.ajax and use jQuery's selector.
 
 Here is a sample to retrieve all anchors on the top page of yahoo.
