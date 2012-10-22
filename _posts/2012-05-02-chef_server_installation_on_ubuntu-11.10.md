@@ -32,7 +32,7 @@ cookbook_path "/tmp/chef-solo/cookbooks"
 <pre class="prettyprint json">
 {
   "chef_server": {
-    "server_url": "http://localhost:4000",
+    "server_url": "http://localhost:4040",
     "webui_enabled": true
   },
   "run_list": [ "recipe[chef-server::rubygems-install]" ]
