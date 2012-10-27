@@ -59,3 +59,17 @@ Try to check if it works.
 Actually, I'd like to import some records from heroku, but it used hstore.
 Setting up hstore on my local env cost me a lot of effort...
 
+---
+In addition at Oct 17, 2012
+
+If you ran into next error message by executing initdb, change directory to /tmp by `cd /tmp` and try it again.
+
+    shell-init: error retrieving current directory: getcwd: cannot access parent directories: Permission denied
+    could not identify current directory: Permission denied
+    could not identify current directory: Permission denied
+    could not identify current directory: Permission denied
+    The program "postgres" is needed by pg_ctl but was not found in the
+    same directory as "pg_ctl".
+{:.terminal}
+
+That seems a workaround from <https://trac.macports.org/ticket/18024>.
