@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Installation of ruby with rvm as using chef-solo
+title: Installation of ruby with rvm to be available of chef-solo
 creation-date: 2012-10-24 12:54:20
 ---
 Everytime I set up ruby on a new machine, I forget how to install chef-solo works well.
