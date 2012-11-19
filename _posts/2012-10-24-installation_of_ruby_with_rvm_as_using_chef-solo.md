@@ -10,16 +10,20 @@ As <https://rvm.io/rvm/install/>, but without `--ruby`
 
     $ \curl -L https://get.rvm.io | bash -s stable
     $ source ~/.rvm/scripts/rvm
+{:.terminal}
 
 Install required libraries
 
     $ for e in readline iconv curl openssl zlib autoconf ncurses pkgconfig gettext glib mono llvm libxml2 libxslt libyaml; do rvm pkg install $e; done
+{:.terminal}
 
 Install a version of ruby
 
     $ rvm install 1.9.3-p286
+{:.terminal}
 
 Install chef with gem
 
     $ gem install --no-ri --no-rdoc chef
+{:.terminal}
 
