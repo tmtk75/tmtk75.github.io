@@ -19,7 +19,7 @@ Install required libraries
 
 Install a version of ruby
 
-    $ rvm install 1.9.3-p286
+    $ rvm install 1.9.3 --with-openssl-dir=$HOME/.rvm/usr
 {:.terminal}
 
 Install chef with gem
