@@ -29,10 +29,11 @@ To avoid, follow the next instruction.
 {:.terminal}
 
 The summary of steps:
-  - Creates a new keypair
-  - Register the new public key to heroku
-  - Log in with your account to be failed fetch
-  - Add the new private to ssh-agent
+
+- Creates a new keypair
+- Register the new public key to heroku
+- Log in with your account to be failed fetch
+- Add the new private to ssh-agent
 
 Actually, if you already added another private key except for the new one, it doesn't work properly.
 
