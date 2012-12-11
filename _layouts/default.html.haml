@@ -54,6 +54,11 @@
                 {{post.date|date:"%d"}}
                 %a{href:"{{post.url}}"} {{post.title}} 
             {% endfor %}
+        %nav.privacy-policy
+          %h2 Privacy Policy
+          %p
+            %small This site utilizes Google Analytics (GA) and provides first party cookie of GA to your browser. I just only use the data, which is collected by GA, in order to improve the contents, accessibility, usability and readability of this site. And also about the data, I never disclose and use it for another purpose.
+
     {{content}}
   %aside#scripts
     %script{src:"{{site.paths.vendor}}/less.js"}
