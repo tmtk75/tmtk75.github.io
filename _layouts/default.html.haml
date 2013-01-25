@@ -10,56 +10,58 @@
     %link{href:"{{site.paths.css}}/docs.less",rel:"stylesheet/less",type:"text/css"}
     %link{href:"{{site.paths.vendor}}/google-code-prettify/prettify.css",type:"text/css",rel:"stylesheet"}
     %link{href:"{{site.paths.vendor}}/sh.css",type:"text/css",rel:"stylesheet"}
-    %link{href:"{{site.paths.css}}/docs.css",type:"text/css",rel:"stylesheet"}
     %script{src:"{{site.paths.vendor}}/ga.js"}
   %body
-    %header#header
-      %h1
-        %a.brand{href:'/'}{{site.title}}
-    %aside#sidebar
-      .sidebar-inner
-        .rss-atom
-          %a.rss-link{href:"/rss.xml"} RSS
-          %a.atom-link{href:"/atom.xml"} ATOM
-        .last-update
-          updated at
-          %span.date {{site.time | date:"%d %b %Y"}}
-        .social
-          %a{href:"{{site.profile.social.twitter}}"}
-            %img.icon{src:"{{site.paths.icon}}/twitter.png"}
-          %a{href:"{{site.profile.social.facebook}}"}
-            %img.icon{src:"{{site.paths.icon}}/facebook.png"}
-          %a{href:"{{site.profile.social.github}}"}
-            %img.icon{src:"{{site.paths.icon}}/github.png"}
-          %a{href:"{{site.profile.social.googleplus}}"}
-            %img.icon{src:"{{site.paths.icon}}/google.png"}
-          %a{href:"{{site.profile.social.linkedin}}"}
-            %img.icon{src:"{{site.paths.icon}}/linkedin.png"}
-          %a{href:"{{site.profile.social.zerply}}"}
-            %img.icon{src:"{{site.paths.icon}}/zerply.png"}
-        .license
-          = Haml::Engine.new(File.read "_layouts/_license.haml").render
-        %nav.recent-posts
-          %ul
-            {% assign prev_month = '' %}
-            {% for post in site.posts %}
-            {%   assign then = post.date %}
-            {%   assign this_month = {{then|date:'%b'}} %}
-            {%   if prev_month != this_month %}
-            {%     assign prev_month = this_month %}
-            .date {{post.date|date:"%b %Y"}}
-            {%   endif %}
-            %li
-              .title
-                {{post.date|date:"%d"}}
-                %a{href:"{{post.url}}"} {{post.title}} 
-            {% endfor %}
-        %nav.privacy-policy
-          %h2 Privacy Policy
-          %p
-            This site utilizes Google Analytics (GA) and provides first party cookie of GA to your browser. I just only use the data, which is collected by GA, in order to improve the contents, accessibility, usability and readability of this site. And also about the data, I never disclose and use it for another purpose.
-
-    {{content}}
+    .container
+      .row
+        .span3
+          %header#header
+            %h1
+              %a.brand{href:'/'}{{site.title}}
+          %aside#sidebar
+            .sidebar-inner
+              .rss-atom
+                %a.rss-link{href:"/rss.xml"} RSS
+                %a.atom-link{href:"/atom.xml"} ATOM
+              .last-update
+                updated at
+                %span.date {{site.time | date:"%d %b %Y"}}
+              .social
+                %a{href:"{{site.profile.social.twitter}}"}
+                  %img.icon{src:"{{site.paths.icon}}/twitter.png"}
+                %a{href:"{{site.profile.social.facebook}}"}
+                  %img.icon{src:"{{site.paths.icon}}/facebook.png"}
+                %a{href:"{{site.profile.social.github}}"}
+                  %img.icon{src:"{{site.paths.icon}}/github.png"}
+                %a{href:"{{site.profile.social.googleplus}}"}
+                  %img.icon{src:"{{site.paths.icon}}/google.png"}
+                %a{href:"{{site.profile.social.linkedin}}"}
+                  %img.icon{src:"{{site.paths.icon}}/linkedin.png"}
+                %a{href:"{{site.profile.social.zerply}}"}
+                  %img.icon{src:"{{site.paths.icon}}/zerply.png"}
+              .license
+                = Haml::Engine.new(File.read "_layouts/_license.haml").render
+              %nav.recent-posts
+                %ul
+                  {% assign prev_month = '' %}
+                  {% for post in site.posts %}
+                  {%   assign then = post.date %}
+                  {%   assign this_month = {{then|date:'%b'}} %}
+                  {%   if prev_month != this_month %}
+                  {%     assign prev_month = this_month %}
+                  .date {{post.date|date:"%b %Y"}}
+                  {%   endif %}
+                  %li
+                    .title
+                      {{post.date|date:"%d"}}
+                      %a{href:"{{post.url}}"} {{post.title}} 
+                  {% endfor %}
+              %nav.privacy-policy
+                %h2 Privacy Policy
+                %p
+                  This site utilizes Google Analytics (GA) and provides first party cookie of GA to your browser. I just only use the data, which is collected by GA, in order to improve the contents, accessibility, usability and readability of this site. And also about the data, I never disclose and use it for another purpose.
+        .span9
+          {{content}}
   %aside#scripts
     %script{src:"{{site.paths.vendor}}/less.js"}
     %script{src:"{{site.paths.vendor}}/google-code-prettify/prettify.js",type:"text/javascript"}

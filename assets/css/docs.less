@@ -3,14 +3,11 @@
 
 // Layout ---------------------------------------------------------------------
 // horizontal
-@sidebar-width: 240px;
 @body-left-margin: 20px;
 
 body {
   padding-top: 10px;
-  margin-left: @sidebar-width + 80/2px;
   #header {
-    margin-left: -(@sidebar-width + @body-left-margin);
     h1 {
       font-family: Michroma;
       font-size: 20px;
@@ -19,9 +16,6 @@ body {
     }
   }
   #sidebar {
-    width: @sidebar-width;
-    position: absolute;
-    left: 0;
     .sidebar-inner {
       padding-left: @body-left-margin;
       ul { margin-left: 0; }

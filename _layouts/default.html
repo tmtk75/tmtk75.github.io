@@ -10,81 +10,88 @@
     <link href='{{site.paths.css}}/docs.less' rel='stylesheet/less' type='text/css' />
     <link href='{{site.paths.vendor}}/google-code-prettify/prettify.css' rel='stylesheet' type='text/css' />
     <link href='{{site.paths.vendor}}/sh.css' rel='stylesheet' type='text/css' />
-    <link href='{{site.paths.css}}/docs.css' rel='stylesheet' type='text/css' />
     <script src='{{site.paths.vendor}}/ga.js'></script>
   </head>
   <body>
-    <header id='header'>
-      <h1>
-        <a class='brand' href='/'>{{site.title}}</a>
-      </h1>
-    </header>
-    <aside id='sidebar'>
-      <div class='sidebar-inner'>
-        <div class='rss-atom'>
-          <a class='rss-link' href='/rss.xml'>RSS</a>
-          <a class='atom-link' href='/atom.xml'>ATOM</a>
-        </div>
-        <div class='last-update'>
-          updated at
-          <span class='date'>{{site.time | date:"%d %b %Y"}}</span>
-        </div>
-        <div class='social'>
-          <a href='{{site.profile.social.twitter}}'>
-            <img class='icon' src='{{site.paths.icon}}/twitter.png' />
-          </a>
-          <a href='{{site.profile.social.facebook}}'>
-            <img class='icon' src='{{site.paths.icon}}/facebook.png' />
-          </a>
-          <a href='{{site.profile.social.github}}'>
-            <img class='icon' src='{{site.paths.icon}}/github.png' />
-          </a>
-          <a href='{{site.profile.social.googleplus}}'>
-            <img class='icon' src='{{site.paths.icon}}/google.png' />
-          </a>
-          <a href='{{site.profile.social.linkedin}}'>
-            <img class='icon' src='{{site.paths.icon}}/linkedin.png' />
-          </a>
-          <a href='{{site.profile.social.zerply}}'>
-            <img class='icon' src='{{site.paths.icon}}/zerply.png' />
-          </a>
-        </div>
-        <div class='license'>
-          This work is licensed under a
-          <a href='http://creativecommons.org/licenses/by-nc-nd/3.0/' rel='license'>
-            Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported License
-            <br/>
-            <img alt='Creative Commons License' src='http://i.creativecommons.org/l/by-nc-nd/3.0/88x31.png' style='border-width:0' />
-          </a>
-        </div>
-        <nav class='recent-posts'>
-          <ul>
-            {% assign prev_month = '' %}
-            {% for post in site.posts %}
-            {%   assign then = post.date %}
-            {%   assign this_month = {{then|date:'%b'}} %}
-            {%   if prev_month != this_month %}
-            {%     assign prev_month = this_month %}
-            <div class='date'>{{post.date|date:"%b %Y"}}</div>
-            {%   endif %}
-            <li>
-              <div class='title'>
-                {{post.date|date:"%d"}}
-                <a href='{{post.url}}'>{{post.title}}</a>
+    <div class='container'>
+      <div class='row'>
+        <div class='span3'>
+          <header id='header'>
+            <h1>
+              <a class='brand' href='/'>{{site.title}}</a>
+            </h1>
+          </header>
+          <aside id='sidebar'>
+            <div class='sidebar-inner'>
+              <div class='rss-atom'>
+                <a class='rss-link' href='/rss.xml'>RSS</a>
+                <a class='atom-link' href='/atom.xml'>ATOM</a>
               </div>
-            </li>
-            {% endfor %}
-          </ul>
-        </nav>
-        <nav class='privacy-policy'>
-          <h2>Privacy Policy</h2>
-          <p>
-            This site utilizes Google Analytics (GA) and provides first party cookie of GA to your browser. I just only use the data, which is collected by GA, in order to improve the contents, accessibility, usability and readability of this site. And also about the data, I never disclose and use it for another purpose.
-          </p>
-        </nav>
+              <div class='last-update'>
+                updated at
+                <span class='date'>{{site.time | date:"%d %b %Y"}}</span>
+              </div>
+              <div class='social'>
+                <a href='{{site.profile.social.twitter}}'>
+                  <img class='icon' src='{{site.paths.icon}}/twitter.png' />
+                </a>
+                <a href='{{site.profile.social.facebook}}'>
+                  <img class='icon' src='{{site.paths.icon}}/facebook.png' />
+                </a>
+                <a href='{{site.profile.social.github}}'>
+                  <img class='icon' src='{{site.paths.icon}}/github.png' />
+                </a>
+                <a href='{{site.profile.social.googleplus}}'>
+                  <img class='icon' src='{{site.paths.icon}}/google.png' />
+                </a>
+                <a href='{{site.profile.social.linkedin}}'>
+                  <img class='icon' src='{{site.paths.icon}}/linkedin.png' />
+                </a>
+                <a href='{{site.profile.social.zerply}}'>
+                  <img class='icon' src='{{site.paths.icon}}/zerply.png' />
+                </a>
+              </div>
+              <div class='license'>
+                This work is licensed under a
+                <a href='http://creativecommons.org/licenses/by-nc-nd/3.0/' rel='license'>
+                  Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported License
+                  <br/>
+                  <img alt='Creative Commons License' src='http://i.creativecommons.org/l/by-nc-nd/3.0/88x31.png' style='border-width:0' />
+                </a>
+              </div>
+              <nav class='recent-posts'>
+                <ul>
+                  {% assign prev_month = '' %}
+                  {% for post in site.posts %}
+                  {%   assign then = post.date %}
+                  {%   assign this_month = {{then|date:'%b'}} %}
+                  {%   if prev_month != this_month %}
+                  {%     assign prev_month = this_month %}
+                  <div class='date'>{{post.date|date:"%b %Y"}}</div>
+                  {%   endif %}
+                  <li>
+                    <div class='title'>
+                      {{post.date|date:"%d"}}
+                      <a href='{{post.url}}'>{{post.title}}</a>
+                    </div>
+                  </li>
+                  {% endfor %}
+                </ul>
+              </nav>
+              <nav class='privacy-policy'>
+                <h2>Privacy Policy</h2>
+                <p>
+                  This site utilizes Google Analytics (GA) and provides first party cookie of GA to your browser. I just only use the data, which is collected by GA, in order to improve the contents, accessibility, usability and readability of this site. And also about the data, I never disclose and use it for another purpose.
+                </p>
+              </nav>
+            </div>
+          </aside>
+        </div>
+        <div class='span9'>
+          {{content}}
+        </div>
       </div>
-    </aside>
-    {{content}}
+    </div>
   </body>
   <aside id='scripts'>
     <script src='{{site.paths.vendor}}/less.js'></script>
