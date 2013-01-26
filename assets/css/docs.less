@@ -1,5 +1,5 @@
 // Web font -------------------------------------------------------------------
-@import url("http://fonts.googleapis.com/css?family=Questrial|Michroma");
+@import url("http://fonts.googleapis.com/css?family=Questrial|Michroma|Oxygen:700");
 
 // Layout ---------------------------------------------------------------------
 body {
@@ -17,19 +17,13 @@ body {
 }
 #sidebar {
   .sidebar-inner {
+    margin-top: 20px;
     ul { margin-left: 0; }
     .recent-posts {
-      .date { margin-top: 10px; }
+      margin-top: 20px;
+      .date { margin-top: 20px; font-size: 16px; }
       .title { margin-bottom: 5px; }
       li { list-style-type: none; }
-    }
-  }
-  .privacy-policy {
-    margin-top: 3em;
-    h2 { font-size: 1em; }
-    p {
-      line-height: 16px;
-      color: #555;
     }
   }
 }
@@ -43,23 +37,24 @@ body {
   padding-top: 3em;
   padding-bottom: 3em;
   border-bottom: 1px #333333;
+  .license {
+    a {
+      color: #d9d9cc;
+    }
+  }
   .copyright {
     margin-top: 3em;
     text-align: center;
   }
 }
 
-.post {
-  //width: 640px;
-  .content p, #disqus_thread { width: 480px; }
-}
-.post header h2, #recent-posts h3, .read-more, .date, #sidebar .title, .license {font-family: Questrial;}
+.post { .content p, #disqus_thread { width: 460px; } }
+.read-more, .date, #sidebar .title { font-family: Questrial; }
+.post header h2, #recent-posts h3 { font-family: Oxygen; font-weight: bold; }
 .post header h2:first-letter { font-size:141%; }
 .social {
   margin-top: 10px;
-  a, a:hover {
-    text-decoration: none;
-  }
+  a, a:hover { text-decoration: none; }
   .icon {
     width: 16px;
     border: solid 1px #222;
@@ -79,19 +74,14 @@ body {
   }
 }
 
-#sidebar {
-  .license, .recent-posts {
-  margin-top: 20px;
-}}
-
 body #recent-posts {
   .post {
-    position: relative;
+    position: relative;  // for blur effect
     overflow-y: hidden;
     height: 160+20px;
     margin-bottom: 40+20px;
-    h2 {font-size: 1.2em;}
-    h3 {font-size: 1.1em;}
+    h2 {font-size: 20px;}
+    h3 {font-size: 18px;}
     .title {color: #333;}
     footer {
       padding-top: 20px;
