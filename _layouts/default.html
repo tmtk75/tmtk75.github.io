@@ -77,21 +77,37 @@
                   {% endfor %}
                 </ul>
               </nav>
-              <nav class='privacy-policy'>
-                <h2>Privacy Policy</h2>
-                <p>
-                  This site utilizes Google Analytics (GA) and provides first party cookie of GA to your browser. I just only use the data, which is collected by GA, in order to improve the contents, accessibility, usability and readability of this site. And also about the data, I never disclose and use it for another purpose.
-                </p>
-              </nav>
             </div>
           </aside>
         </div>
-        <div class='span9'>
+        <div class='span6'>
           {{content}}
         </div>
       </div>
     </div>
   </body>
+  <div id='metainfo'>
+    <footer class='container'>
+      <div class='row'>
+        <div class='span9'>
+          <div class='row'>
+            <div class='span3'>&nbsp;</div>
+            <div class='span3 privacy-policy'>
+              <h2>Privacy Policy</h2>
+              <p>
+                This site utilizes Google Analytics (GA) and provides first party cookie of GA to your browser. I just only use the data, which is collected by GA, in order to improve the contents, accessibility, usability and readability of this site. And also about the data, I never disclose and use it for another purpose.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class='row'>
+        <div class='span9 copyright'>
+          &copy; 2012 Tomotaka Sakuma
+        </div>
+      </div>
+    </footer>
+  </div>
   <aside id='scripts'>
     <script src='{{site.paths.vendor}}/ga.js'></script>
     <script src='{{site.paths.vendor}}/less.js'></script>

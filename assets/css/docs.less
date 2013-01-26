@@ -4,39 +4,53 @@
 // Layout ---------------------------------------------------------------------
 body {
   padding-top: 10px;
-  #header {
-    h1 {
-      font-family: Michroma;
-      font-size: 20px;
-      font-weight: 400;
-      a {color: #4c4c4c;}
+  border-top: solid 10px #555555;
+}
+
+#header {
+  h1 {
+    font-family: Michroma;
+    font-size: 20px;
+    font-weight: 400;
+    a {color: #4c4c4c;}
+  }
+}
+#sidebar {
+  .sidebar-inner {
+    ul { margin-left: 0; }
+    .recent-posts {
+      .date { margin-top: 10px; }
+      .title { margin-bottom: 5px; }
+      li { list-style-type: none; }
     }
   }
-  #sidebar {
-    .sidebar-inner {
-      ul { margin-left: 0; }
-      .recent-posts {
-        .date { margin-top: 10px; }
-        .title { margin-bottom: 5px; }
-        li { list-style-type: none; }
-      }
-    }
-    .privacy-policy {
-      margin-top: 3em;
-      h2 { font-size: 1em; }
-      p {
-        line-height: 16px;
-        color: #555;
-      }
+  .privacy-policy {
+    margin-top: 3em;
+    h2 { font-size: 1em; }
+    p {
+      line-height: 16px;
+      color: #555;
     }
   }
-  #recent-posts {
-    .content {overflow-x: hidden;}
+}
+#recent-posts {
+  .content {overflow-x: hidden;}
+}
+#metainfo {
+  border-top: 1px #333333;
+  background-color: #555555;
+  color: #d9d9cc;
+  padding-top: 3em;
+  padding-bottom: 3em;
+  border-bottom: 1px #333333;
+  .copyright {
+    margin-top: 3em;
+    text-align: center;
   }
 }
 
 .post {
-  width: 640px;
+  //width: 640px;
   .content p, #disqus_thread { width: 480px; }
 }
 .post header h2, #recent-posts h3, .read-more, .date, #sidebar .title, .license {font-family: Questrial;}
@@ -171,25 +185,3 @@ pre.prettyprint {
     #dsq-footer { margin: auto; }
   }
 }
-
-.syntaxhighlighter .line.alt1,
-.syntaxhighlighter .line.alt2,
-.syntaxhighlighter {
-  background-image: none !important;
-  background-color: transparent !important;
-  .toolbar {display:none;}
-}
-.syntaxhighlighter {
-  background-color: whiteSmoke !important;
-  padding: 8.5px;
-  margin: 0 0 18px 0;
-  border: 1px solid rgba(0,0,0,0.15);
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  -o-border-radius: 3px;
-  border-radius: 3px;
-  .gutter .line {
-    border-right: 3px solid rgba(0,107,159,0.5) !important;
-  }
-}
-

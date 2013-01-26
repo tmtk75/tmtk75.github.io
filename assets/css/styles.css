@@ -4,8 +4,8 @@
 .syntaxhighlighter {
   background-image: none !important;
   background-color: transparent !important;
-  .toolbar {display:none;}
 }
+.syntaxhighlighter .toolbar {display:none;}
 .syntaxhighlighter {
   background-color: whiteSmoke !important;
   padding: 8.5px;
