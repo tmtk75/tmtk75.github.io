@@ -24,10 +24,9 @@ public class GroovyScripting {
     String code = ""
         + "counter += 1" + LF
         + "println args[0]" + LF
-        + "true"
-        ;
-    
-    System.out.println(engine.eval(code));
+        + "['a':123, 3:'b']";
+                    
+    System.out.println(((java.util.Map)engine.eval(code)).get("a"));
     System.out.println(bindings.get("counter"));
   }
 }
@@ -38,12 +37,13 @@ public class GroovyScripting {
 The output is like
 
     hello
-    true
+    123
     1
 {:.terminal}
 
 `engine.eval(code)` returns the value which is evaluated at the last of script.
 After the evaluation, you can see local variables thru [Bindings][bindings].
+In this example, the last value is a Map.
 
 
 Add a next dependency if you use maven.
