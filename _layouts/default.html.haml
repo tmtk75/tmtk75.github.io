@@ -55,6 +55,9 @@
                   {% endfor %}
         .span6
           {{content}}
+        
+        .span3
+          %div= Haml::Engine.new(File.read "_layouts/_adsense.haml").render
 
   #metainfo
     %footer.container
