@@ -3,7 +3,6 @@ var pluginUrl = '//www.google-analytics.com/plugins/ga/inpage_linkid.js';
 _gaq.push(['_require', 'inpage_linkid', pluginUrl]);
 _gaq.push(['_setAccount', 'UA-27755043-2']);
 _gaq.push(['_trackPageview']);
-_gaq.push(['_setCustomVar', 1, 'customvarteset', 'test' + (Math.floor(Math.random()*10)), 1]);
 var now = new Date;
 function zp(n) {return n/10 >= 1 ? n : "0" + n}
 var val = now.getFullYear() + "-" + zp(now.getMonth() + 1) + "-" + (Math.floor(now.getDate()/10) + 1)
