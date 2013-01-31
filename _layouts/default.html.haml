@@ -43,16 +43,18 @@
                 %ul
                   {% assign prev_month = '' %}
                   {% for post in site.posts %}
-                  {%   assign then = post.date %}
-                  {%   assign this_month = {{then|date:'%b'}} %}
-                  {%   if prev_month != this_month %}
-                  {%     assign prev_month = this_month %}
+                  {%   if post.lang == null or post.lang == "en" %}
+                  {%     assign then = post.date %}
+                  {%     assign this_month = {{then|date:'%b'}} %}
+                  {%     if prev_month != this_month %}
+                  {%       assign prev_month = this_month %}
                   .date {{post.date|date:"%b %Y"}}
-                  {%   endif %}
+                  {%     endif %}
                   %li
                     .title
                       {{post.date|date:"%d"}}
                       %a{href:"{{post.url}}"} {{post.title}} 
+                  {%   endif %}
                   {% endfor %}
         .span6
           {{content}}

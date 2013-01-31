@@ -1,7 +1,7 @@
 -#layout: default
 #recent-posts
   {% for post in site.posts limit:10 offset:0 %}
-  {%if post.lang == null or post.lang == "en" %}
+  {% if post.lang == 'ja' %}
   %article.post
     %header
       %h2
