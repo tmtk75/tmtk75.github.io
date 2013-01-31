@@ -57,6 +57,7 @@
           {{content}}
         
         .span3
+          %div= File.read "_layouts/_search.html"
           %div= Haml::Engine.new(File.read "_layouts/_adsense.haml").render
 
   #metainfo
