@@ -32,6 +32,7 @@ task :post, [:title] do |t, args|
 ---
 layout: post
 title: #{args.title}
+lang: #{args.lang}
 creation-date: #{Time.now.strftime '%Y-%m-%d %k:%M:%S'}
 ---
 EOF
