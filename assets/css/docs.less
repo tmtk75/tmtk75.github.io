@@ -111,7 +111,7 @@ article#the.post {
   margin-bottom: 40px;
   header {
     margin-bottom: 3em;
-    h2 {
+    h1 {
       .date {
         color: gray;
         border-right: dotted 2px gray;
@@ -124,7 +124,12 @@ article#the.post {
       }
     }
   }
-  p:not(:first-child) { margin-top: 40px; }
+  .content > h2 {
+    line-height: 26px;
+    margin-top: 1.5em;
+    margin-bottom: 10px;
+  }
+  //p:not(:first-child) { margin-top: 40px; }
   #disqus_thread { margin-top: 60px; }
   img {box-shadow: 3px 3px 8px #888;}
   .gist {margin-top: 40px;}
