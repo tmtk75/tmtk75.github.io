@@ -46,3 +46,12 @@ Don't worry.
 
 Install chef-server
 -------------------
+You have launched an EC2 instance for chef-server.  
+OK, let's install there actually.
+
+- Log-in thru ssh with the private key
+- Install some native libraries and ruby with apt-get
+- Download two chef's configuration files
+- Install chef-solr with gem
+- Install chef-server with chef-solo
+
