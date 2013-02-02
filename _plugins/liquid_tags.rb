@@ -23,5 +23,11 @@ module Jekyll
       "http://www.example.com/#{input}?#{Time.now.to_i}"
     end
   end
+  module TagsFilter
+    def tags(vals)      
+      ["<ul class='tags'>", vals.map {|e| "<li class='tag'>#{e}</li>"}, "</ul>"].join ""
+    end
+  end
 end
 Liquid::Template.register_filter(Jekyll::AssetFilter)
+Liquid::Template.register_filter(Jekyll::TagsFilter)

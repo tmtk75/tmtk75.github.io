@@ -48,7 +48,6 @@ body {
     text-align: center;
   }
 }
-
 .post { .content p, #disqus_thread { width: 460px; } }
 .read-more, .date, #sidebar .title { font-family: Questrial; }
 .post header h2, #recent-posts h3 { font-family: Oxygen; font-weight: bold; }
@@ -107,6 +106,23 @@ body #recent-posts {
   }
 }
 //------------------------------------------------------------------------------
+#the.post {
+  .tags {
+    margin-left: 0;
+  }
+  .tags .tag {
+    margin-right: 2px;
+    border: 1px solid #888;
+    background-color: #eee;
+    border-radius: 3px;
+    padding-right: 6px;
+    padding-left: 6px;
+  }
+  .tags .tag {
+    list-style: none;
+    display: inline-block;
+  }
+}
 article#the.post {
   margin-bottom: 40px;
   header {
