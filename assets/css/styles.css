@@ -1,3 +1,13 @@
+/*-------- google search --------*/
+div .cse .gsc-control-cse,
+div .gsc-control-cse {
+  padding-left: 0;
+  padding-right: 0;
+}
+form.gsc-search-box-tools .gsc-search-box .gsc-input {
+  padding-right: 1px;
+}
+
 /*-------- syntaxhighlilghter --------*/
 .syntaxhighlighter .line.alt1,
 .syntaxhighlighter .line.alt2,
