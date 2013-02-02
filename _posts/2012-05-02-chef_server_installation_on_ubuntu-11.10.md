@@ -6,7 +6,7 @@ creation-date: 2012-05-02 20:22:19
 <div class="alert alert-info">
   <dl style='margin:0'>
     <dt>NOTE</dt>
-    <dd>a new post is here, <a href='/2013/02/01/set_up_chef-server_on_ec2_with_ubuntu-12.4.html'>Set up chef-server on EC2 with Ubuntu 12.04</a></dd>.
+    <dd>a new post is here, <a href='/2013/02/01/set_up_chef-server_on_ec2_with_ubuntu-12.4.html'>Set up chef-server on EC2 with Ubuntu 12.04</a></dd>
   </dl>
 </div>
 

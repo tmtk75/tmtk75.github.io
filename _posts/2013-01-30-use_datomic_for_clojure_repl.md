@@ -4,6 +4,13 @@ title: Use a Datomic archive for clojure REPL
 tags: datomic clojure REPL
 creation-date: 2013-01-30 11:43:19
 ---
+<div class="alert alert-info">
+  <dl style='margin:0'>
+    <dt>NOTE</dt>
+    <dd>a new post is here, <a href='/2013/02/01/not_datomic_but_leiningen_for_repl.html'>Not datomic but Leiningen for REPL</a></dd>
+  </dl>
+</div>
+
 Now clojure's latest stable version is [1.4.0], and [1.5.0-RC4][1.5.0] is as a beta.
 
   [1.4.0]: http://clojure.org/downloads
