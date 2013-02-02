@@ -6,7 +6,7 @@ creation-date: 2013-01-28 10:40:16
 ---
 This is a similar post of [the post for Java and Groovy][interopjavagroovy].
 
-  [interopjavagroovy]: 2013/01/27/interoperability_between_java_and_groovy.html
+  [interopjavagroovy]: /2013/01/27/interoperability_between_java_and_groovy.html
 
 Calling JRuby scripts from Java is a bit harder than Groovy, which existing ruby scripts may not be used as it is.
 
