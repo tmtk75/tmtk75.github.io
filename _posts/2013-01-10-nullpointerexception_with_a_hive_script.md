@@ -6,7 +6,7 @@ creation-date: 2013-01-10  8:36:08
 ---
 I encountered a NullPointerException when using hive-0.8.1 on local like:
 
-<textarea class='terminal' wrap='off' rows='20' style='width:140%;background-color:black;color:white;padding:8.5px' readonly='true'>
+<textarea class='terminal' wrap='off' rows='20' style='width:460px;background-color:black;color:white;padding:8.5px;overflow-x:scroll' readonly='true'>
 $ hive -f count.distinct.person.q
 Logging initialized using configuration in jar:file:/home/foobarsen/usr/hive-0.8.1/lib/hive-common-0.8.1.jar!/hive-log4j.properties
 Hive history file=/tmp/foobarsen/hive_job_log_foobarsen_201301091402_904175264.txt
