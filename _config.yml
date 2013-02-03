@@ -8,6 +8,8 @@ exclude: ["Rakefile", "Gemfile", "Gemfile.lock", "index.html.haml"]
 
 ## Site preference
 title: Undefined Title
+images:
+  url: https://s3-ap-northeast-1.amazonaws.com/tmtk75.github.com
 paths:
   icon: /assets/img/icon
   image: /assets/img
