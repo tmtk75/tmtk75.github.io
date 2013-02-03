@@ -30,6 +30,6 @@ If failed, re-run it. And also, it takes so much time in order to compile geocod
 
 In case finishing without error, open <http://localhost:4000> with your browser.
 
-<img src="{{site.paths.image}}/2012-05-05/chef-server-webui.jpg" alt="chef-server-webui.jpg" width="256px"/>
+<img src="{{site.images.url}}/2012-05-05/chef-server-webui.jpg" alt="chef-server-webui.jpg" width="256px"/>
 
 If you can see above, installation is succeeded!

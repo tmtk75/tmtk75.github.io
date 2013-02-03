@@ -96,7 +96,7 @@ Ah, it's due to updating Xcode just now? This MBP is a sub note and I've not rec
 
 Oh, bingo... I got the trouble before like [this](http://tmtk75.github.com/2012/08/19/macports-upgrade.html).
 
-<a href='{{site.paths.image}}/downloads-Xcode4_4.png'><img src='{{site.paths.image}}/downloads-Xcode4_4.png' width='386px' /></a>
+<a href='{{site.images.url}}/2012-09-05/downloads-Xcode4_4.png'><img src='{{site.images.url}}/2012-09-05/downloads-Xcode4_4.png' width='386px' /></a>
 
 With Xcode4.4, we can download command line tools from Preference -> Downloads.
 
