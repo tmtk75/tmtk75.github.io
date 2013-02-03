@@ -39,3 +39,25 @@ EOF
     end
   system "#{ENV['EDITOR']} #{path}"
 end
+
+desc "make tags"
+task :tags do |t, args|
+  #!/usr/bin/env ruby
+  require "json"
+  require "fileutils"
+  tags = Hash.new []
+  Dir.glob("_posts/**").map {|path|
+    lines = open(path, "r") {|f| f.readlines}
+    title     = lines.find {|e| e =~ /^title:/}.gsub(/^title:/, "").strip
+    tags_line = lines.find {|e| e =~ /^tags:/}
+    next unless tags_line =~ /^tags:(.*)$/
+    $1.strip.split(/ +/).each {|e|
+      p = path.gsub(/^_posts/, "")
+              .gsub(/(....)-(..)-(..)-/, "\\1/\\2/\\3/")
+              .gsub(/\.md/, ".html")
+      tags[e] += [{path: p, title: title}]
+    }
+  }
+  puts tags.to_json
+end
+
