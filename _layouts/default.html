@@ -4,12 +4,12 @@
     <title>{{site.title}}</title>
     <meta charset='utf-8' />
     <meta content='width=device-width,initial-scale=1.0' name='viewport' />
-    <meta content='Tomotaka Sakuma' name='author' />
-    <meta content='' name='description' />
-    <link href='{{site.paths.vendor}}/bootstrap/docs/assets/css/bootstrap.css' rel='stylesheet' />
-    <link href='{{site.paths.css}}/docs.less' rel='stylesheet/less' type='text/css' />
-    <link href='{{site.paths.vendor}}/sh.css' rel='stylesheet' type='text/css' />
-    <link href='{{site.paths.css}}/styles.css' rel='stylesheet' />
+    <meta content='{{site.author.name}}' name='author' />
+    <meta content='{{site.description}}' name='description' />
+    <link href='{{site.vendor.url}}/bootstrap/docs/assets/css/bootstrap.css' rel='stylesheet' />
+    <link href='{{site.css.url}}/docs.less' rel='stylesheet/less' type='text/css' />
+    <link href='{{site.vendor.url}}/sh.css' rel='stylesheet' type='text/css' />
+    <link href='{{site.css.url}}/styles.css' rel='stylesheet' />
   </head>
   <body>
     <div class='container'>
@@ -31,22 +31,22 @@
                 <span class='date'>{{site.time | date:"%d %b %Y"}}</span>
               </div>
               <div class='social'>
-                <a href='{{site.profile.social.twitter}}'>
+                <a href='{{site.socials.twitter.url}}'>
                   <img class='icon' src='{{site.icons.url}}/twitter.png' />
                 </a>
-                <a href='{{site.profile.social.facebook}}'>
+                <a href='{{site.socials.facebook.url}}'>
                   <img class='icon' src='{{site.icons.url}}/facebook.png' />
                 </a>
-                <a href='{{site.profile.social.github}}'>
+                <a href='{{site.socials.github.url}}'>
                   <img class='icon' src='{{site.icons.url}}/github.png' />
                 </a>
-                <a href='{{site.profile.social.googleplus}}'>
+                <a href='{{site.socials.googleplus.url}}'>
                   <img class='icon' src='{{site.icons.url}}/google.png' />
                 </a>
-                <a href='{{site.profile.social.linkedin}}'>
+                <a href='{{site.socials.linkedin.url}}'>
                   <img class='icon' src='{{site.icons.url}}/linkedin.png' />
                 </a>
-                <a href='{{site.profile.social.zerply}}'>
+                <a href='{{site.socials.zerply.url}}'>
                   <img class='icon' src='{{site.icons.url}}/zerply.png' />
                 </a>
               </div>
@@ -138,18 +138,18 @@
     </footer>
   </div>
   <aside id='scripts'>
-    <script src='{{site.paths.vendor}}/ga.js'></script>
-    <script src='{{site.paths.vendor}}/less.js'></script>
-    <script src='{{site.paths.vendor}}/javascripts/syntaxhighlighter/scripts/shCore.js'></script>
-    <script src='{{site.paths.vendor}}/javascripts/syntaxhighlighter/scripts/shBrushJScript.js'></script>
-    <script src='{{site.paths.vendor}}/javascripts/syntaxhighlighter/scripts/shBrushXml.js'></script>
-    <script src='{{site.paths.vendor}}/javascripts/syntaxhighlighter/scripts/shBrushJava.js'></script>
-    <script src='{{site.paths.vendor}}/javascripts/syntaxhighlighter/scripts/shBrushBash.js'></script>
-    <script src='{{site.paths.vendor}}/javascripts/syntaxhighlighter/scripts/shBrushCss.js'></script>
-    <script src='{{site.paths.vendor}}/javascripts/syntaxhighlighter/scripts/shBrushPython.js'></script>
-    <script src='{{site.paths.vendor}}/javascripts/syntaxhighlighter/scripts/shBrushRuby.js'></script>
-    <script src='{{site.paths.vendor}}/jquery.js'></script>
-    <script src='{{site.paths.vendor}}/bootstrap/docs/assets/js/bootstrap-tooltip.js'></script>
-    <script src='{{site.paths.vendor}}/syntaxhighlighter.js'></script>
+    <script src='{{site.vendor.url}}/ga.js'></script>
+    <script src='{{site.vendor.url}}/less.js'></script>
+    <script src='{{site.vendor.url}}/javascripts/syntaxhighlighter/scripts/shCore.js'></script>
+    <script src='{{site.vendor.url}}/javascripts/syntaxhighlighter/scripts/shBrushJScript.js'></script>
+    <script src='{{site.vendor.url}}/javascripts/syntaxhighlighter/scripts/shBrushXml.js'></script>
+    <script src='{{site.vendor.url}}/javascripts/syntaxhighlighter/scripts/shBrushJava.js'></script>
+    <script src='{{site.vendor.url}}/javascripts/syntaxhighlighter/scripts/shBrushBash.js'></script>
+    <script src='{{site.vendor.url}}/javascripts/syntaxhighlighter/scripts/shBrushCss.js'></script>
+    <script src='{{site.vendor.url}}/javascripts/syntaxhighlighter/scripts/shBrushPython.js'></script>
+    <script src='{{site.vendor.url}}/javascripts/syntaxhighlighter/scripts/shBrushRuby.js'></script>
+    <script src='{{site.vendor.url}}/jquery.js'></script>
+    <script src='{{site.vendor.url}}/bootstrap/docs/assets/js/bootstrap-tooltip.js'></script>
+    <script src='{{site.vendor.url}}/syntaxhighlighter.js'></script>
   </aside>
 </html>
