@@ -9,7 +9,7 @@
       .title {{page.title}}
     %ul.tags
       {% for tag in page.tags %}
-      %li.tag {{tag}}
+      %li.tag{"data-bind"=>"click:show_links_for_tag","data-tag"=>'{{tag}}'} {{tag}}
       {% endfor %}
   .content
     {{content}}

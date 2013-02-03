@@ -1,5 +1,5 @@
 $(function() {
-    SyntaxHighlighter.config.clipboardSwf = '/javascripts/syntaxhighlighter/scripts/clipboard.swf';
-    SyntaxHighlighter.config.toolbar = false;
-    SyntaxHighlighter.all()
+  SyntaxHighlighter.config.clipboardSwf = '/vendor/javascripts/syntaxhighlighter/scripts/clipboard.swf';
+  SyntaxHighlighter.config.toolbar = false;
+  SyntaxHighlighter.all()
 });
