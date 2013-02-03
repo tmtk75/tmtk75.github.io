@@ -108,17 +108,20 @@ body #recent-posts {
 //------------------------------------------------------------------------------
 #the.post {
   .tags {
+    margin-top: 2px;
     margin-left: 0;
-  }
-  .tags .tag {
-    background-color: #eee;
-    border-radius: 3px;
-    padding-right: 6px;
-    padding-left: 6px;
-  }
-  .tags .tag {
-    list-style: none;
-    display: inline-block;
+    .tag {
+      background-color: #eee;
+      border-radius: 3px;
+      padding-right: 6px;
+      padding-left: 6px;
+      list-style: none;
+      display: inline-block;
+      &:hover {
+        background-color: #ddd;
+        cursor: pointer;
+      }
+    }
   }
 }
 article#the.post {
