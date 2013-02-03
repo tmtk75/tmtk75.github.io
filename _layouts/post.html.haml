@@ -7,7 +7,10 @@
         .month {{page.creation-date || date:"%b"}}
         .year {{page.creation-date || date:"%Y"}}
       .title {{page.title}}
-    //%div {{page.tags || tags}}
+    %ul.tags
+      {% for tag in page.tags %}
+      %li.tag {{tag}}
+      {% endfor %}
   .content
     {{content}}
 

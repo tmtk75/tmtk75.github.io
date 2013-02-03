@@ -11,7 +11,11 @@ layout: default
       </div>
       <div class='title'>{{page.title}}</div>
     </h1>
-    <!-- /%div {{page.tags || tags}} -->
+    <ul class='tags'>
+      {% for tag in page.tags %}
+      <li class='tag'>{{tag}}</li>
+      {% endfor %}
+    </ul>
   </header>
   <div class='content'>
     {{content}}
