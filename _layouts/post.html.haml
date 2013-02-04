@@ -12,14 +12,11 @@
       %li.tag{"data-bind"=>"click:show_links_for_tag","data-tag"=>'{{tag}}'} {{tag}}
       {% endfor %}
   
-  %div{"data-bind"=>"visible:links_shown, template:{name:'links_for_tag',foreach:links}"}
+  %ul#links_with_tag{"data-bind"=>"visible:links_shown, template:{name:'links_for_tag',foreach:links}"}
 
   %script{type:"text/html",id:"links_for_tag"}
-    %h1 hello wolrd
-    .t
-      .t title:
-      %span{"data-bind"=>"text:title"}
-      %span{"data-bind"=>"text:path"}
+    %li
+      %a.title{"data-bind"=>"text:title, attr:{href:path}"}
 
   .content
     {{content}}

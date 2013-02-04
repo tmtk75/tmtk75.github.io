@@ -17,14 +17,11 @@ layout: default
       {% endfor %}
     </ul>
   </header>
-  <div data-bind="visible:links_shown, template:{name:'links_for_tag',foreach:links}"></div>
+  <ul data-bind="visible:links_shown, template:{name:'links_for_tag',foreach:links}" id='links_with_tag'></ul>
   <script id='links_for_tag' type='text/html'>
-    <h1>hello wolrd</h1>
-    <div class='t'>
-      <div class='t'>title:</div>
-      <span data-bind='text:title'></span>
-      <span data-bind='text:path'></span>
-    </div>
+    <li>
+      <a class='title' data-bind='text:title, attr:{href:path}'></a>
+    </li>
   </script>
   <div class='content'>
     {{content}}
