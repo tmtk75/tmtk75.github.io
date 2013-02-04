@@ -55,7 +55,7 @@ task :tags do |t, args|
       p = path.gsub(/^_posts/, "")
               .gsub(/(....)-(..)-(..)-/, "\\1/\\2/\\3/")
               .gsub(/\.md/, ".html")
-      tags[e] += [{path: p, title: title}]
+      tags[e.downcase] += [{path: p, title: title}]
     }
   }
   puts tags.to_json

@@ -3,7 +3,7 @@ $ ->
     
     model =
       show_links_for_tag: (m, evt)->
-        tag = $(evt.target).data("tag")
+        tag = $(evt.target).data("tag").toLowerCase()
         this.links_shown true
         this.links tag2paths[tag]
       links: ko.observableArray []
