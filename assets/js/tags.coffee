@@ -3,11 +3,17 @@ $ ->
     
     model =
       show_links_for_tag: (m, evt)->
+        title = $('#the.post h1 .title').data("title")
         tag = $(evt.target).data("tag").toLowerCase()
-        this.links_shown true
-        this.links tag2paths[tag]
+        vals = tag2paths[tag].filter (e)-> e.title != title
+        @links_shown true
+        @tagname tag
+        @links vals
       links: ko.observableArray []
+      tagname: ko.observable ""
       links_shown: ko.observable true
+
+    model.empty = ko.dependentObservable -> model.links().length == 0
 
     ko.applyBindings model
     console.log "binded"
