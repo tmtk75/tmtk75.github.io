@@ -9,15 +9,15 @@
       .title{"data-title"=>"{{page.title}}"} {{page.title}}
     %ul.tags
       {% for tag in page.tags %}
-      %li.tag{"data-bind"=>"click:show_links_for_tag","data-tag"=>'{{tag}}'} {{tag}}
+      %li.tag{"data-bind"=>"event:{mouseover:show_links_for_tag}","data-tag"=>'{{tag}}'} {{tag}}
       {% endfor %}
 
-    .links_with_tag
+    .links_with_tag{"data-bind"=>"visible:links_shown"}
       .h
         %span{"data-bind"=>"if: empty"} No other related
         %span{"data-bind"=>"ifnot: empty"} Related
         posts for the tag "<span data-bind='text:tagname'></span>"
-      %ul{"data-bind"=>"visible:links_shown, template:{name:'links_for_tag',foreach:links}"}
+      %ul{"data-bind"=>"template:{name:'links_for_tag',foreach:links}"}
       
       %script{type:"text/html",id:"links_for_tag"}
         %li

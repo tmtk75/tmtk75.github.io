@@ -13,16 +13,16 @@ layout: default
     </h1>
     <ul class='tags'>
       {% for tag in page.tags %}
-      <li class='tag' data-bind='click:show_links_for_tag' data-tag='{{tag}}'>{{tag}}</li>
+      <li class='tag' data-bind='event:{mouseover:show_links_for_tag}' data-tag='{{tag}}'>{{tag}}</li>
       {% endfor %}
     </ul>
-    <div class='links_with_tag'>
+    <div class='links_with_tag' data-bind='visible:links_shown'>
       <div class='h'>
         <span data-bind='if: empty'>No other related</span>
         <span data-bind='ifnot: empty'>Related</span>
         posts for the tag "<span data-bind='text:tagname'></span>"
       </div>
-      <ul data-bind="visible:links_shown, template:{name:'links_for_tag',foreach:links}"></ul>
+      <ul data-bind="template:{name:'links_for_tag',foreach:links}"></ul>
       <script id='links_for_tag' type='text/html'>
         <li>
           <a class='title' data-bind='text:title, attr:{href:path}'></a>
