@@ -22,7 +22,8 @@ $ ->
         links.show -> model.links_shown true
         @tagname tag
         @links vals
-      keep: -> links.keep()
+      keep: ->
+        links.keep() if @links().length > 0
       hide_links_for_tag: (m, evt)->
         links.hide -> model.links_shown false
       links: ko.observableArray []
