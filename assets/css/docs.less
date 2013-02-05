@@ -158,6 +158,11 @@ article#the.post {
 
 .links_with_tag {
   position: absolute;
+  // tips: to hide while loading page
+  //       this will be visible by knockout when applyBindings
+  //       see the data-bind attribute
+  visibility: hidden;
+
   margin: 0px;
   padding: 4px 6px;
   border: solid 1px rgba(34,34,34,0.33);
@@ -166,7 +171,6 @@ article#the.post {
   color: white;
   ul {margin-bottom: 0px;}
   li {
-    list-style: none;
     a {
       color: white;
     }
