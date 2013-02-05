@@ -9,10 +9,10 @@
       .title{"data-title"=>"{{page.title}}"} {{page.title}}
     %ul.tags
       {% for tag in page.tags %}
-      %li.tag{"data-bind"=>"event:{mouseover:show_links_for_tag}","data-tag"=>'{{tag}}'} {{tag}}
+      %li.tag{"data-bind"=>"event:{mouseover:show_links_for_tag,mouseout:hide_links_for_tag}","data-tag"=>'{{tag}}'} {{tag}}
       {% endfor %}
 
-    .links_with_tag{"data-bind"=>"visible:links_shown"}
+    .links_with_tag{"data-bind"=>"visible:links_shown,event:{mouseover:keep,mouseout:hide_links_for_tag}"}
       .h
         %span{"data-bind"=>"if: empty"} No other related
         %span{"data-bind"=>"ifnot: empty"} Related

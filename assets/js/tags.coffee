@@ -3,9 +3,12 @@ $ ->
     constructor: (@node)->
   Fading::show = (cb)->
     @node.fadeIn 250, cb
+    @keep()
+  Fading::keep = ->
+    clearTimeout @tid
   Fading::hide = (cb)->
     n = @node
-    setTimeout (-> n.fadeOut 500, cb), 1000
+    @tid = setTimeout (-> n.fadeOut 400, cb), 550
 
   links = new Fading $(".links_with_tag")
 
@@ -19,6 +22,8 @@ $ ->
         links.show -> model.links_shown true
         @tagname tag
         @links vals
+      keep: -> links.keep()
+      hide_links_for_tag: (m, evt)->
         links.hide -> model.links_shown false
       links: ko.observableArray []
       tagname: ko.observable ""
