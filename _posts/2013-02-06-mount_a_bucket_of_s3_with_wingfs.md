@@ -17,3 +17,7 @@ I think you must want to mount it.
 
 A disk icon appears on your Desktop.
 That's a teriffic utility!
+
+P.S.  
+Some directories and files which contain multi-byte characters like Japanese in the name
+are not shown in the folder mounted by WingFS. That's a bit problem for the people in none-English region.
