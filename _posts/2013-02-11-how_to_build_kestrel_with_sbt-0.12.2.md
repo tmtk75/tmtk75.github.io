@@ -13,7 +13,7 @@ It's written in scala and [sbt][sbt] is used to build it.
   [github]: https://github.com/robey/kestrel
   [sbt]:    http://www.scala-sbt.org/
 
-At this time I'm writing, the latest version is 0.12.2, 0.13.0 is going to be released though.
+At this time I'm writing, the latest version of sbt is 0.12.2, 0.13.0 is going to be released though.
 So I downloaded [0.12.2][tgz] from [here][here] and tried to bulid as the [building-it section][building-it].
 
   [tgz]:  http://scalasbt.artifactoryonline.com/scalasbt/sbt-native-packages/org/scala-sbt/sbt//0.12.2/sbt.tgz
