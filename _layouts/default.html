@@ -19,6 +19,13 @@
           <header id='header'>
             <h1>
               <a class='brand' href='/'>{{site.title}}</a>
+              <div class='navigated-links'>
+                {% if page.lang == 'ja' %}
+                <a href='/'>In English</a>
+                {% else %}
+                <a href='/index.ja.html'>in Japanese</a>
+                {% endif %}
+              </div>
             </h1>
           </header>
           <aside id='sidebar'>

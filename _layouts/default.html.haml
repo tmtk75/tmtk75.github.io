@@ -18,6 +18,12 @@
           %header#header
             %h1
               %a.brand{href:'/'}{{site.title}}
+              .navigated-links
+                {% if page.lang == 'ja' %}
+                %a{href:"/"} In English
+                {% else %}
+                %a{href:"/index.ja.html"} in Japanese
+                {% endif %}
           %aside#sidebar
             .sidebar-inner
               .rss-atom
