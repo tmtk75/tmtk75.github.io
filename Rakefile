@@ -25,6 +25,7 @@ end
 desc "Given a title as an argument, create a new post file."
 task :post, [:title] do |t, args|
   filename = "#{Time.now.strftime '%Y-%m-%d'}-#{args.title.gsub(/\s/, '_').downcase}.md"
+  now = Time.now.strftime '%Y-%m-%d %k:%M:%S'
   path = File.join "_posts", filename
   if File.exist? path then raise "Won't clobber #{path}" end
   File.open(path, 'w') do |file|
@@ -32,8 +33,10 @@ task :post, [:title] do |t, args|
 ---
 layout: post
 title: #{args.title}
+tags:
 lang: #{args.lang}
-creation-date: #{Time.now.strftime '%Y-%m-%d %k:%M:%S'}
+creation-date: #{now}
+modified-date: #{now}
 ---
 EOF
     end
