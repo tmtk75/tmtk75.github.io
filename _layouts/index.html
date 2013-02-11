@@ -4,7 +4,7 @@ layout: default
 <div id='recent-posts'>
   {% for post in site.posts limit:10 offset:0 %}
   {%   if post.lang == page.lang or (page.lang == "en" and post.lang == null) %}
-  <article class='post'>
+  <article class='post {{page.lang}}'>
     <header>
       <h2>
         <a class='title' href='{{post.url}}'>{{post.title}}</a>
