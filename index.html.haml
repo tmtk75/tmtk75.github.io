@@ -1,15 +1,2 @@
--#layout: default
+-#layout: index
 -#lang: en
-#recent-posts
-  {% for post in site.posts limit:10 offset:0 %}
-  {%   if post.lang == null or post.lang == "en" %}
-  %article.post
-    %header
-      %h2
-        %a.title{href:"{{post.url}}"} {{post.title}}
-    .content {{post.content}}
-    %footer
-      %a.read-more{href:"{{post.url}}"} Read more
-      .date {{post.creation-date || date:"%d %b %Y"}}
-  {%   endif %}
-  {% endfor %}
