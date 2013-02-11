@@ -43,7 +43,7 @@
                 %ul
                   {% assign prev_month = '' %}
                   {% for post in site.posts %}
-                  {%   if post.lang == null or post.lang == "en" %}
+                  {%   if post.lang == page.lang or (page.lang == "en" and post.lang == null) %}
                   {%     assign then = post.date %}
                   {%     assign this_month = {{then|date:'%b'}} %}
                   {%     if prev_month != this_month %}

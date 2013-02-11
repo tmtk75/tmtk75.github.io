@@ -55,18 +55,20 @@
                 <ul>
                   {% assign prev_month = '' %}
                   {% for post in site.posts %}
-                  {%   assign then = post.date %}
-                  {%   assign this_month = {{then|date:'%b'}} %}
-                  {%   if prev_month != this_month %}
-                  {%     assign prev_month = this_month %}
+                  {%   if post.lang == page.lang or (page.lang == "en" and post.lang == null) %}
+                  {%     assign then = post.date %}
+                  {%     assign this_month = {{then|date:'%b'}} %}
+                  {%     if prev_month != this_month %}
+                  {%       assign prev_month = this_month %}
                   <div class='date'>{{post.date|date:"%b %Y"}}</div>
-                  {%   endif %}
+                  {%     endif %}
                   <li>
                     <div class='title'>
                       {{post.date|date:"%d"}}
                       <a href='{{post.url}}'>{{post.title}}</a>
                     </div>
                   </li>
+                  {%   endif %}
                   {% endfor %}
                 </ul>
               </nav>

@@ -1,10 +1,10 @@
 ---
 layout: default
-lang: en
+lang: ja
 ---
 <div id='recent-posts'>
   {% for post in site.posts limit:10 offset:0 %}
-  {%if post.lang == null or post.lang == "en" %}
+  {% if post.lang == 'ja' %}
   <article class='post'>
     <header>
       <h2>
