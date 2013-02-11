@@ -58,8 +58,8 @@
           {{content}}
         
         .span3
-          %div= File.read "_layouts/_search.html"
-          %div= Haml::Engine.new(File.read "_layouts/_adsense.haml").render
+          %div {% include search.html %}
+          %div {% include adsense.html %}
 
   #metainfo
     %footer.container
@@ -73,7 +73,7 @@
                 This site utilizes Google Analytics (GA) and provides first party cookie of GA to your browser. I just only use the data, which is collected by GA, in order to improve the contents, accessibility, usability and readability of this site. And also about the data, I never disclose and use it for another purpose.
             .span3.license
               %h2 License
-              %p= Haml::Engine.new(File.read "_layouts/_license.haml").render
+              %p {% include license.html %}
       .row
         .span3 &nbsp;
         .span6.copyright
