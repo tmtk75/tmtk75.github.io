@@ -15,7 +15,7 @@ modified-date: 2013-02-11 17:51:47
 <hr>
 
 このサイトはドメインを見れば分かるように[gh-pages][gh-pages]で公開している。
-ということは当然jekyllベースだ。
+ということは当然Jekyllベースだ。
 
 公開リポジトリの [tmtk75.github.com.git][tmtk75.github.com] を覗いてみてもらうと分かるが、
 たとえば[レイアウトファイル][_layouts]なんかはHamlで書いてある。
