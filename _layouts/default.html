@@ -10,7 +10,14 @@
     <link href='{{site.css.url}}/docs.less' rel='stylesheet/less' type='text/css' />
     <link href='{{site.vendor.url}}/sh.css' rel='stylesheet' type='text/css' />
     <link href='{{site.css.url}}/styles.css' rel='stylesheet' />
-    <link href='http://tmtk75.github.com/rss.xml' rel='alternate' title='RSS' type='application/rss+xml' />
+    {% if page.lang == 'ja' %}
+    {%   assign rss_path  = "/rss.ja.xml" %}
+    {%   assign atom_path = "/atom.ja.xml" %}
+    {% else %}
+    {%   assign rss_path  = "/rss.en.xml" %}
+    {%   assign atom_path = "/atom.en.xml" %}
+    {% endif %}"
+    <link href='{{site.url}}{{rss_path}}' rel='alternate' title='RSS' type='application/rss+xml' />
   </head>
   <body>
     <div class='container'>
@@ -35,8 +42,8 @@
           <aside id='sidebar'>
             <div class='sidebar-inner'>
               <div class='rss-atom'>
-                <a class='rss-link' href='/rss.xml'>RSS</a>
-                <a class='atom-link' href='/atom.xml'>ATOM</a>
+                <a class='rss-link' href='{{rss_path}}'>RSS</a>
+                <a class='atom-link' href='{{atom_path}}'>ATOM</a>
               </div>
               <div class='last-update'>
                 updated at

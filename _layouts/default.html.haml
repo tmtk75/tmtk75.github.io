@@ -10,7 +10,14 @@
     %link{href:"{{site.css.url}}/docs.less",rel:"stylesheet/less",type:"text/css"}
     %link{href:"{{site.vendor.url}}/sh.css",type:"text/css",rel:"stylesheet"}
     %link{href:"{{site.css.url}}/styles.css",rel:"stylesheet"}
-    %link{rel:"alternate",type:"application/rss+xml",title:"RSS",href:"http://tmtk75.github.com/rss.xml"}
+    {% if page.lang == 'ja' %}
+    {%   assign rss_path  = "/rss.ja.xml" %}
+    {%   assign atom_path = "/atom.ja.xml" %}
+    {% else %}
+    {%   assign rss_path  = "/rss.en.xml" %}
+    {%   assign atom_path = "/atom.en.xml" %}
+    {% endif %}"
+    %link{rel:"alternate",type:"application/rss+xml",title:"RSS",href:"{{site.url}}{{rss_path}}"}
   %body
     .container
       .row
@@ -31,8 +38,8 @@
           %aside#sidebar
             .sidebar-inner
               .rss-atom
-                %a.rss-link{href:"/rss.xml"} RSS
-                %a.atom-link{href:"/atom.xml"} ATOM
+                %a.rss-link{href:"{{rss_path}}"} RSS
+                %a.atom-link{href:"{{atom_path}}"} ATOM
               .last-update
                 updated at
                 %span.date {{site.time | date:"%d %b %Y"}}
