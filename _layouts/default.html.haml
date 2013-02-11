@@ -17,7 +17,11 @@
         .span3
           %header#header
             %h1
+              {% if page.lang == 'ja' %}
+              %a.brand{href:'/index.ja.html'}{{site.title}}
+              {% else %}
               %a.brand{href:'/'}{{site.title}}
+              {% endif %}
               .navigated-links
                 {% if page.lang == 'ja' %}
                 %a{href:"/"} In English

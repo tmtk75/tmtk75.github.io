@@ -18,7 +18,11 @@
         <div class='span3'>
           <header id='header'>
             <h1>
+              {% if page.lang == 'ja' %}
+              <a class='brand' href='/index.ja.html'>{{site.title}}</a>
+              {% else %}
               <a class='brand' href='/'>{{site.title}}</a>
+              {% endif %}
               <div class='navigated-links'>
                 {% if page.lang == 'ja' %}
                 <a href='/'>In English</a>
