@@ -20,6 +20,7 @@ Then, you may be happy if you install [git-hub][git-hub]. (now, this works only 
 
 When you want to open a page for a file at the deep bototm of source tree,
 then you alreadly know the filename, you can type as following using git-hub to directly open.
+It's very useful than I expected.
 
     $ git hub blob <part-of-filename>
 {:.terminal}
@@ -60,10 +61,13 @@ Let's try.
     git hub blob README.md:2
 {:.terminal}
 
-git-hub prints all candidates for README.md, and if you want to open 3rd one `doc/mrbgems/README.md`, you type as `git hub blob README.md:3`.
+git-hub prints all candidates for README.md, and if you want to open 3rd one `doc/mrbgems/README.md`,
+you type as `git hub blob README.md:3`.
+Without typing long path, you just need to choose a path in the list.
 
 
-For other functions, please see [the README][readme] of git-hub.
+For other functions, there are `commits`, `compare`, `branches`.
+Please see [the README][readme] of git-hub.
 
   [readme]: https://github.com/tmtk75/git-hub#readme
 
