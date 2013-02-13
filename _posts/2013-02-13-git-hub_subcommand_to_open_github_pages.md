@@ -1,6 +1,6 @@
 ---
 layout: post
-title: git-hub subcommand to open github with browser from CLI 
+title: git-hub subcommand to open github with browser from terminal
 tags: git github extension
 lang: 
 creation-date: 2013-02-13  8:08:24
