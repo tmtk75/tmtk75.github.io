@@ -13,13 +13,13 @@ That's very nice to write a specific link in a commit on a BTS.
 However, when we want to get a link, we have to sometimes dig into the target file clicking over and over.
 That's a bit stressful.
 
-Then, you may be happy if you install [git-hub][git-hub]. (now, this is only for MacOSX)
+Then, you may be happy if you install [git-hub][git-hub]. (now, this works only for MacOSX)
 
   [git-hub]: https://github.com/tmtk75/git-hub
   [mruby]: git://github.com/mruby/mruby.git
 
-When you want to open a page for a file at the bototm of deep source tree,
-then you alreadly know the filename, you can type as following using git-hub.
+When you want to open a page for a file at the deep bototm of source tree,
+then you alreadly know the filename, you can type as following using git-hub to directly open.
 
     $ git hub blob <part-of-filename>
 {:.terminal}
@@ -58,6 +58,12 @@ Let's try.
     please try specifying index to select like
 
     git hub blob README.md:2
+{:.terminal}
+
+git-hub prints all candidates for README.md, and if you want to open 3rd one `doc/mrbgems/README.md`, you type as `git hub blob README.md:3`.
 
 
-  
+For other functions, please see [the README][readme] of git-hub.
+
+  [readme]: https://github.com/tmtk75/git-hub#readme
+
