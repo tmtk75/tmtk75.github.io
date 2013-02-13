@@ -14,7 +14,7 @@ BTSなんかにピンポイントでコードのある行へのリンクを張�
 何度もクリックして目的のファイルまでツリーを掘り進まないと行けないのが玉にキズ。
 
 そんなときは、[git-hub][git-hub]サブコマンドをインストールするとちょっと幸せになれるかもしれない。
-（今のところMacOSXでしか動かないけど）
+（今のところMacOSXでしか動かないけど。もしよかったら他のOSでの方法教えてください）
 
   [git-hub]: https://github.com/tmtk75/git-hub
   [mruby]: git://github.com/mruby/mruby.git

@@ -3,8 +3,8 @@ layout: post
 title: git-hub subcommand to open github with browser from terminal
 tags: git github extension
 lang: 
-creation-date: 2013-02-13  8:08:24
-modified-date: 2013-02-13  8:08:24
+creation-date: 2013-02-13 08:08:24 +0900
+modified-date: 2013-02-14 08:08:24 +0900
 ---
 The UI of github is cool, referenceable and capable.
 We can tell a line of a source file as easy as poining it with an URL like [this](https://github.com/tmtk75/git-hub/blob/master/git-hub#L8).
@@ -13,7 +13,7 @@ That's very nice to write a specific link in a commit on a BTS.
 However, when we want to get a link, we have to sometimes dig into the target file clicking over and over.
 That's a bit stressful.
 
-Then, you may be happy if you install [git-hub][git-hub]. (now, this works only for MacOSX)
+Then, you may be happy if you install [git-hub][git-hub]. (now, this works only for MacOSX. Please let me know how to open on other platforms)
 
   [git-hub]: https://github.com/tmtk75/git-hub
   [mruby]: git://github.com/mruby/mruby.git
