@@ -1,6 +1,6 @@
 ---
 layout: post
-title: githubのページをterminalから直接開くgit-hubサブコマンド
+title: githubのページをterminalから開くgit-hubサブコマンド
 tags: git github extension
 lang: ja
 creation-date: 2013-02-13  8:08:24
