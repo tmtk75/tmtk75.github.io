@@ -59,7 +59,7 @@ Take care of this!
 |-------------|-----|
 {:.table .table-condensed}
 
-  [availabetypes]: http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/instance-types.html#AvailableInstanceTypes
+  [availabletypes]: http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/instance-types.html#AvailableInstanceTypes
   [memoryintensive]: http://docs.aws.amazon.com/ElasticMapReduce/latest/DeveloperGuide/HadoopMemoryIntensive.html
   [EMR]: http://aws.amazon.com/jp/elasticmapreduce/
 
