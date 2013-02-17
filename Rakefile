@@ -48,19 +48,22 @@ task :tags do |t, args|
   #!/usr/bin/env ruby
   require "json"
   require "fileutils"
-  tags = Hash.new []
+  tags = {"en"=>Hash.new([]), "ja"=>Hash.new([])}
   Dir.glob("_posts/**").map {|path|
     lines = open(path, "r") {|f| f.readlines}
     title     = lines.find {|e| e =~ /^title:/}.gsub(/^title:/, "").strip
+    lang      = (lines.find {|e| e =~ /^lang:/} or "en").gsub(/^lang:/, "").strip
     tags_line = lines.find {|e| e =~ /^tags:/}
     next unless tags_line =~ /^tags:(.*)$/
     $1.strip.split(/ +/).each {|e|
       p = path.gsub(/^_posts/, "")
               .gsub(/(....)-(..)-(..)-/, "\\1/\\2/\\3/")
               .gsub(/\.md/, ".html")
-      tags[e.downcase] += [{path: p, title: title}]
+      lang = "en" if lang.empty?
+      tags[lang][e.downcase] += [{path: p, title: title}]
     }
   }
   puts tags.to_json
+  #puts JSON.pretty_generate tags
 end
 

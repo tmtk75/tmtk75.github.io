@@ -18,7 +18,8 @@ $ ->
       show_links_for_tag: (m, evt)->
         title = $('#the.post h1 .title').data("title")
         tag = $(evt.target).data("tag").toLowerCase()
-        vals = tag2paths[tag].filter (e)-> e.title != title
+        lang = _page?.lang or "en"
+        vals = tag2paths[lang][tag].filter (e)-> e.title != title
         links.show -> model.links_shown true
         @tagname tag
         @links vals
@@ -35,4 +36,3 @@ $ ->
     model.empty = ko.dependentObservable -> model.links().length == 0
 
     ko.applyBindings model
-    console.log "binded"
