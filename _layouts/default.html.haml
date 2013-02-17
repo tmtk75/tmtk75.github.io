@@ -28,18 +28,7 @@
                 updated at
                 %span.date {{site.time | date:"%d %b %Y"}}
               .social
-                %a{href:"{{site.socials.twitter.url}}"}
-                  %img.icon{src:"{{site.icons.url}}/twitter.png"}
-                %a{href:"{{site.socials.facebook.url}}"}
-                  %img.icon{src:"{{site.icons.url}}/facebook.png"}
-                %a{href:"{{site.socials.github.url}}"}
-                  %img.icon{src:"{{site.icons.url}}/github.png"}
-                %a{href:"{{site.socials.googleplus.url}}"}
-                  %img.icon{src:"{{site.icons.url}}/google.png"}
-                %a{href:"{{site.socials.linkedin.url}}"}
-                  %img.icon{src:"{{site.icons.url}}/linkedin.png"}
-                %a{href:"{{site.socials.zerply.url}}"}
-                  %img.icon{src:"{{site.icons.url}}/zerply.png"}
+                {% include _social.html %}
               %nav.recent-posts
                 %ul
                   {% assign prev_month = '' %}
