@@ -1,0 +1,8 @@
+{% if page.lang == "ja" %}
+%span{"data-bind"=>"if: empty"} 関連する記事はありません
+%span{"data-bind"=>"ifnot: empty"} 関連記事
+{% else %}
+%span{"data-bind"=>"if: empty"} No other related
+%span{"data-bind"=>"ifnot: empty"} Related
+posts for the tag
+{% endif %}

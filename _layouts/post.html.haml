@@ -14,9 +14,8 @@
 
     .links_with_tag{"data-bind"=>"style:{visibility:'visible'},visible:links_shown,event:{mouseover:keep,mouseout:hide_links_for_tag}"}
       .h
-        %span{"data-bind"=>"if: empty"} No other related
-        %span{"data-bind"=>"ifnot: empty"} Related
-        posts for the tag "<span data-bind='text:tagname'></span>"
+        {% include _head_tags.html %}
+        "<span data-bind='text:tagname'></span>"
       %ul{"data-bind"=>"template:{name:'links_for_tag',foreach:links}"}
       
       %script{type:"text/html",id:"links_for_tag"}
