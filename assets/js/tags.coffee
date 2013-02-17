@@ -22,6 +22,8 @@ $ ->
         links.show -> model.links_shown true
         @tagname tag
         @links vals
+        _gaq.push(['_trackEvent', 'Tag', 'Show', tag, vals.length, true])
+
       keep: ->
         links.keep() if @links().length > 0
       hide_links_for_tag: (m, evt)->
