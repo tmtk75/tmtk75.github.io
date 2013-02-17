@@ -1,5 +1,5 @@
 ## Jekyll configuration
-safe: false
+safe: true
 pygments: true
 auto: false
 markdown: kramdown
