@@ -10,13 +10,7 @@
     %link{href:"{{site.css.url}}/docs.less",rel:"stylesheet/less",type:"text/css"}
     %link{href:"{{site.vendor.url}}/sh.css",type:"text/css",rel:"stylesheet"}
     %link{href:"{{site.css.url}}/styles.css",rel:"stylesheet"}
-    {% if page.lang == 'ja' %}
-    {%   assign rss_path  = "/rss.ja.xml" %}
-    {%   assign atom_path = "/atom.ja.xml" %}
-    {% else %}
-    {%   assign rss_path  = "/rss.en.xml" %}
-    {%   assign atom_path = "/atom.en.xml" %}
-    {% endif %}
+    {% include _rss_paths.html %}
     %link{rel:"alternate",type:"application/rss+xml",title:"RSS",href:"{{site.url}}{{rss_path}}"}
   %body
     .container
@@ -24,17 +18,7 @@
         .span3
           %header#header
             %h1
-              {% if page.lang == 'ja' %}
-              %a.brand{href:'/index.ja.html'}{{site.title}}
-              {% else %}
-              %a.brand{href:'/'}{{site.title}}
-              {% endif %}
-              .navigated-links
-                {% if page.lang == 'ja' %}
-                %a{href:"/"} In English
-                {% else %}
-                %a{href:"/index.ja.html"} in Japanese
-                {% endif %}
+              {% include _site_title.html %}
           %aside#sidebar
             .sidebar-inner
               .rss-atom

@@ -10,13 +10,7 @@
     <link href='{{site.css.url}}/docs.less' rel='stylesheet/less' type='text/css' />
     <link href='{{site.vendor.url}}/sh.css' rel='stylesheet' type='text/css' />
     <link href='{{site.css.url}}/styles.css' rel='stylesheet' />
-    {% if page.lang == 'ja' %}
-    {%   assign rss_path  = "/rss.ja.xml" %}
-    {%   assign atom_path = "/atom.ja.xml" %}
-    {% else %}
-    {%   assign rss_path  = "/rss.en.xml" %}
-    {%   assign atom_path = "/atom.en.xml" %}
-    {% endif %}
+    {% include _rss_paths.html %}
     <link href='{{site.url}}{{rss_path}}' rel='alternate' title='RSS' type='application/rss+xml' />
   </head>
   <body>
@@ -25,18 +19,7 @@
         <div class='span3'>
           <header id='header'>
             <h1>
-              {% if page.lang == 'ja' %}
-              <a class='brand' href='/index.ja.html'>{{site.title}}</a>
-              {% else %}
-              <a class='brand' href='/'>{{site.title}}</a>
-              {% endif %}
-              <div class='navigated-links'>
-                {% if page.lang == 'ja' %}
-                <a href='/'>In English</a>
-                {% else %}
-                <a href='/index.ja.html'>in Japanese</a>
-                {% endif %}
-              </div>
+              {% include _site_title.html %}
             </h1>
           </header>
           <aside id='sidebar'>
