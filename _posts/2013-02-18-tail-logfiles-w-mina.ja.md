@@ -21,7 +21,7 @@ deploy用のツールのひとつとして[capistrano][capistrano]が有名。
 - [デプロイ用gem CapistranoとMinaの比較][mina-cmp]
 
   [mina]: https://github.com/nadarei/mina
-  [cap]: https://github.com/capistrano/capistrano
+  [capistrano]: https://github.com/capistrano/capistrano
   [github-help]: https://help.github.com/articles/deploying-with-capistrano
   [mina-inst]: http://qiita.com/items/23d447a7aba6ac910fff
   [mina-deploy]: http://blog.44uk.net/2012/11/03/use-deploy-tool-mina/
