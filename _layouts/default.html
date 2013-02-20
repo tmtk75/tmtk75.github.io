@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang='{%if page.lang == null %}en{%else%}{{page.lang}}{%endif%}'>
   <head>
     <title>{%if page.title %} {{page.title}} {%else%} {{site.title}} {%endif%}</title>
     <meta charset='utf-8' />
