@@ -4,7 +4,7 @@ title: expectで公開鍵を登録する
 tags: expect publickey ssh
 lang: ja
 creation-date: 2013-02-19 10:52:32 +0900
-modified-date: 2013-02-19 10:52:32 +0900
+modified-date: 2013-02-20 11:17:00 +0900
 ---
 
 [minaでログファイルをtailするまで](/2013/02/18/tail-logfiles-w-mina.ja.html)を書いていて
@@ -52,7 +52,7 @@ modified-date: 2013-02-19 10:52:32 +0900
     send "cat ~/$pubkey_name >> ~/.ssh/authorized_keys\r"
     send "chmod 600 ~/.ssh/authorized_keys\r"
     send "chmod 700 ~/.ssh\r"
-    send "rm ~/minademo.pub\r"
+    send "rm ~/$pubkey_name\r"
     expect -re $prompt
 
     ### Exit the session
