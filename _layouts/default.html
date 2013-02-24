@@ -39,6 +39,9 @@
               <div class='social'>
                 {% include _social.html %}
               </div>
+              <div class='search'>
+                {% include search.html %}
+              </div>
               <nav class='recent-posts'>
                 <ul>
                   {% assign prev_month = '' %}
@@ -63,11 +66,10 @@
             </div>
           </aside>
         </div>
-        <div class='span6'>
+        <div class='span7'>
           {{content}}
         </div>
-        <div class='span3'>
-          <div>{% include search.html %}</div>
+        <div class='span2'>
           <div>{% include adsense.html %}</div>
         </div>
       </div>

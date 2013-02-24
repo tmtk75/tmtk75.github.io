@@ -31,6 +31,8 @@
                 %span.date {{site.time | date:"%d %b %Y"}}
               .social
                 {% include _social.html %}
+              .search
+                {% include search.html %}
               %nav.recent-posts
                 %ul
                   {% assign prev_month = '' %}
@@ -48,11 +50,10 @@
                       %a{href:"{{post.url}}"} {{post.title}} 
                   {%   endif %}
                   {% endfor %}
-        .span6
+        .span7
           {{content}}
         
-        .span3
-          %div {% include search.html %}
+        .span2
           %div {% include adsense.html %}
 
   #metainfo
