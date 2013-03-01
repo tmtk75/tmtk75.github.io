@@ -11,6 +11,9 @@
       {% for tag in page.tags %}
       %li.tag{"data-bind"=>"event:{mouseover:show_links_for_tag,mouseout:hide_links_for_tag}","data-tag"=>'{{tag}}'} {{tag}}
       {% endfor %}
+    %ul.buttons
+      %li
+        .fb-like{"data-send"=>"true", "data-layout"=>"button_count", "data-width"=>"450", "data-show-faces"=>"false"}
 
     .links_with_tag{"data-bind"=>"style:{visibility:'visible'},visible:links_shown,event:{mouseover:keep,mouseout:hide_links_for_tag}"}
       .h

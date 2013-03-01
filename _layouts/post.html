@@ -16,6 +16,9 @@ layout: default
       <li class='tag' data-bind='event:{mouseover:show_links_for_tag,mouseout:hide_links_for_tag}' data-tag='{{tag}}'>{{tag}}</li>
       {% endfor %}
     </ul>
+    <ul class='buttons'>
+      <div class='fb-like' data-layout='button_count' data-send='true' data-show-faces='false' data-width='450'></div>
+    </ul>
     <div class='links_with_tag' data-bind="style:{visibility:'visible'},visible:links_shown,event:{mouseover:keep,mouseout:hide_links_for_tag}">
       <div class='h'>
         {% include _head_tags.html %}
