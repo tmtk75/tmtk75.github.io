@@ -14,6 +14,10 @@
     %ul.buttons
       %li
         .fb-like{"data-send"=>"true", "data-layout"=>"button_count", "data-width"=>"450", "data-show-faces"=>"false"}
+      %li
+        %a.hatena-bookmark-button{href:"http://b.hatena.ne.jp/entry/{{site.url}}", "data-hatena-bookmark-title"=>"{{page.title}}({{site.title}})", "data-hatena-bookmark-layout"=>"simple-balloon"}
+          %img{src:"http://b.st-hatena.com/images/entry-button/button-only.gif", width:"20", height:"20", style:"border: none;"}
+
 
     .links_with_tag{"data-bind"=>"style:{visibility:'visible'},visible:links_shown,event:{mouseover:keep,mouseout:hide_links_for_tag}"}
       .h
