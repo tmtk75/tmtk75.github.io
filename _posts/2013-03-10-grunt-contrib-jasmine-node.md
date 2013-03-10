@@ -15,7 +15,7 @@ I wrote a small plugin, which supports only `--coffee` option, for [GRUNT](http:
 If you want to specif a environtment var like `NODE_PATH=lib/js` and set `--coffee` option,
 and spec files are in `spec` directory, you can define the initConfig of grunt.
 
-<pre class="brush:js".
+<pre class="brush:js">
 grunt.initConfig({
   "jasmine-node": {
     options: {
