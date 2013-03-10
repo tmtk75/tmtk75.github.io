@@ -34,6 +34,7 @@ grunt.initConfig({
 Then you run like:
 
     $ grunt jsamine-node
+{:.terminal}
 
 It's similar to:
 
