@@ -35,3 +35,11 @@ Then you run like:
 
     $ grunt jsamine-node
 
+It's similar to:
+
+    $ NODE_PATH=lib/js jasmine-node --coffee spec
+{:.terminal}
+
+
+The current version 0.0.1 does support only an option `--coffee`.
+I'll improve, or could you conribute? :)
