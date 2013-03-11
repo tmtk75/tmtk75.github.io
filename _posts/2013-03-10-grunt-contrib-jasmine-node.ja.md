@@ -6,7 +6,7 @@ lang: ja
 creation-date: 2013-03-10 12:14:39 +0900
 modified-date: 2013-03-10 12:14:39 +0900
 ---
-JavaScriptのTDD用ライブラリは[jasmine](http://pivotal.github.com/jasmine/)が好きだ。
+JavaScriptのBDD用ライブラリは[jasmine](http://pivotal.github.com/jasmine/)が好きだ。
 もともとRSpec使ってたから似たようなものを探したからなんだけど。
 
 で、CLI用に[jasmine-node](https://github.com/mhevery/jasmine-node)もある。
