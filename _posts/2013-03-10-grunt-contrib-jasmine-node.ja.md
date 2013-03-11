@@ -4,17 +4,17 @@ title: grunt-contrib-jasmine-node
 tags: grunt jasmine-node
 lang: ja
 creation-date: 2013-03-10 12:14:39 +0900
-modified-date: 2013-03-10 12:14:39 +0900
+modified-date: 2013-03-11 21:55:00 +0900
 ---
 JavaScriptのBDD用ライブラリは[jasmine](http://pivotal.github.com/jasmine/)が好きだ。
 もともとRSpec使ってたから似たようなものを探したからなんだけど。
-
 で、CLI用に[jasmine-node](https://github.com/mhevery/jasmine-node)もある。
 [こんなふう][ex1]に書けて、terminalで実行できるので重宝している。
 
   [ex1]: https://github.com/tmtk75/jumly/blob/master/spec/SequenceDiagramBuilderSpec.coffee
 
-[GRUNT](http://gruntjs.com/)に移行したのでgruntからjasmine-nodeを起動するpluginを書いてみた。ただオプションは`--coffee`しかサポートしていない。
+[JUMLY](http://jumly.herokuapp.com/)でも[GRUNT](http://gruntjs.com/)に移行したので
+gruntからjasmine-nodeを起動するpluginを書いてみた。ただオプションは`--coffee`しかサポートしていない。
 
 <https://github.com/tmtk75/grunt-contrib-jasmine-node>
 
