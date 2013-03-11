@@ -42,6 +42,7 @@ grunt.initConfig({
 GRUNTのコマンドは次のようになる。
 
     $ grunt jsamine-node
+{:.terminal}
 
 
 `--coffee`オプションしかサポートしてないので、誰か追加してください :)
