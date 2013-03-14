@@ -15,6 +15,21 @@ valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
 '" type="text/javascript" charset="utf-8"><\/sc'+'ript>')})();
 </script><script>utmx('url','A/B');</script>
 <!-- End of Google Analytics Content Experiment code -->
+<script>var _gaq = _gaq || [];
+var pluginUrl = '//www.google-analytics.com/plugins/ga/inpage_linkid.js';
+_gaq.push(['_require', 'inpage_linkid', pluginUrl]);
+_gaq.push(['_setAccount', 'UA-27755043-2']);
+_gaq.push(['_trackPageview']);
+_gaq.push(['_deleteCustomVar', 1]);
+var now = new Date;
+function zp(n) {return n/10 >= 1 ? n : "0" + n}
+var val = now.getFullYear() + "-" + zp(now.getMonth() + 1) + "-" + (Math.floor(now.getDate()/10) + 1)
+_gaq.push(['_setCustomVar', 2, 'cohort', val, 1]);  // 1:user, 2:session, 3:page
+(function() {
+  var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+  ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();</script>
     <title>{%if page.title %} {{page.title}} {%else%} {{site.title}} {%endif%}</title>
     <meta charset='utf-8' />
     <meta content='width=device-width,initial-scale=1.0' name='viewport' />
@@ -120,7 +135,6 @@ valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
     <script>
       var _page = {lang:"{{page.lang}}"};
     </script>
-    <script src='{{site.vendor.url}}/ga.js'></script>
     <script src='{{site.vendor.url}}/less.js'></script>
     <script src='{{site.vendor.url}}/jquery.js'></script>
     <script src='{{site.vendor.url}}/jquery.tmpl.js'></script>
