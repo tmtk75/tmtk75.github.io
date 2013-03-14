@@ -1,0 +1,260 @@
+// Web font -------------------------------------------------------------------
+@import url("http://fonts.googleapis.com/css?family=Questrial|Michroma|Oxygen:700");
+
+// Layout ---------------------------------------------------------------------
+body {
+  padding-top: 10px;
+  border-top: solid 10px #555555;
+}
+
+#header {
+  h1 {
+    font-family: Michroma;
+    font-size: 20px;
+    font-weight: 400;
+    a {color: #4c4c4c;}
+  }
+  .navigated-links {
+    text-align: right;
+    font-size: 13px;
+    line-height: 15px;
+  }
+}
+#sidebar {
+  .sidebar-inner {
+    margin-top: 20px;
+    ul { margin-left: 0; }
+    .recent-posts {
+      margin-top: 20px;
+      .date { margin-top: 20px; font-size: 16px; }
+      .title { margin-bottom: 5px; }
+      li { list-style-type: none; }
+    }
+  }
+}
+#recent-posts {
+  .content {overflow-x: hidden;}
+}
+#metainfo {
+  border-top: 1px #333333;
+  background-color: #555555;
+  color: #d9d9cc;
+  padding-top: 3em;
+  padding-bottom: 3em;
+  border-bottom: 1px #333333;
+  h2, .copyright { text-shadow: 1px -1px 0 rgba(0,0,0,.5); }
+  .license {
+    a {
+      color: #d9d9cc;
+    }
+  }
+  .copyright {
+    margin-top: 3em;
+    text-align: center;
+  }
+}
+.post {
+  .syntaxhighlighter { width: 520px !important; }
+}
+.read-more, .date, #sidebar .title { font-family: Questrial; }
+.post header h2, #recent-posts h3 { font-family: Oxygen; font-weight: bold; }
+.post:not(.ja) header h2:first-letter { font-size:141%; }
+.social {
+  margin-top: 10px;
+  a, a:hover { text-decoration: none; }
+  .icon {
+    width: 16px;
+    border: solid 1px #222;
+    padding: 1px; border-radius: 2px;
+    background-image: -webkit-gradient(linear, left top, left bottom,
+                        from(rgba(240,240,240,0)),
+                        color-stop(0.5, rgba(240,240,240,0)),
+                        to(rgba(240,240,240,1.0)));
+    background-image: -moz-linear-gradient(
+                        rgba(240,240,240,0) 0%,
+                        rgba(240,240,240,0) 50%,
+                        rgba(240,240,240,1.0) 100%);
+    background-image: -o-linear-gradient(
+                        rgba(240,240,240,0) 0%,
+                        rgba(240,240,240,0) 50%,
+                        rgba(240,240,240,1.0) 100%);
+  }
+}
+
+body #recent-posts {
+  .post {
+    //position: relative;  // for blur effect
+    overflow-y: hidden;
+    //margin-bottom: 40+20px;
+    h2 {font-size: 20px;}
+    h3 {font-size: 18px;}
+    .title {color: #333;}
+    footer {
+      padding-top: 2px;
+      //height: 20*2px;
+      //position: absolute;
+      //top: 160-20px;
+      text-align: right;
+      width: 100%;
+      font-size: 16px;
+      .date, .date>* {display: inline;}
+    }
+  }
+}
+//------------------------------------------------------------------------------
+#the.post, #recent-posts .post {
+  .tags {
+    margin-top: 2px;
+    margin-left: 0;
+    .tag {
+      background-color: #dddddd;
+      border-radius: 3px;
+      padding-right: 6px;
+      padding-left: 6px;
+      list-style: none;
+      display: inline-block;
+    }
+  }
+}
+#the.post {
+  .tags {
+    .tag {
+      &:hover {
+        background-color: #cccccc;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+article#the.post {
+  //margin-bottom: 40px;
+  header {
+    margin-bottom: 3em;
+    h1 {
+      .date {
+        color: gray;
+        border-right: dotted 2px gray;
+        padding-right: 4px;
+        margin-right: 4px;
+        float: left;
+        .day {font-weight: bold; font-size: 24px; line-height:26px;}
+        .month {font-weight: bold; font-size: 18px; line-height:22px;}
+        .year {font-weight: bold; font-size: 14px; line-height:18px;}
+      }
+    }
+    .buttons {
+      margin-left: 0;
+      li {
+        list-style: none;
+        display: inline-block;
+        margin-left: 4px;
+        &.facebook { position: relative; top: -2px; }
+        &.twitter { width: 76px; }
+        &.googleplus { width: 58px; }
+      }
+    }
+  }
+  .content > h2 {
+    line-height: 26px;
+    margin-top: 1.5em;
+    margin-bottom: 10px;
+  }
+  //p:not(:first-child) { margin-top: 40px; }
+  #disqus_thread { margin-top: 60px; }
+  img {
+    box-shadow: 3px 3px 8px #888;
+    margin-top: 1em;
+    margin-bottom: 1em;
+  }
+  .gist {
+    margin-top: 10px;
+    margin-bottom: 40px;
+  }
+}
+
+.post .content .footnotes {
+  margin-top: 3em;
+  li p {
+    width: 440px;
+  }
+}
+
+.links_with_tag {
+  position: absolute;
+  // tips: to hide while loading page
+  //       this will be visible by knockout when applyBindings
+  //       see the data-bind attribute
+  visibility: hidden;
+
+  margin: 0px;
+  padding: 4px 6px;
+  border: solid 1px rgba(34,34,34,0.33);
+  background-color: rgba(0,0,0,0.77);
+  border-radius: 3px;
+  color: white;
+  ul {margin-bottom: 0px;}
+  li {
+    a {
+      color: white;
+    }
+  }
+}
+
+.rss-atom {
+  a {color: white;}
+  .rss-link, .atom-link {
+    font-weight: bold;
+    padding: 0px 8px;
+    border-radius: 2px;
+    display: inline-block;
+    background-color: #222;
+  }
+}
+
+//---------------------------------------------------------------- Effect
+pre.terminal {
+  color:white;
+  background-color:black;
+  font-weight:normal;
+  font-family:monaco,monospace,mono;
+}
+
+textarea.terminal {
+  width: 520px;
+  background-color: black;
+  color: white;
+  padding: 8.5px;
+  overflow-x: scroll;
+  font-size: 12px;
+  line-height: 14px;
+  font-family: "courier new";
+}
+
+//---------------------------------------------------------------- Behavior
+
+//---------------------------------------------------------------- Disable/change library's style
+pre.prettyprint {
+  border: 1px solid #ccc;
+  padding: 8.5px;
+}
+
+#disqus_thread {
+  margin-bottom: 0;
+  #dsq-content {
+    #dsq-global-toolbar {
+      margin: auto;
+      line-height: auto;
+    }
+    .dsq-reply {
+      margin-top: auto;
+      .dsq-textarea-reply { margin-bottom: auto; }
+    }
+    h3 {
+      margin: auto;
+      position: static;
+      font-size: 1em;
+    }
+    #dsq-footer { margin: auto; }
+  }
+}
