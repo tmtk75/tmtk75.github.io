@@ -1,20 +1,6 @@
 <!DOCTYPE html>
 <html lang='{%if page.lang == null %}en{%else%}{{page.lang}}{%endif%}'>
   <head>
-<!-- Google Analytics Content Experiment code -->
-<script>function utmx_section(){}function utmx(){}(function(){var
-k='58395966-0',d=document,l=d.location,c=d.cookie;
-if(l.search.indexOf('utm_expid='+k)>0)return;
-function f(n){if(c){var i=c.indexOf(n+'=');if(i>-1){var j=c.
-indexOf(';',i);return escape(c.substring(i+n.length+1,j<0?c.
-length:j))}}}var x=f('__utmx'),xx=f('__utmxx'),h=l.hash;d.write(
-'<sc'+'ript src="'+'http'+(l.protocol=='https:'?'s://ssl':
-'://www')+'.google-analytics.com/ga_exp.js?'+'utmxkey='+k+
-'&utmx='+(x?x:'')+'&utmxx='+(xx?xx:'')+'&utmxtime='+new Date().
-valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
-'" type="text/javascript" charset="utf-8"><\/sc'+'ript>')})();
-</script><script>utmx('url','A/B');</script>
-<!-- End of Google Analytics Content Experiment code -->
 <script>var _gaq = _gaq || [];
 var pluginUrl = '//www.google-analytics.com/plugins/ga/inpage_linkid.js';
 _gaq.push(['_require', 'inpage_linkid', pluginUrl]);
@@ -36,7 +22,7 @@ _gaq.push(['_setCustomVar', 2, 'cohort', val, 1]);  // 1:user, 2:session, 3:page
     <meta content='{{site.author.name}}' name='author' />
     <meta content='{%if page.description %} {{page.description}} {%else%} {{site.description}} {%endif%}' name='description' />
     <link href='{{site.vendor.url}}/bootstrap/docs/assets/css/bootstrap.css' rel='stylesheet' />
-    <link href='{{site.css.url}}/home1.less' rel='stylesheet/less' type='text/css' />
+    <link href='{{site.css.url}}/docs.less' rel='stylesheet/less' type='text/css' />
     <link href='{{site.vendor.url}}/sh.css' rel='stylesheet' type='text/css' />
     <link href='{{site.css.url}}/styles.css' rel='stylesheet' />
     {% include _rss_paths.html %}
@@ -71,12 +57,35 @@ _gaq.push(['_setCustomVar', 2, 'cohort', val, 1]);  // 1:user, 2:session, 3:page
               <div class='search'>
                 {% include search.html %}
               </div>
+              <nav class='recent-posts'>
+                <ul>
+                  {% assign prev_month = '' %}
+                  {% for post in site.posts %}
+                  {%   if post.lang == page.lang or (page.lang == "en" and post.lang == null) %}
+                  {%     assign then = post.date %}
+                  {%     assign this_month = {{then|date:'%b'}} %}
+                  {%     if prev_month != this_month %}
+                  {%       assign prev_month = this_month %}
+                  <div class='date'>{{post.date|date:"%b %Y"}}</div>
+                  {%     endif %}
+                  <li>
+                    <div class='title'>
+                      {{post.date|date:"%d"}}
+                      <a href='{{post.url}}'>{{post.title}}</a>
+                    </div>
+                  </li>
+                  {%   endif %}
+                  {% endfor %}
+                </ul>
+              </nav>
             </div>
-            <div>{% include adsense.html %}</div>
           </aside>
         </div>
         <div class='span7'>
           {{content}}
+        </div>
+        <div class='span2'>
+          <div>{% include adsense.html %}</div>
         </div>
       </div>
     </div>
