@@ -1,26 +1,4 @@
-task :default => :jekyll
-
-desc "Jekyll"
-task :jekyll, [:haml] do
-  `jekyll`
-end
-
-desc "Compile with haml."
-task :haml do
-  require "haml"
-  Dir.glob("**/*.haml") do |e|
-    open(e.gsub(/\.haml$/, ""), "w") do |f|
-      lines = File.new(e).readlines
-      s = lines.select {|e| e =~ /^-#.*/}.map {|e| e.gsub /^-#|\n$/, ''}.join("\n")
-      f.write <<EOF if s.length > 0
----
-#{s}
----
-EOF
-      f.write Haml::Engine.new(lines.join "\n").render
-    end
-  end
-end
+task :default => :tags
 
 desc "Given a title as an argument, create a new post file."
 task :post, [:title] do |t, args|
