@@ -55,3 +55,6 @@ So you start installing again like:
     1 gem installed
 {:.terminal}
 
+
+[The answer on the Stack Overflow](http://stackoverflow.com/questions/5229907/mysql2-ruby-gem-will-not-install-10-6) was helpful for me.
+
