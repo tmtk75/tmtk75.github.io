@@ -3,8 +3,8 @@ layout: post
 title: JUMLY is being improved for robustness diagram
 tags: JUMLY robustness
 lang: 
-creation-date: 2013-03-24 22:42:01 +0900
-modified-date: 2013-03-24 22:42:01 +0900
+creation-date: 2013-03-29 08:42:01 +0900
+modified-date: 2013-03-29 08:42:01 +0900
 ---
 I'm improving [JUMLY](http://jumly.herokuapp.com/) to enable rendering [robustness diagram](https://www.google.co.jp/search?q=robustness+diagram&hl=en&tbm=isch&tbo=u&source=univ&sa=X&ei=UMpUUa5Bh_KQBYmngZgJ&ved=0CC8QsAQ&biw=998&bih=738).
 
