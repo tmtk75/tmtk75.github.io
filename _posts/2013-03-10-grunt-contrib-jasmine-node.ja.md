@@ -1,6 +1,6 @@
 ---
 layout: post
-title: grunt-contrib-jasmine-node
+title: grunt-contrib-jasmine-nodeを書きました
 tags: grunt jasmine-node
 lang: ja
 creation-date: 2013-03-10 12:14:39 +0900
