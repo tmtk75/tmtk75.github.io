@@ -40,4 +40,4 @@ Robustness diagram is different from sequence diagram at layout.
 The former is 2D graph, so called.
 If someone knows good algorithms to place nodes on 2D graph and give me that, it would be very happy for me.
 
-Anyway, I have to improve theses.
+Anyway, I have to improve these.
