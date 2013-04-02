@@ -31,7 +31,8 @@ So if you use tomcat, how do you define your server.xml?
 Then use entity `&#9;` like:
 
 <pre class="brush: xml">
-pattern="host:%h&amp;#9;ident:%l&amp;#9;user:%u"
+<Value ...
+  pattern="host:%h&amp;#9;ident:%l&amp;#9;user:%u" />
 </pre>
 
 You will get access logs like:
