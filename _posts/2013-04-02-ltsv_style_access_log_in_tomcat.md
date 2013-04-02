@@ -8,7 +8,7 @@ modified-date: 2013-04-03 08:03:44 +0900
 ---
 ## LTSV + fluentd is nice
 
-LTSV is "labeled Tab-separated Values", [http://ltsv.org/](http://ltsv.org/).
+LTSV is "Labeled Tab-separated Values", [http://ltsv.org/](http://ltsv.org/).
 
 A typical access log of Apache is like:
 
