@@ -32,7 +32,6 @@ You can see `repl-jline` in the bin directory.
     $ ./bin/repl-jline
     Clojure 1.4.0
     user=> 
-{:.terminal}
 
 Congraturation!  
 you got very useful REPL environment!

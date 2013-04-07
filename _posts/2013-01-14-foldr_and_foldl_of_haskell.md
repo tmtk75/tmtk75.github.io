@@ -16,7 +16,6 @@ A difference of foldr and foldl.
     Prelude> foldr (-) 1 [2,3,4]
     2
     Prelude> 
-{:.terminal}
 
 It's easy to understand as thinking like:
 

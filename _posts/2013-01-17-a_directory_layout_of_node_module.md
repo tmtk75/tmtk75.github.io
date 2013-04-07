@@ -28,46 +28,45 @@ For these, I like a directory layout like:
       |       |-- ...
       |    
       `-- package.js
-{:.terminal}
 
 `cli.js`, which is a wrapper to invoke `index.coffee` in `lib/js`.
 
-<pre class="brush:js">
+```javascript
 #!/usr/bin/env node
 require("coffee-script");
 require(require('path').join(require('fs').realpathSync(__dirname), '../lib/js/index.coffee'));
-</pre>
+```
 
 `index.coffee`, which is a wrapper of `cil.js`.
 
-<pre class="brush:js">
+```javascript
 #!/usr/bin/env node
 require(require("path").join(require("fs").realpathSync(__dirname), "bin/cli.js"));
-</pre>
+```
 
 `app.coffee`, which provides a webapp on express.
 
-<pre class="brush:js">
+```coffeescript
 #!/usr/bin/env coffee
 express = require "express"
 jade    = require "jade"
 stylus  = require "stylus"
 mymod   = require "lib/js/mymod.coffee"
 ## Your configuraiton of express...
-</pre>
+```
 
 `index.coffee`, which is the actual entry point. Here is an example to require a local module.
 
-<pre class="brush:js">
+```coffeescript
 mymod = require "./mymod"
 console.log mymod.hello_message()
-</pre>
+```
 
 `mymod.coffee`, which is a module. At here, provides an object with a function to return a string.
 
-<pre class="brush:js">
+```coffeescript
 module.exports =
   hello_message: -> "hello! from " + __filename
-</pre>
+```
 
 How about you? :)

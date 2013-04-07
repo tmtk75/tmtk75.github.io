@@ -9,7 +9,7 @@ It's easy to give an initial value as a local variable to groovy script.
 And also even if the script takes a few command line arguments,
 that engine can give those values with using value name `args` which is an array of String.
 
-<pre class="brush:java">
+```java
 import javax.script.*;
 
 public class GroovyScripting {
@@ -30,7 +30,7 @@ public class GroovyScripting {
     System.out.println(bindings.get("counter"));
   }
 }
-</pre>
+```
 
 `counter` and `args` are local variables.
 
@@ -39,7 +39,6 @@ The output is like
     hello
     123
     1
-{:.terminal}
 
 `engine.eval(code)` returns the value which is evaluated at the last of script.
 After the evaluation, you can see local variables thru [Bindings][bindings].
@@ -48,13 +47,13 @@ In this example, the last value is a Map.
 
 Add a next dependency if you use maven.
 
-<pre class="brush:xml">
+```xml
 <dependency>
   <groupId>org.codehaus.groovy</groupId>
   <artifactId>groovy-jsr223</artifactId>
   <version>2.0.0</version>
 </dependency>
-</pre>
+```
 
   [scriptengine]: http://docs.oracle.com/javase/6/docs/api/javax/script/ScriptEngine.html
   [bindings]: http://docs.oracle.com/javase/6/docs/api/javax/script/Bindings.html

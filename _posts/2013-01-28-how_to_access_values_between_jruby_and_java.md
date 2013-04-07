@@ -16,7 +16,7 @@ In JRuby,
 - cannot receive values as command line arguments as ARGV (I'm not sure there is a way)
 - symbol of ruby is represented by org.jruby.RubySymbol, so hard to access a value with it in Java context.
 
-<pre class='brush:java'>
+```java
 import java.util.Map;
 import javax.script.*;
 
@@ -41,7 +41,7 @@ public class JRubyScripting {
 		System.out.println("counter: " + bindings.get("counter"));
 	}
 }
-</pre>
+```
 
 The output is like
 
@@ -50,15 +50,14 @@ The output is like
     a: 123
     b: null
     counter: 3
-{:.terminal}
 
 
 In order to use jruby ScriptEngine, add a next dependency to pom.xml if you use maven.
 
-<pre class='brush:xml'>
+```xml
 <dependency>
   <groupId>org.jruby</groupId>
   <artifactId>jruby-complete</artifactId>
   <version>1.6.5</version>
 </dependency>
-</pre>
+```

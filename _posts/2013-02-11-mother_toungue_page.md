@@ -31,21 +31,21 @@ modified-date: 2013-02-11 17:51:47
 オレオレルールを使って書いている部分がある。
 Hamlのコメントは`-`だけど、`-#`から始まる行はYAML-Front-Matterの行として生成するというルール。
 
-<pre class='brush: ruby'>
+```ruby
 -#layout: default
 -#lang: ja
 %div Hello World
-</pre>
+```
 
 だから上のようなファイルを、次のように変換する。
 
-<pre class='brush: ruby'>
+```ruby
 ---
 layout: default
 lang: ja
 ---
 <div>Hello World</div>
-</pre>
+```
 
 で、ここで定義した`lang`は、`_layouts`以下のレイアウトファイルでは、`page.lang`として参照可能。
 なので、[_layouts/default.html.haml][default]などの中では、それらの値を[Liquidのifタグ][liquid-if]で使って
@@ -54,7 +54,7 @@ lang: ja
   [default]: https://github.com/tmtk75/tmtk75.github.com/blob/master/_layouts/default.html.haml
   [liquid-if]: https://github.com/Shopify/liquid/wiki/Liquid-for-Designers
 
-<pre class='brush: ruby'>
+```ruby
 {% raw %}
 {% if page.lang == 'ja' %}
 %a.brand{href:'/index.ja.html'}{{site.title}}
@@ -62,7 +62,7 @@ lang: ja
 %a.brand{href:'/'}{{site.title}}
 {% endif %}
 {% endraw %}
-</pre>
+```
 
 こんな感じ。
 

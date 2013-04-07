@@ -64,7 +64,6 @@ Replace the path with yours.
 
     chmod 400 ~/Downloads/chefamikey.pem
     ssh -i ~/Downloads/chefamikey.pem ubuntu@ec2-54-248-3-36.ap-northeast-1.compute.amazonaws.com
-{:.terminal}
 
 
 Next, some native libraries are installed.

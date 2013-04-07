@@ -23,7 +23,6 @@ then you alreadly know the filename, you can type as following using git-hub to 
 It's very useful than I expected.
 
     $ git hub blob <part-of-filename>
-{:.terminal}
 
 
 For example, let's play git-hub on [mruby][mruby].
@@ -32,7 +31,6 @@ Install git-hub, that's very easy.
 
     $ git clone git://github.com/tmtk75/git-hub.git ~/.git-hub
     $ PATH=$PATH:~/.git-hub
-{:.terminal}
 
 Clone mruby, open vs2012.rake
 The page is opened with your default browser.
@@ -40,7 +38,6 @@ The page is opened with your default browser.
     $ git clone git://github.com/mruby/mruby.git
     $ cd mruby
     $ git hub blob v22012.rake
-{:.terminal}
 
 If there are many files with same name, how do it work?
 Let's try.
@@ -59,7 +56,6 @@ Let's try.
     please try specifying index to select like
 
     git hub blob README.md:2
-{:.terminal}
 
 git-hub prints all candidates for README.md, and if you want to open 3rd one `doc/mrbgems/README.md`,
 you type as `git hub blob README.md:3`.

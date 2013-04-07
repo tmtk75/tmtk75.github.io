@@ -13,7 +13,6 @@ He uses it because of usage as here document like
     option:
     ...
     doc
-{:.terminal}
 
 
 The colon is a command to do nothing and return exit code zero.

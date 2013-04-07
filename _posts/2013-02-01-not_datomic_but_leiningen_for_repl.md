@@ -18,7 +18,6 @@ The way to install is very easy according to its [README][github].
     $ wget -O ~/bin/lein https://raw.github.com/technomancy/leiningen/stable/bin/lein
     $ chmod +x ~/bin/lein
     $ lein
-{:.terminal}
 
 Just only!
 
@@ -39,7 +38,6 @@ And type to run REPL just like this, `lein repl`.
               (user/clojuredocs name-here)
               (user/clojuredocs "ns-here" "name-here")
     user=> 
-{:.terminal}
 
 In REPL, you can use command-history, line-edit and command-complement.
 Command-complement is not supported in the REPL of datomic.

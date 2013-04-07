@@ -17,7 +17,6 @@ Then, I ran into a next error about importing module.
     Prelude> :m Control.Monad.
     Control.Monad.Fix        Control.Monad.ST       Control.Monad.ST.Lazy.Safe    Control.Monad.ST.Safe    Control.Monad.ST.Unsafe
     Control.Monad.Instances  Control.Monad.ST.Lazy  Control.Monad.ST.Lazy.Unsafe  Control.Monad.ST.Strict  Control.Monad.Zip
-{:.terminal}
 
 At first, I couldn't find `Control.Monad.Writer`.
 But now, I can find it though I'm not sure why it is found.

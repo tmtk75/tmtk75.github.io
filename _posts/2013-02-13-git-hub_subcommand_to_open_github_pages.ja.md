@@ -25,7 +25,6 @@ BTSなんかにピンポイントでコードのある行へのリンクを張�
 思ったよりこれが便利。
 
     $ git hub blob <part-of-filename>
-{:.terminal}
 
 
 例を挙げて説明する。巷で話題の[mruby][mruby]のリポジトリで試してみよう。
@@ -35,7 +34,6 @@ cloneしてPATHを通すだけ。
 
     $ git clone git://github.com/tmtk75/git-hub.git ~/.git-hub
     $ PATH=$PATH:~/.git-hub
-{:.terminal}
 
 <https://raw.github.com/tmtk75/git-hub/master/git-hub>をPATHが通ったところに置くだけでもいい。
 
@@ -45,7 +43,6 @@ cloneしてPATHを通すだけ。
     $ git clone git://github.com/mruby/mruby.git
     $ cd mruby
     $ git hub blob v22012.rake
-{:.terminal}
 
 もし同じ名前のファイルが複数あったらどう動くか？
 やってみよう。
@@ -64,7 +61,6 @@ cloneしてPATHを通すだけ。
     please try specifying index to select like
 
     git hub blob README.md:2
-{:.terminal}
 
 git-hubはREADME.mdとマッチするファイルの候補をすべて列挙する。
 もし3番目の`doc/mrbgems/README.md`を開きたいなら、後ろに`:3`を付けて`git hub blob README.md:3`タイプすればいい。
