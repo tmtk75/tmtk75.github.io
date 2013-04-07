@@ -7,25 +7,25 @@ chef-solo allows overriding attributes at the runtime with `-j` options which is
 
 It usually is used for declaring `run_list` like this.
 
-<pre class="brush: java">
-    {
-      "run_list": ["recipe[java]"]
-    }
-</pre>
+```ruby
+{
+  "run_list": ["recipe[java]"]
+}
+```
 
 Then you can write attributes in same level with `run_list`.
 
-<pre class="brush: java">
-    {
-      "java": {
-        "home": "/usr/local/java"
-      },
-      "run_list": ["recipe[java]"]
-    }
-</pre>
+```ruby
+{
+  "java": {
+    "home": "/usr/local/java"
+  },
+  "run_list": ["recipe[java]"]
+}
+```
 
 It equals following notattion in attributes/default.rb of cookbook of java.
 
-<pre class="brush: ruby">
-    default[:java][:home] = "/usr/local/java"
-</pre>
+```ruby
+default[:java][:home] = "/usr/local/java"
+```

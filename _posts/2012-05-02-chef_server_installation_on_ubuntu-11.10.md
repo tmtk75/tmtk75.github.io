@@ -21,22 +21,23 @@ You can absolutely set up chef-server after this post!
 
 Initially, install ruby1.9
 
-    $ sudo apt-get update
-    $ sudo apt-get install libstdc++6-4.6-dev g++ ruby1.9.2-full
-{:.terminal}
+```bash
+sudo apt-get update
+sudo apt-get install libstdc++6-4.6-dev g++ ruby1.9.2-full
+```
 
 Create two configuration files of chef.
 
 [~/solo.rb](https://gist.github.com/2600816)
 
-<pre class="prettyprint ruby">
+```ruby
 file_cache_path "/tmp/chef-solo"
 cookbook_path "/tmp/chef-solo/cookbooks"
-</pre>
+```
 
 [~/chef.json](https://gist.github.com/2600821)
 
-<pre class="prettyprint json">
+```json
 {
   "chef_server": {
     "server_url": "http://localhost:4040",
@@ -44,28 +45,31 @@ cookbook_path "/tmp/chef-solo/cookbooks"
   },
   "run_list": [ "recipe[chef-server::rubygems-install]" ]
 }
-</pre>
+```
 
 Install chef client, and install chef server using chef-solo.
 
-    $ sudo gem install zliby chef-solr --no-ri --no-rdoc
-    $ sudo chef-solo -c ~/solo.rb -j ~/chef.json -r http://s3.amazonaws.com/chef-solo/bootstrap-latest.tar.gz
-{:.terminal}
+```bash
+sudo gem install zliby chef-solr --no-ri --no-rdoc
+sudo chef-solo -c ~/solo.rb -j ~/chef.json -r http://s3.amazonaws.com/chef-solo/bootstrap-latest.tar.gz
+```
 
 
 Some scripts in /etc/init.d strangely require /usr/bin/chef-* scripts.
 Make symbolic links for them.
 
-    $ sudo ln -sf /usr/local/bin/chef-* /usr/bin
-{:.terminal}
+```bash
+sudo ln -sf /usr/local/bin/chef-* /usr/bin
+```
 
 Start all related services in order.
 
-    $ sudo /etc/init.d/chef-solr start
-    $ sudo /etc/init.d/chef-expander start
-    $ sudo /etc/init.d/chef-server start
-    $ sudo /etc/init.d/chef-server-webui start
-{:.terminal}
+```bash
+sudo /etc/init.d/chef-solr start
+sudo /etc/init.d/chef-expander start
+sudo /etc/init.d/chef-server start
+sudo /etc/init.d/chef-server-webui start
+```
 
 
 Congraturation, you finished installing chef server.
