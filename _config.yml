@@ -2,9 +2,9 @@
 safe: true
 pygments: true
 auto: false
-markdown: kramdown
+markdown: redcarpet
 permalink: date
-exclude: ["Rakefile", "Gemfile", "Gemfile.lock", "index.html.haml"]
+exclude: ["Rakefile"]
 
 ## Site preference
 title: Undefined Title
