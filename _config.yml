@@ -4,7 +4,12 @@ pygments: true
 auto: false
 markdown: redcarpet
 permalink: date
+encoding: utf-8
 exclude: ["Rakefile"]
+
+redcarpet:
+  extensions: ['autolink', 'tables']
+
 
 ## Site preference
 title: Undefined Title
