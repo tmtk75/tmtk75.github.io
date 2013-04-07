@@ -7,7 +7,6 @@ MacOSX 10.8 (or maybe other recent ones) already has apache2.
 You can run it on terminal.
 
     $ sudo apachectl start # or restart
-{:.terminal}
 
 If you enable PHP5, you comment off two lines in `/private/etc/apache2/httpd.conf`.
 They were at 117 and 118 line on my machine.
@@ -20,7 +19,6 @@ To test if it works, create a simple .php one.
     $ sudo touch /Library/WebServer/Document/hello.php
     $ sudo chmod 777 /Library/WebServer/Document/hello.php
     $ echo '<?php echo "Hello World"?>' /Library/WebServer/Document/hello.php
-{:.terminal}
 
 After then, please restart apache2 and access to <http://localhost/hello.php>.
 

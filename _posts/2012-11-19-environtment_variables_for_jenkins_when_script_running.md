@@ -12,21 +12,21 @@ Then you can use some [environment variables][envvars].
 
 For example, `$BUILD_NUMBER` provides the number of build and `$WORKSPACE` gives the workspace directory of the job.
 
-<pre class="brush: bash">
-    suffix=$BUILD_NUMBER
-    [[ -z "$BUILD_NUMBER" ]] && suffix=`date +%Y%m%d-%H%M%S`
+```bash
+suffix=$BUILD_NUMBER
+[[ -z "$BUILD_NUMBER" ]] && suffix=`date +%Y%m%d-%H%M%S`
 
-    do_sth() {
-      # DO SOMETHING
-      echo "..."
-    }
-    if ! do_sth; then
-      exit 1
-    fi
+do_sth() {
+  # DO SOMETHING
+  echo "..."
+}
+if ! do_sth; then
+  exit 1
+fi
 
-    cd "$WORKSPACE"
-    mkdir sth-$suffix
-</pre>
+cd "$WORKSPACE"
+mkdir sth-$suffix
+```
 
 If this script runs on a jenkins job, it creates a directory with each build number in the workspace every build,
 otherwise it creates a directory with timestamp in $HOME.

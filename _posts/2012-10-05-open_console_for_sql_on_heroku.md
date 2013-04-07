@@ -7,4 +7,3 @@ Use heroku-sql-console.
 
     $ heroku plugins:install git://github.com/ddollar/heroku-sql-console.git
     $ heroku sql [--app APPLICATION_NAME]
-{:.terminal}

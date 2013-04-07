@@ -23,7 +23,6 @@ installation
     $ rpm -ql postgresql90-server | grep pg_ctl
     /usr/pgsql-9.0/bin/pg_ctl
     ...
-{:.terminal}
 
 
 initialization
@@ -44,7 +43,6 @@ create a directory to store data.
         /usr/pgsql-9.0/bin/postgres -D /usr/pgsql-9.0/db
     or
         /usr/pgsql-9.0/bin/pg_ctl -D /usr/pgsql-9.0/db -l logfile start
-{:.terminal}
 
 
 create database
@@ -58,12 +56,9 @@ Let's say your account is `jenny` and the database name is `slake`.
     $ echo 'create user jenny' | pg
     $ echo 'grant all on database slake to public' | pg
     $ cat /usr/pgsql-9.0/share/contrib/hstore.sql | pg slake
-{:.terminal}
 
 `cd /tmp` in the first line is a workaround to avoid a postgresql's glitch about permission.
 
 Now you can login like this.
 
     $ psql -h localhost -U jenny slake
-{:.terminal}
-

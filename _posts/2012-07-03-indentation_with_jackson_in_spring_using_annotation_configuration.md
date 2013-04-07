@@ -8,7 +8,7 @@ Here is a way to use it on springframework.
 
 A keen colleague who is special familiar with spring tought me this =)
 
-<pre class="brush: java">
+```java
 @Configuration
 public class ObjectMapperConfiguration {
     @Provider
@@ -28,4 +28,4 @@ public class ObjectMapperConfiguration {
         return new ConfiguredJacksonJsonProvider();
     }
 }
-</pre>
+```

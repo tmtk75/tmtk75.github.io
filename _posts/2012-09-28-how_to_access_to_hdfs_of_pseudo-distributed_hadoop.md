@@ -15,14 +15,14 @@ with IP address to be accessible from another host.
 Let's say IP address of your host hadoop running is 192.168.10.20,
 you rewrite the value of fs.default.name as following.
 
-<pre class="brush: xml">
+```xml
 <configuration>
   <property>
     <name>fs.default.name</name>
     <value>hdfs://192.168.10.20:9000</value>
   </property>
 </configuration>
-</pre>
+```
 
 That's all for the host.
 
@@ -31,4 +31,3 @@ After then, you can run hadoop command on your local machine. (Don't forget conf
 
     $ hadoop fs -lsr hdfs://192.168.10.20:9000/
     drwxrwxrwx   - hadoop supergroup          0 2012-09-28 16:32 /user
-{:.terminal}

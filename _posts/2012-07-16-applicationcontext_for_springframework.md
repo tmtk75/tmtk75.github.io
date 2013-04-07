@@ -8,7 +8,7 @@ but you may sometimes want other ApplicationContext for test cases.
 
 Then you can use @ContextConfiguration with ContextLoader.
 
-<pre class="brush:java">
+```java
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(loader=Conf.class)
 public class SomethingTest {
@@ -46,5 +46,4 @@ public class SomethingTest {
     }
   }
 }
-</pre>
-
+```

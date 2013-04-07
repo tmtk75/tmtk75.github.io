@@ -8,7 +8,7 @@ but can't use it in providers and definitions as is.
 
 In the case, you can use `run_context`.
 
-<pre class="brush:ruby">
+```ruby
 action :an_action do
   ## invoke "maven" recipe if mvn command missing.
   unless ::File.exists? "#{ENV['M2_HOME']}/bin/mvn"
@@ -17,7 +17,7 @@ action :an_action do
   
   ## processes using maven
   ## ...
-</pre>
+```
 
 I think this is not official interface though working on chef-10.16.2.
 

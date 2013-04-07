@@ -6,7 +6,7 @@ creation-date: 2012-08-29  8:52:13
 It's frequent process downloading a tarball from somewhere and extracting it.
 Here is a definition of chef to do it.
 
-<pre class="brush: ruby">
+```ruby
 define :install_tarball do
 
   url = params[:name]
@@ -24,7 +24,7 @@ define :install_tarball do
   end
 
 end
-</pre>
+```
 
 Put this under your cookbook as like tomcat/definitions/install_tarball.rb.
 

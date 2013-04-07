@@ -5,7 +5,7 @@ creation-date: 2012-08-08 10:50:54
 ---
 It's using two plugins, jar and shade.
 
-<pre class="brush:xml">
+```xml
 <plugin>
   <groupId>org.apache.maven.plugins</groupId>
     <artifactId>maven-jar-plugin</artifactId>
@@ -31,13 +31,13 @@ It's using two plugins, jar and shade.
     </execution>
   </executions>
 </plugin>
-</pre>
+```
 
 And then just type such as
 
-<pre class="terminal">
-$ mvn package
-$ java -jar target/your-artifactId-version.jar
-</pre>
+```bash
+mvn package
+java -jar target/your-artifactId-version.jar
+```
 
 What a simple way :)

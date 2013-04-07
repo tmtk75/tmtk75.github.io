@@ -11,6 +11,7 @@ Now it supports only MacOS X because of using "open" command.
 
 <https://github.com/tmtk75/git-hub>
 
+```bash
     usage: git hub [command] [args]
 
       git extension for github to open page
@@ -49,4 +50,4 @@ Now it supports only MacOS X because of using "open" command.
 
       graphs:                                        network:
         git hub graphs                                 git hub network
-{:.terminal}
+```

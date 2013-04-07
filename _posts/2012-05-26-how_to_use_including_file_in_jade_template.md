@@ -8,9 +8,11 @@ If we want to embed an external file in markdown, we cannot.
 
 Then, it's happy to define utility function in app.js, and you can pass it like this.
 
-    utils =
-      markdown: (path)-> require("markdown-js").parse fs.readFileSync(path).toString()
-    app.get "/", (req, res)-> res.render 'index', utils
+```coffeescript
+utils =
+  markdown: (path)-> require("markdown-js").parse fs.readFileSync(path).toString()
+app.get "/", (req, res)-> res.render 'index', utils
+```
 
 And use it in template.
 

@@ -7,21 +7,23 @@ I think js-yaml is a good library for loading YAML in Node.js
 
 <https://github.com/nodeca/js-yaml>
 
-<pre class="terminal">
-$ npm install js-yaml
-</pre>
+```bash
+npm install js-yaml
+```
 
 Let's say your yaml file is as "your.yml",
 
-    greeting: hello!
-    year: 2012
+```yaml
+greeting: hello!
+year: 2012
+```
 
 In your .js code,
 
-<pre class="brush:js">
+```javascript
 var yaml = require("js-yaml");
 var fs = require("fs");
 var e = yaml.load(fs.readFileSync("your.yml"));
 console.log(e.greeting);
 console.log(e.year);
-</pre>
+```

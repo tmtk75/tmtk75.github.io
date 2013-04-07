@@ -6,29 +6,29 @@ creation-date: 2012-07-03 10:30:21
 Make an visitor interface for an type, Entity.
 It has two generics types for return-type and optional parameter type.
 
-<pre class="brush:java">
+```java
 interface EntityVisitor<T, K> {
     T visit(Entity unknown, K args);
     T visit(LongEntity source, K args);
     T visit(StringEntity source, K args);
 }
-</pre>
+```
 
 Let's say Entity is like this which has accept.
 Its signature is something a bit complicated because of two generics types.
 
-<pre class="brush:java">
+```java
 abstract class Entity {
     public <T, K> T accept(EntityVisitor<T, K> visitor, K args) {
         return visitor.visit(this, args);
     }
 }
-</pre>
+```
 
 Entity's sub classes are like this. Make sure overriding accept method =)
 It's important to dispatch.
 
-<pre class="brush:java">
+```
 abstract class LongEntity extends Entity {
     Long value;  // snip constructor
     public <T, K> T accept(EntityVisitor<T, K> visitor, K args) {
@@ -42,12 +42,12 @@ abstract class StringEntity extends Entity {
         return visitor.visit(this, args);
     }
 }
-</pre>
+```
 
 And create a concrete visitor.
 It's like adding a new polymorphic method to Entity.
 
-<pre class="brush:java">
+```java
 class Stringify implements EntityVisitor<String, Integer> {
     public String visit(Entity unknown, Integer args) {
         throw new IllegalStateException("unknown: " + unknown + " args:" + args);
@@ -65,13 +65,12 @@ class Stringify implements EntityVisitor<String, Integer> {
         System.out.println(new Stringify().visit(b, 87));
     }
 }
-</pre>
+```
 
 Here is the result of execution.
 
-<pre class="terminal">
+```bash
 $ java Stringify
 Long:123 with 3
 String:123 with 87
-</pre>
-
+```

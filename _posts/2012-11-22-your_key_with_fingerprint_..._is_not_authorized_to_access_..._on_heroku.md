@@ -13,7 +13,6 @@ If you use multiple accounts of heroku, you may run into next error.
 
      Please make sure you have the correct access rights
      and the repository exists.
-{:.terminal}
 
 It's a bit troublesome to use multiple accounts of heroku.
 
@@ -26,7 +25,6 @@ To avoid, follow the next instruction.
     Password (typing will be hidden): 
     $ ssh-add ~/.ssh/id_rsa4heroku
     $ git fetch
-{:.terminal}
 
 The summary of steps:
 
@@ -40,25 +38,20 @@ Actually, if you already added another private key except for the new one, it do
     $ ssh-add -l
     2048 7f:86:6a:f7:3c:da:86:47:bb:69:22:dc:1b:5b:7b:ba /Users/you/.ssh/id_rsa (RSA)
     2048 7f:86:6a:f7:3c:da:86:47:bb:69:22:dc:1b:5b:7b:ba /Users/you/.ssh/id_rsa4heroku (RSA)
-{:.terminal}
 
 In the case, you can unregister id_rsa for now like:
 
     $ ssh-add -d
     Identity removed: /Users/you/.ssh/id_rsa ( you@yourcomputer)
-{:.terminal}
 
 After then, try fetch again. It will be successful.
 
     $ git fetch
-{:.terminal}
 
 And also if succeeded, restore the key.
 
     $ ssh-add
     Identity added: /Users/you/.ssh/id_rsa (/Users/you/.ssh/id_rsa)
-{:.terminal}
-
 
 I hope heroku officially supports multi-accounts :-)
 
