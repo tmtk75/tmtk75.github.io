@@ -15,8 +15,8 @@ iOS勉強中です。
 
 `Visible at Launch`をONにして、UIWindowのサブクラスをCustom ClassにInterface Builderで指定してmotionBeganを定義するとシェイクとかで呼ばれた。
 
-<pre class="brush: js">
+```objective-c
 -(void)motionBegan:(UIEventSubtype)motion withEvent:(UIEvent *)event
-</pre>
+```
 
 いやー、地道にやってくしかねーなー。

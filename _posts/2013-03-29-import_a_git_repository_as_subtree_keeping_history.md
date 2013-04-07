@@ -23,4 +23,3 @@ you follows next.
     git read-tree --prefix=doc -u man/master
     git pull -s subtree man master
     git ci -m "import manual.git"
-{:.terminal}

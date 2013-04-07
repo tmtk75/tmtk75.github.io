@@ -20,11 +20,11 @@ The following is a prototyping for rendering and DSL.
 @controller "Server" :-> @entity "Database"
 </script>
 
-<pre class="brush:js">
+```coffeescript
 @actor "User" :-> @view "Browser"
 @view "Browser" :-> @controller "Server"
 @controller "Server" :-> @entity "Database"
-</pre>
+```
 
 Actually, I'm considering about:
 

@@ -32,19 +32,19 @@ LTSVについては、[ここ](http://d.hatena.ne.jp/naoya/20130207)が面白い
 Tomcatでは`server.xml`の`Value`要素でアクセスログのパターンを定義することができます。
 詳しくはオフィシャルを見てください。<http://tomcat.apache.org/tomcat-7.0-doc/config/valve.html#Access_Log_Valve>.
 
-<pre class="brush: xml">
+```xml
 <&#86;alve className="org.apache.catalina.valves.AccessLogValve"
   directory="logs" prefix="access" suffix=".log"
   pattern="%h %l %u %t %r %s %b %D %I" resolveHosts="false"/>
-</pre>
+```
 
 ここでアクセスログのパターンを`pattern`属性に書く必要があるのですが、XMLゆえにちょっとした規則があります。
 まあそういうめんどくさい規則うんぬんはおいといて、LTSVのためにタブを属性値に含めるには実体参照`&#9;`を使います。
 
-<pre class="brush: xml">
+```xml
 <&#86;alve ...
   pattern="host:%h&amp;#9;ident:%l&amp;#9;user:%u" />
-</pre>
+```
 
 上のように書くと、アクセスログにTABが出力できます。
 

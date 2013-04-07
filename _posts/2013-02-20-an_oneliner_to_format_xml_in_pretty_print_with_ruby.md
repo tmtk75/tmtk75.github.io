@@ -8,4 +8,3 @@ modified-date: 2013-02-20 18:25:28 +0900
 ---
 
     ruby -e 'require "rexml/document";d=REXML::Document.new($stdin.read);d.write(s="",2);puts s'
-{:.terminal}

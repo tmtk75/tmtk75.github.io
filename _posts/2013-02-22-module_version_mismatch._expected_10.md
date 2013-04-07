@@ -17,7 +17,6 @@ On 0.8.20, it didn't work.
 If you use nvm, change the version.
 
     $ nvm use 0.8.16
-{:.terminal}
 
 
 Actually, I tried to correct and checked versions about 
@@ -25,7 +24,6 @@ node-sqlite3 installed by npm and sqlite3 installed by MacPorts.
 
     foobar@0.1.0 /Users/mydirectory/myproject
     └── sqlite3@2.1.5 
-{:.terminal}
 
 node-sqlite3 was 2.1.5.
 
@@ -35,7 +33,6 @@ node-sqlite3 was 2.1.5.
     --->      sqlite3 @3.7.15_0
     --->      sqlite3 @3.7.15.2_0 (active)
     Error: port activate failed: Registry error: Please specify the full version as recorded in the port registry.
-{:.terminal}
 
 sqlite3 was active as 3.7.15.2.
 

@@ -8,7 +8,7 @@ modified-date: 2013-03-09 19:47:07 +0900
 ---
 I ran into a problem jekyll didn't start like this.
 
-<textarea class='terminal' wrap='off' rows='20' readonly='true'>
+```
 $ jekyll --server --auto
 Configuration from /Users/tsakuma/Documents/workspace/blog/_config.yml
 Unable to load the EventMachine C extension; To use the pure-ruby reactor, require 'em/pure_ruby'
@@ -32,7 +32,7 @@ Auto-regenerating enabled: /Users/tsakuma/Documents/workspace/blog -> /Users/tsa
         from /Users/tsakuma/.rvm/gems/ruby-1.9.3-p327/bin/jekyll:19:in `<main>'
         from /Users/tsakuma/.rvm/gems/ruby-1.9.3-p327/bin/ruby_noexec_wrapper:14:in `eval'
         from /Users/tsakuma/.rvm/gems/ruby-1.9.3-p327/bin/ruby_noexec_wrapper:14:in `<main>'
-</textarea>
+```
 
 Yes, actually I removed `/opt/local/lib/libcrypto.1.0.0.dylib` in order to move 
 the package manager from MacPorts to [homebrew][brew].
@@ -42,7 +42,6 @@ the package manager from MacPorts to [homebrew][brew].
 To get recover, I tried to reinstall ruby with rvm.
 
     rvm reinstall ruby-1.9.3
-{:.terminal}
 
 Then `1.9.3-p392` was installed although I had used `1.9.3-p327`.
 I installed `jekyll` with 1.9.3-p392 and it was succeeded,
@@ -50,6 +49,5 @@ and reconfigure using p327.
 
     rvm 1.9.3-p392 do gem install jekyll --no-ri --no-rdoc
     rvm use 1.9.3-p327
-{:.terminal}
 
 So `jekyll --server --auto` got recovered.

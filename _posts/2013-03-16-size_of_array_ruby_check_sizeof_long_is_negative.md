@@ -9,7 +9,6 @@ modified-date: 2013-03-16 08:31:28 +0900
 When you install `mysql2` with gem, if you ran into a weird issue such as `error: size of array ‘ruby_check_sizeof_long’ is negative`,
 it must be caused by the arch of mysql binary you installed.
 
-<pre class="brush: bash">
     ERROR:  Error installing mysql2:
             ERROR: Failed to build gem native extension.
 
@@ -40,7 +39,6 @@ it must be caused by the arch of mysql binary you installed.
 
     Gem files will remain installed in /Users/tsakuma/.rvm/gems/ruby-1.9.3-p327/gems/mysql2-0.3.11 for inspection.
     Results logged to /Users/tsakuma/.rvm/gems/ruby-1.9.3-p327/gems/mysql2-0.3.11/ext/mysql2/gem_make.out
-</pre>
 
 Download a new archive from [the download page](http://www.mysql.com/downloads/mysql/).
 
@@ -53,7 +51,6 @@ So you start installing again like:
     gem install mysql2 --no-ri --no-rdoc -- --with-mysql-config=$YOUR_MYSQL_HOME/bin/mysql_config
     Successfully installed mysql2-0.3.11
     1 gem installed
-{:.terminal}
 
 
 [The answer on the Stack Overflow](http://stackoverflow.com/questions/5229907/mysql2-ruby-gem-will-not-install-10-6) was helpful for me.

@@ -19,13 +19,11 @@ It's the time I cloned the repository and ran `npm install`.
     npm ERR! System Darwin 12.2.0
     npm ERR! command "/Users/tsakuma/.nvm/v0.9.4/bin/node" "/Users/tsakuma/.nvm/v0.9.4/bin/npm" "install"
     ... to be continued long
-{:.terminal}
 
 I say the conclusion first of all.  
 Try to remove your ~/.npm if no problem for you.
 
     rm -rm ~/.npm    
-{:.terminal}
 
 And then try `npm install` again.  
 In case of me, it worked well though I didn't know the root cause.

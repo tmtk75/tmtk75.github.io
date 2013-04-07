@@ -23,7 +23,7 @@ gruntからjasmine-nodeを起動するpluginを書いてみた。ただオプシ
 
 こんなコマンドをGRUNTから叩くには、次のように定義してやる。
 
-<pre class="brush:js">
+```javascript
 grunt.initConfig({
   "jasmine-node": {
     options: {
@@ -37,12 +37,11 @@ grunt.initConfig({
     }
   }
 })
-</pre>
+```
 
 GRUNTのコマンドは次のようになる。
 
     $ grunt jsamine-node
-{:.terminal}
 
 
 `--coffee`オプションしかサポートしてないので、誰か追加してください :)
