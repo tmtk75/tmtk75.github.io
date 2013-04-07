@@ -21,6 +21,16 @@ EOF
   system "#{ENV['EDITOR']} #{path}"
 end
 
+desc "compile *.styl"
+task :stylus do
+  require "stylus"
+  Dir.glob("assets/css/*.styl").each {|path|
+    basename = (File.basename path, ".styl")
+    dirname = (File.dirname path)
+    open("#{dirname}/#{basename}.css", "w") {|f| f << Stylus.compile(File.new(path))}
+  }
+end
+
 desc "make tags"
 task :tags do |t, args|
   #!/usr/bin/env ruby
