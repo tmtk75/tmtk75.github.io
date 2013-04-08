@@ -14,6 +14,7 @@ The following is a prototyping for rendering and DSL.
 <script src='http://code.jquery.com/jquery-1.9.1.min.js'></script>
 <script src='http://coffeescript.org/extras/coffee-script.js'></script>
 <script type="text/javascript" src='https://jumly.herokuapp.com/release/jumly.min.js'></script>
+
 <script type="text/jumly+robustness">
 @actor "User" :-> @view "Browser"
 @view "Browser" :-> @controller "Server"
