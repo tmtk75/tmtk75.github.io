@@ -12,9 +12,13 @@ It was occurred that the clock of local machine was very late.
 
 I updated the time with ntpdate.
 
-    $ sudo /usr/sbin/ntpdate 210.173.160.27
-    29 Jan 14:28:41 ntpdate[32495]: step time server 210.173.160.27 offset -929.483212 sec
+```bash
+$ sudo /usr/sbin/ntpdate 210.173.160.27
+29 Jan 14:28:41 ntpdate[32495]: step time server 210.173.160.27 offset -929.483212 sec
+```
 
 If you don't have ntpdate, you can install with yum.
 
-    $ sudo yum install -y ntp
+```bash
+$ sudo yum install -y ntp
+```

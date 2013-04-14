@@ -12,11 +12,13 @@ The reason was the difference jQuery.css returns value for "left" of div applied
 
 At following case, WebKit returns "auto", but Gecko returns "0px".
 
-    div = $("<div>").css({position:"relative"});
-    parent = $("<div>").css({position:"relative"});
-    parent.append(div);
-    $("body").append(parent);
-    console.log(div.css("left"));
+```javascript
+var div = $("<div>").css({position:"relative"});
+var parent = $("<div>").css({position:"relative"});
+parent.append(div);
+$("body").append(parent);
+console.log(div.css("left"));
+```
 
 About a node which position is "relative",
 when it is in another node which position is "relative",

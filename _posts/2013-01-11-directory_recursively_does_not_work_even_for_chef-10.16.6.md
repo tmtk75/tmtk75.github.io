@@ -21,7 +21,7 @@ I've expected the `directory` resource of chef works such that.
 
 For example, if foobar directory doesn't exist, it creates 12345-abc.
 
-```
+```ruby
 directory "/tmp/foobar/12345-abc" do
   recursive true
 end
@@ -32,7 +32,7 @@ It seems recursive option works for only deleting.
 
 Instead of it, I used raw-ruby code like:
 
-```
+```ruby
 require "fileutils"
 ::FileUtils.mkdir_p "/tmp/foobar/12345-abc"
 ```

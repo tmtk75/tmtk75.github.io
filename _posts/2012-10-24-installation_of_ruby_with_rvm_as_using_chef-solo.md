@@ -8,18 +8,25 @@ I'll memorize it.
 
 As <https://rvm.io/rvm/install/>, but without `--ruby`
 
-    $ \curl -L https://get.rvm.io | bash -s stable
-    $ source ~/.rvm/scripts/rvm
+```bash
+$ \curl -L https://get.rvm.io | bash -s stable
+$ source ~/.rvm/scripts/rvm
+```
 
 Install required libraries
 
-    $ for e in readline iconv curl openssl zlib autoconf ncurses pkgconfig gettext glib mono llvm libxml2 libxslt libyaml; do rvm pkg install $e; done
+```bash
+$ for e in readline iconv curl openssl zlib autoconf ncurses pkgconfig gettext glib mono llvm libxml2 libxslt libyaml; do rvm pkg install $e; done
+```
 
 Install a version of ruby
 
-    $ rvm install 1.9.3 --with-openssl-dir=$HOME/.rvm/usr
+```bash
+$ rvm install 1.9.3 --with-openssl-dir=$HOME/.rvm/usr
+```
 
 Install chef with gem
 
-    $ gem install --no-ri --no-rdoc chef
-
+```bash
+$ gem install --no-ri --no-rdoc chef
+```

@@ -15,15 +15,20 @@ especially for illustrate and describe, we can't concentrate on the output due t
 
 In order to suppress the message, set an option when launching of pig console.
 
-    pig -4 nolog.conf
+```bash
+pig -4 nolog.conf
+```
 
 nolog.conf is very simple which is one line.
 
-    log4j.rootLogger=fatal
-
+```
+log4j.rootLogger=fatal
+```
 
 P.S. at Feb 19, 2013
 
 You can create it like this.
 
-    $ echo "log4j.rootLogger=fatal" > nolog.conf
+```bash
+$ echo "log4j.rootLogger=fatal" > nolog.conf
+```

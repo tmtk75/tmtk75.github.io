@@ -24,16 +24,19 @@ BTSなんかにピンポイントでコードのある行へのリンクを張�
 次のようにタイプすればそのページをブラウザが開く。
 思ったよりこれが便利。
 
-    $ git hub blob <part-of-filename>
-
+```bash
+$ git hub blob <part-of-filename>
+```
 
 例を挙げて説明する。巷で話題の[mruby][mruby]のリポジトリで試してみよう。
 
 git-hubをインストールするのは非常に簡単。
 cloneしてPATHを通すだけ。
 
-    $ git clone git://github.com/tmtk75/git-hub.git ~/.git-hub
-    $ PATH=$PATH:~/.git-hub
+```bash
+$ git clone git://github.com/tmtk75/git-hub.git ~/.git-hub
+$ PATH=$PATH:~/.git-hub
+```
 
 <https://raw.github.com/tmtk75/git-hub/master/git-hub>をPATHが通ったところに置くだけでもいい。
 

@@ -5,26 +5,30 @@ creation-date: 2012-11-22 12:09:56
 ---
 If you use multiple accounts of heroku, you may run into next error.
 
-     $ git fetch 
+```bash
+$ git fetch 
 
-     !  Your key with fingerprint 90:a4:b1:c6:ba:51:da:f0:62:8d:c9:60:2c:c1:d1:54 is not authorized to access northen-sea-7865.
+!  Your key with fingerprint 90:a4:b1:c6:ba:51:da:f0:62:8d:c9:60:2c:c1:d1:54 is not authorized to access northen-sea-7865.
 
-     fatal: Could not read from remote repository.
+fatal: Could not read from remote repository.
 
-     Please make sure you have the correct access rights
-     and the repository exists.
+Please make sure you have the correct access rights
+and the repository exists.
+```
 
 It's a bit troublesome to use multiple accounts of heroku.
 
 To avoid, follow the next instruction.
 
-    $ ssh-keygen -t rsa -f ~/.ssh/id_rsa4heroku -N ""
-    $ heroku keys:add ~/.ssh/id_rsa4heroku.pub
-    Enter your Heroku credentials.
-    Email: your-account@example.com
-    Password (typing will be hidden): 
-    $ ssh-add ~/.ssh/id_rsa4heroku
-    $ git fetch
+```bash
+$ ssh-keygen -t rsa -f ~/.ssh/id_rsa4heroku -N ""
+$ heroku keys:add ~/.ssh/id_rsa4heroku.pub
+Enter your Heroku credentials.
+Email: your-account@example.com
+Password (typing will be hidden): 
+$ ssh-add ~/.ssh/id_rsa4heroku
+$ git fetch
+```
 
 The summary of steps:
 
@@ -35,23 +39,31 @@ The summary of steps:
 
 Actually, if you already added another private key except for the new one, it doesn't work properly.
 
-    $ ssh-add -l
-    2048 7f:86:6a:f7:3c:da:86:47:bb:69:22:dc:1b:5b:7b:ba /Users/you/.ssh/id_rsa (RSA)
-    2048 7f:86:6a:f7:3c:da:86:47:bb:69:22:dc:1b:5b:7b:ba /Users/you/.ssh/id_rsa4heroku (RSA)
+```bash
+$ ssh-add -l
+2048 7f:86:6a:f7:3c:da:86:47:bb:69:22:dc:1b:5b:7b:ba /Users/you/.ssh/id_rsa (RSA)
+2048 7f:86:6a:f7:3c:da:86:47:bb:69:22:dc:1b:5b:7b:ba /Users/you/.ssh/id_rsa4heroku (RSA)
+```
 
 In the case, you can unregister id_rsa for now like:
 
-    $ ssh-add -d
-    Identity removed: /Users/you/.ssh/id_rsa ( you@yourcomputer)
+```bash
+$ ssh-add -d
+Identity removed: /Users/you/.ssh/id_rsa ( you@yourcomputer)
+```
 
 After then, try fetch again. It will be successful.
 
-    $ git fetch
+```bash
+$ git fetch
+```
 
 And also if succeeded, restore the key.
 
-    $ ssh-add
-    Identity added: /Users/you/.ssh/id_rsa (/Users/you/.ssh/id_rsa)
+```bash
+$ ssh-add
+Identity added: /Users/you/.ssh/id_rsa (/Users/you/.ssh/id_rsa)
+```
 
 I hope heroku officially supports multi-accounts :-)
 

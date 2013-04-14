@@ -8,6 +8,8 @@ but Ruby aws-sdk 1.6.5 doesn't support those regions.
 
 Here is a workaround in case of Japan region.
 
-    AWS::Core::Configuration.module_eval do
-      add_service 'EMR', 'emr', 'ap-northeast-1.elasticmapreduce.amazonaws.com'
-    end
+```ruby
+AWS::Core::Configuration.module_eval do
+  add_service 'EMR', 'emr', 'ap-northeast-1.elasticmapreduce.amazonaws.com'
+end
+```

@@ -28,7 +28,7 @@ abstract class Entity {
 Entity's sub classes are like this. Make sure overriding accept method =)
 It's important to dispatch.
 
-```
+```java
 abstract class LongEntity extends Entity {
     Long value;  // snip constructor
     public <T, K> T accept(EntityVisitor<T, K> visitor, K args) {

@@ -21,14 +21,15 @@ So I downloaded [0.12.2][tgz] from [here][here] and tried to bulid as the [build
   [building-it]: https://github.com/robey/kestrel#building-it
 
 
-    $ git clone git://github.com/robey/kestrel.git
-    $ cd kestrel
-    $ sbt clean update package-dist
-
+```bash
+$ git clone git://github.com/robey/kestrel.git
+$ cd kestrel
+$ sbt clean update package-dist
+```
 
 I failed to build due to a following dependency error.
 
-<textarea class='terminal' wrap='off' rows='23' style='' readonly='true'>
+```
 ...
 [info] Resolving org.scala-sbt#precompiled-2_8_2;0.12.0 ...
 [info] Resolving org.scala-sbt#precompiled-2_10_0-m4;0.12.0 ...
@@ -53,7 +54,7 @@ unresolved dependency: com.twitter#sbt11-scrooge;3.0.0: not found
 [error] (*:update) sbt.ResolveException: unresolved dependency: com.twitter#sbt-package-dist;1.0.6: not found
 [error] unresolved dependency: com.twitter#sbt11-scrooge;3.0.0: not found
 Project loading failed: (r)etry, (q)uit, (l)ast, or (i)gnore? 
-</textarea>
+```
 
 As [the section][building-it] saying, we have to use sbt 0.11.2 to build.
 
@@ -63,7 +64,9 @@ Kestrel requires java 6 and sbt 0.11.2. Presently some sbt plugins used by kestr
 
 On sbt, you can put a `build.properties` in `project` directory in order to use the specific version of sbt.
 
-    echo "sbt.version=0.11.2" > proejct/build.properties
+```bash
+echo "sbt.version=0.11.2" > proejct/build.properties
+```
 
 Then I tried to build again, so it was succeeded and dist directory is generated in kestrel.
 

@@ -13,31 +13,35 @@ It's a build & package manager like maven of Java.
 
 The way to install is very easy according to its [README][github].
 
-    $ mkdir -p ~/bin
-    $ PATH=$PATH:~/bin
-    $ wget -O ~/bin/lein https://raw.github.com/technomancy/leiningen/stable/bin/lein
-    $ chmod +x ~/bin/lein
-    $ lein
+```bash
+$ mkdir -p ~/bin
+$ PATH=$PATH:~/bin
+$ wget -O ~/bin/lein https://raw.github.com/technomancy/leiningen/stable/bin/lein
+$ chmod +x ~/bin/lein
+$ lein
+```
 
 Just only!
 
 And type to run REPL just like this, `lein repl`.
 
-    $ lein repl
-    nREPL server started on port 51856
-    REPL-y 0.1.9
-    Clojure 1.4.0
-        Exit: Control+D or (exit) or (quit)
-    Commands: (user/help)
-        Docs: (doc function-name-here)
-              (find-doc "part-of-name-here")
-      Source: (source function-name-here)
-              (user/sourcery function-name-here)
-     Javadoc: (javadoc java-object-or-class-here)
-    Examples from clojuredocs.org: [clojuredocs or cdoc]
-              (user/clojuredocs name-here)
-              (user/clojuredocs "ns-here" "name-here")
-    user=> 
+```
+$ lein repl
+nREPL server started on port 51856
+REPL-y 0.1.9
+Clojure 1.4.0
+    Exit: Control+D or (exit) or (quit)
+Commands: (user/help)
+    Docs: (doc function-name-here)
+          (find-doc "part-of-name-here")
+  Source: (source function-name-here)
+          (user/sourcery function-name-here)
+ Javadoc: (javadoc java-object-or-class-here)
+Examples from clojuredocs.org: [clojuredocs or cdoc]
+          (user/clojuredocs name-here)
+          (user/clojuredocs "ns-here" "name-here")
+user=> 
+```
 
 In REPL, you can use command-history, line-edit and command-complement.
 Command-complement is not supported in the REPL of datomic.

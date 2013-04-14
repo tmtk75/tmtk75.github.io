@@ -6,7 +6,7 @@ creation-date: 2013-01-10  8:36:08
 ---
 I encountered a NullPointerException when using hive-0.8.1 on local like:
 
-<textarea class='terminal' wrap='off' rows='20' readonly='true'>
+```bash
 $ hive -f count.distinct.person.q
 Logging initialized using configuration in jar:file:/home/foobarsen/usr/hive-0.8.1/lib/hive-common-0.8.1.jar!/hive-log4j.properties
 Hive history file=/tmp/foobarsen/hive_job_log_foobarsen_201301091402_904175264.txt
@@ -27,17 +27,20 @@ java.lang.NullPointerException
         at org.apache.hadoop.hive.ql.lib.DefaultRuleDispatcher.dispatch(DefaultRuleDispatcher.java:89)
         at org.apache.hadoop.hive.ql.lib.DefaultGraphWalker.dispatch(DefaultGraphWalker.java:88)
         ... (snip)
-</textarea>
+```
 
 
 As a result I tried to fix, it was occurred by the place of distinct.
 At first, I wrote like this:
 
-    SELECT distinct count(id) FROM person;
+```sql
+SELECT distinct count(id) FROM person;
+```
 
 Actuall, it was wrong. The next is right.
 
-    SELECT count(distinct id) FROM person;
-
+```sql
+SELECT count(distinct id) FROM person;
+```
 
 I'm not sure the latest hive already has been fixed...

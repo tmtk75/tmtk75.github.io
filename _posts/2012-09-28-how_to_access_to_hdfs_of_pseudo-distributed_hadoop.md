@@ -29,5 +29,7 @@ That's all for the host.
 
 After then, you can run hadoop command on your local machine. (Don't forget configuration of your local machine)
 
-    $ hadoop fs -lsr hdfs://192.168.10.20:9000/
-    drwxrwxrwx   - hadoop supergroup          0 2012-09-28 16:32 /user
+```bash
+$ hadoop fs -lsr hdfs://192.168.10.20:9000/
+drwxrwxrwx   - hadoop supergroup          0 2012-09-28 16:32 /user
+```

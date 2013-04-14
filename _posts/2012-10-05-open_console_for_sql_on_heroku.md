@@ -5,5 +5,7 @@ creation-date: 2012-10-05 11:45:54
 ---
 Use heroku-sql-console.
 
-    $ heroku plugins:install git://github.com/ddollar/heroku-sql-console.git
-    $ heroku sql [--app APPLICATION_NAME]
+```bash
+$ heroku plugins:install git://github.com/ddollar/heroku-sql-console.git
+$ heroku sql [--app APPLICATION_NAME]
+```

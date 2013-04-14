@@ -32,5 +32,6 @@ Then, if you can put the next resource in your recipe,
 apache-tomcat-x.x.x will be extracted in node.home.
 (It assumes node.home and node.tomcat.releases.latest, which is URL, are defined)
 
-    install_tarball node.tomcat.releases.latest
-
+```ruby
+install_tarball node.tomcat.releases.latest
+```
