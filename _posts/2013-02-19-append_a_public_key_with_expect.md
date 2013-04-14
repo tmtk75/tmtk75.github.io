@@ -13,9 +13,9 @@ modified-date: 2013-02-20 11:17:00 +0900
 
 ということで、 [expect](http://en.wikipedia.org/wiki/Expect)を使って
 パスワードの入力を最低限抑えるようにしてみた。
-コマンドライン引数に一回だけ書く。<sup id='fn1'>1</sup>
+コマンドライン引数に一回だけ書く。<sup id='fn1ref'><a href='#fn1'>1</a></sup>
 
-[Gist](https://gist.github.com/tmtk75/4982391)はこちら。<sup id='fn2'>2</sup>
+[Gist](https://gist.github.com/tmtk75/4982391)はこちら。<sup id='fn2ref'><a href='#fn2'>2</a></sup>
 
 ```ruby
 #!/usr/bin/env expect
@@ -64,5 +64,10 @@ expect eof
 ホスト名やpromptも変更できるように工夫すれば、いろんなホストに公開鍵をばらまけるようになるね。
 
 
-[^1]: Historyに残るのがイヤな人はファイルを読み込んでそこから値を受け取る、とか直すといい
-[^2]: expectってsyntax highlightingしてくれないのね、いくらGistでも
+<span id='fn1'></span>
+<span>1:</span>
+<span>Historyに残るのがイヤな人はファイルを読み込んでそこから値を受け取る、とか直すといい</span>
+
+<span id='fn2'></span>
+<span>2:</span>
+<span>expectってsyntax highlightingしてくれないのね、いくらGistでも</span>

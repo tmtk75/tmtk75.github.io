@@ -18,8 +18,9 @@ gruntからjasmine-nodeを起動するpluginを書いてみた。ただオプシ
 
 <https://github.com/tmtk75/grunt-contrib-jasmine-node>
 
-    NODE_PATH=lib/js jasmine-node --coffee spec
-{:.terminal}
+```bash
+NODE_PATH=lib/js jasmine-node --coffee spec
+```
 
 こんなコマンドをGRUNTから叩くには、次のように定義してやる。
 
@@ -41,7 +42,8 @@ grunt.initConfig({
 
 GRUNTのコマンドは次のようになる。
 
-    $ grunt jsamine-node
-
+```bash
+$ grunt jsamine-node
+```
 
 `--coffee`オプションしかサポートしてないので、誰か追加してください :)

@@ -41,13 +41,17 @@ the package manager from MacPorts to [homebrew][brew].
 
 To get recover, I tried to reinstall ruby with rvm.
 
-    rvm reinstall ruby-1.9.3
+```bash
+rvm reinstall ruby-1.9.3
+```
 
 Then `1.9.3-p392` was installed although I had used `1.9.3-p327`.
 I installed `jekyll` with 1.9.3-p392 and it was succeeded,
 and reconfigure using p327.
 
-    rvm 1.9.3-p392 do gem install jekyll --no-ri --no-rdoc
-    rvm use 1.9.3-p327
+```bash
+rvm 1.9.3-p392 do gem install jekyll --no-ri --no-rdoc
+rvm use 1.9.3-p327
+```
 
 So `jekyll --server --auto` got recovered.

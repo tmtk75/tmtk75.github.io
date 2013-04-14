@@ -23,7 +23,9 @@ It's the time I cloned the repository and ran `npm install`.
 I say the conclusion first of all.  
 Try to remove your ~/.npm if no problem for you.
 
-    rm -rm ~/.npm    
+```bash
+rm -rm ~/.npm    
+```
 
 And then try `npm install` again.  
 In case of me, it worked well though I didn't know the root cause.

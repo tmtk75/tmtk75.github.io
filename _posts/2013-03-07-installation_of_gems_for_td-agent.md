@@ -14,7 +14,7 @@ td-agent has complete runtime of Ruby, we should install gems to the GEM_HOME td
      ENV["GEM_HOME"]="/usr/lib64/fluent/ruby/lib/ruby/gems/1.9.1/"
      ...
 
-Seeing the script[^script] to launch, it says the GEM_HOME.
+Seeing the script<sup><a href='#fn1'>1</a></sup> to launch, it says the GEM_HOME.
 
 So when you install gems td-agent uses, set GEM_HOME like this.
 
@@ -23,5 +23,5 @@ So when you install gems td-agent uses, set GEM_HOME like this.
 
 td-agent will recognize it.
 
-[^script]: the version was td-agent-1.1.11-0.x86_64
-
+<span id='fn1'></span>
+<span>1:</span><span>the version was td-agent-1.1.11-0.x86_64</span>

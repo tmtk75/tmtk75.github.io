@@ -48,10 +48,11 @@ Download a new archive from [the download page](http://www.mysql.com/downloads/m
 
 So you start installing again like:
 
-    gem install mysql2 --no-ri --no-rdoc -- --with-mysql-config=$YOUR_MYSQL_HOME/bin/mysql_config
-    Successfully installed mysql2-0.3.11
-    1 gem installed
-
+```bash
+gem install mysql2 --no-ri --no-rdoc -- --with-mysql-config=$YOUR_MYSQL_HOME/bin/mysql_config
+Successfully installed mysql2-0.3.11
+1 gem installed
+```
 
 [The answer on the Stack Overflow](http://stackoverflow.com/questions/5229907/mysql2-ruby-gem-will-not-install-10-6) was helpful for me.
 
