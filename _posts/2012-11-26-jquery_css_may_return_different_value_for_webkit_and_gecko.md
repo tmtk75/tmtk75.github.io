@@ -1,7 +1,6 @@
 ---
 layout: post
 title: jQuery css return different value for WebKit and Gecko
-category: JUMLY
 tag: unresolved
 creation-date: 2012-11-26 22:41:40
 ---
