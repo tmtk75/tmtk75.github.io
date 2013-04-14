@@ -1,4 +1,3 @@
-/*-------- google search --------*/
 div .cse .gsc-control-cse,
 div .gsc-control-cse {
   padding-left: 0;
@@ -6,4 +5,26 @@ div .gsc-control-cse {
 }
 form.gsc-search-box-tools .gsc-search-box .gsc-input {
   padding-right: 1px;
+}
+.syntaxhighlighter .line.alt1,
+.syntaxhighlighter .line.alt2,
+.syntaxhighlighter {
+  background-image: none !important;
+  background-color: transparent !important;
+}
+.syntaxhighlighter .toolbar {
+  display: none;
+}
+.syntaxhighlighter {
+  background-color: whiteSmoke !important;
+  padding: 8.5px;
+  margin: 0 0 18px 0;
+  border: 1px solid rgba(0,0,0,0.15);
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+}
+.syntaxhighlighter .gutter .line {
+  border-right: 3px solid rgba(0,107,159,0.5) !important;
 }

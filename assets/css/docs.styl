@@ -105,7 +105,18 @@ body #recent-posts .post footer
   position: absolute
   top: 140px
   width: 100%
-  background-image: -o-linear-gradient(rgba(255,255,255,0) 0, #fff 25%, #fff 100%)
+  background-image: -webkit-gradient(linear, left top, left bottom,
+                      from(rgba(255,255,255,0)),
+                      color-stop(0.25, rgba(255,255,255,1)),
+                      to(white));
+  background-image: -moz-linear-gradient(
+                      rgba(255,255,255,0) 0%,
+                      rgba(255,255,255,1) 25%,
+                      white 100%);
+  background-image: -o-linear-gradient(
+                      rgba(255,255,255,0) 0%,
+                      rgba(255,255,255,1) 25%,
+                      white 100%);
 
 body #recent-posts .post footer .date,body #recent-posts .post footer .date>*
   display: inline
