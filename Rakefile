@@ -1,4 +1,4 @@
-task :default => :tags
+task :default => [:stylus, :tags]
 
 desc "Given a title as an argument, create a new post file."
 task :post, [:title] do |t, args|
