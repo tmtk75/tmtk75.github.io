@@ -33,7 +33,7 @@ Tomcatでは`server.xml`の`Value`要素でアクセスログのパターンを�
 詳しくはオフィシャルを見てください。<http://tomcat.apache.org/tomcat-7.0-doc/config/valve.html#Access_Log_Valve>.
 
 ```xml
-<&#86;alve className="org.apache.catalina.valves.AccessLogValve"
+<Valve className="org.apache.catalina.valves.AccessLogValve"
   directory="logs" prefix="access" suffix=".log"
   pattern="%h %l %u %t %r %s %b %D %I" resolveHosts="false"/>
 ```
@@ -42,7 +42,7 @@ Tomcatでは`server.xml`の`Value`要素でアクセスログのパターンを�
 まあそういうめんどくさい規則うんぬんはおいといて、LTSVのためにタブを属性値に含めるには実体参照`&#9;`を使います。
 
 ```xml
-<&#86;alve ...
+<Valve ...
   pattern="host:%h&amp;#9;ident:%l&amp;#9;user:%u" />
 ```
 
