@@ -14,7 +14,7 @@ Here is [a gist](https://gist.github.com/tmtk75/5475559) to check behavior of th
 
 ## Relation between data-* name and key of .data()
 - `data-foo` is for `.data("foo")`
-- `data-foo\_bar` is for `.data("foo\_bar")`
+- `data-foo_bar` is for `.data("foo_bar")`
 - `data-foo-bar` is for `.data("fooBar")`
 - `data-foo-0` is for nothing. `foo-0` is not recognized as key name
 
