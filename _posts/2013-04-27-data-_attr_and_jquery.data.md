@@ -7,7 +7,7 @@ creation-date: 2013-04-28 08:32:21 +0900
 modified-date: 2013-04-28 08:32:21 +0900
 ---
 I wrote down this memo for `data-*` attribute and jQuery.data
-because I got stuck when using them on implemetation of JUMLY.scan.
+because I got stuck when using them on implemetation of [JUMLY.scan](http://jumly.herokuapp.com/).
 
 Here is [a gist](https://gist.github.com/tmtk75/5475559) to check behavior of them.
 

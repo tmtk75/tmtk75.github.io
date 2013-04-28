@@ -6,7 +6,7 @@ lang: ja
 creation-date: 2013-04-28 08:32:21 +0900
 modified-date: 2013-04-28 08:32:21 +0900
 ---
-JUMLY.scanの実装で`data-*`属性jQuery.dataを使ってちょっとハマったので書き残す。
+[JUMLY.scan](http://jumly.herokuapp.com/)の実装で`data-*`属性jQuery.dataを使ってちょっとハマったので書き残す。
 
 動作検証用に書いたものを[Gistに貼った](https://gist.github.com/tmtk75/5475559)のでどうぞ。
 
