@@ -7,9 +7,11 @@ creation-date: 2013-05-16 06:48:31 +0900
 modified-date: 2013-05-16 06:48:31 +0900
 ---
 
-I'm personally checking PhantomJS. At first about WebPage class.
+I'm personally checking PhantomJS.
 
-Listed the properties with [this simple script on gist](https://gist.github.com/tmtk75/5587683).
+At first about WebPage class.
+It has some interesting [properties and functions](https://github.com/ariya/phantomjs/wiki/API-Reference-WebPage#wiki-webpage-render).
+I listed the properties with [this simple script on gist](https://gist.github.com/tmtk75/5587683).
 Here is that of PhantomJS 1.9.0.
 
 ```
