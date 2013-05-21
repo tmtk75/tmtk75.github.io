@@ -16,28 +16,6 @@ Tremendous again.
 
 Here is an exmample.
 
-```html
-<style>
-svg {border:solid gray #ddd}
-.mono .arrow {stroke:gray; stroke-width:2px}
-.mono .arrow .triangle {fill:none}
-.pop .arrow {stroke:#ffba00; stroke-width:8px; stroke-linecap:round; stroke-linejoin:round}
-.pop .arrow .triangle {stroke:#bf8b00; fill:none}
-</style>
-<svg class="mono" width="192" height="64">
-  <g class="arrow">
-    <path class="line" d="M4,32 l140,0"/>
-    <path class="triangle" d="M164,32 l-20,12 l0,-24 Z"/>
-  </g>
-</svg>
-<svg class="pop" width="192" height="64">
-  <g class="arrow">
-    <path class="line" d="M4,32 l140,0"/>
-    <path class="triangle" d="M164,32 l-20,12 l0,-24 Z"/>
-  </g>
-</svg>
-```
-
 <style>
 svg {border:solid gray #ddd}
 .mono .arrow {stroke:gray; stroke-width:2px}
@@ -59,3 +37,25 @@ svg {border:solid gray #ddd}
   </g>
   <text x='20' y='30' style='text-anchor:start'>class="pop"</text>
 </svg>
+
+```html
+<style>
+svg {border:solid gray #ddd}
+.mono .arrow {stroke:gray; stroke-width:2px}
+.mono .arrow .triangle {fill:none}
+.pop .arrow {stroke:#ffba00; stroke-width:8px; stroke-linecap:round; stroke-linejoin:round}
+.pop .arrow .triangle {stroke:#bf8b00; fill:none}
+</style>
+<svg class="mono" width="192" height="64">
+  <g class="arrow">
+    <path class="line" d="M4,32 l140,0"/>
+    <path class="triangle" d="M164,32 l-20,12 l0,-24 Z"/>
+  </g>
+</svg>
+<svg class="pop" width="192" height="64">
+  <g class="arrow">
+    <path class="line" d="M4,32 l140,0"/>
+    <path class="triangle" d="M164,32 l-20,12 l0,-24 Z"/>
+  </g>
+</svg>
+```
