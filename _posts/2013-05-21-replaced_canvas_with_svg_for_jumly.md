@@ -51,11 +51,13 @@ svg {border:solid gray #ddd}
     <path class="line" d="M4,32 l140,0"/>
     <path class="triangle" d="M164,32 l-20,12 l0,-24 Z"/>
   </g>
+  <text x='20' y='30' style='text-anchor:start'>class="mono"</text>
 </svg>
 <svg class="pop" width="192" height="64">
   <g class="arrow">
     <path class="line" d="M4,32 l140,0"/>
     <path class="triangle" d="M164,32 l-20,12 l0,-24 Z"/>
   </g>
+  <text x='20' y='30' style='text-anchor:start'>class="pop"</text>
 </svg>
 ```
