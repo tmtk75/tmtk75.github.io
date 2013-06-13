@@ -65,7 +65,7 @@ Kestrel requires java 6 and sbt 0.11.2. Presently some sbt plugins used by kestr
 On sbt, you can put a `build.properties` in `project` directory in order to use the specific version of sbt.
 
 ```bash
-echo "sbt.version=0.11.2" > proejct/build.properties
+echo "sbt.version=0.11.2" > project/build.properties
 ```
 
 Then I tried to build again, so it was succeeded and dist directory is generated in kestrel.
