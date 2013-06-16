@@ -14,7 +14,6 @@ valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
 '" type="text/javascript" charset="utf-8"><\/sc'+'ript>')})();
 </script><script>utmx('url','A/B');</script>
 <!-- End of Google Analytics Content Experiment code -->
-  <head>
 <script>var _gaq = _gaq || [];
 var pluginUrl = '//www.google-analytics.com/plugins/ga/inpage_linkid.js';
 _gaq.push(['_require', 'inpage_linkid', pluginUrl]);
@@ -30,6 +29,7 @@ _gaq.push(['_setCustomVar', 2, 'cohort', val, 1]);  // 1:user, 2:session, 3:page
   ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
   var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
 })();</script>
+  <head>
     <title>{%if page.title %} {{page.title}} {%else%} {{site.title}} {%endif%}</title>
     <meta charset='utf-8' />
     <meta content='width=device-width,initial-scale=1.0' name='viewport' />
