@@ -56,6 +56,11 @@ _gaq.push(['_setCustomVar', 2, 'cohort', val, 1]);  // 1:user, 2:session, 3:page
               <div class='search'>
                 {% include search.html %}
               </div>
+              {% comment %}
+              <div class='buttons'>
+                {% include _social_buttons.html %}
+              </div>
+              {% endcomment %}
               <nav class='recent-posts'>
                 <ul>
                   {% assign prev_month = '' %}

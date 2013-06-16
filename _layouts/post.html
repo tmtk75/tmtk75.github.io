@@ -17,20 +17,7 @@ layout: default
       {% endfor %}
     </ul>
     <ul class='buttons'>
-      <li class='facebook'>
-        <div class='fb-like' data-layout='button_count' data-send='true' data-show-faces='false' data-width='450'></div>
-      </li>
-      <li class='twitter'>
-        <a class='twitter-share-button' data-via='tmtk75' href='https://twitter.com/share' lang='en'>Tweet</a>
-      </li>
-      <li class='googleplus'>
-        <div class='g-plusone' data-size='medium' data-width='300'></div>
-      </li>
-      <li class='hatena'>
-        <a class='hatena-bookmark-button' data-hatena-bookmark-layout='simple-balloon' data-hatena-bookmark-title='{{page.title}}({{site.title}})' href='http://b.hatena.ne.jp/entry/{{site.url}}'>
-          <img height='20' src='http://b.st-hatena.com/images/entry-button/button-only.gif' style='border: none;' width='20' />
-        </a>
-      </li>
+      {% include _social_buttons.html %}
     </ul>
     <div class='links_with_tag' data-bind="style:{visibility:'visible'},visible:links_shown,event:{mouseover:keep,mouseout:hide_links_for_tag}">
       <div class='h'>
