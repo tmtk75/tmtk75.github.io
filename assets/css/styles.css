@@ -167,22 +167,27 @@ article#the.post header h1 .date .year {
   font-size: 14px;
   line-height: 18px;
 }
-article#the.post header .buttons {
+article#the.post header .buttons,
+#sidebar .sidebar-inner .buttons {
   margin-left: 0;
 }
-article#the.post header .buttons li {
+article#the.post header .buttons li,
+#sidebar .sidebar-inner .buttons li {
   list-style: none;
   display: inline-block;
   margin-left: 4px;
 }
-article#the.post header .buttons li.facebook {
+article#the.post header .buttons li.facebook,
+#sidebar .sidebar-inner .buttons li.facebook {
   position: relative;
   top: -2px;
 }
-article#the.post header .buttons li.twitter {
+article#the.post header .buttons li.twitter,
+#sidebar .sidebar-inner .buttons li.twitter {
   width: 76px;
 }
-article#the.post header .buttons li.googleplus {
+article#the.post header .buttons li.googleplus,
+#sidebar .sidebar-inner .buttons li.googleplus {
   width: 58px;
 }
 article#the.post .content>h2 {
@@ -201,6 +206,9 @@ article#the.post img {
 article#the.post .gist {
   margin-top: 10px;
   margin-bottom: 40px;
+}
+article#the.post .ad {
+  margin-top: 30px;
 }
 .post .content .footnotes {
   margin-top: 3em;
