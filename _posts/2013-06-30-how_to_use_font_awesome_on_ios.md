@@ -43,6 +43,10 @@ Click and add an entry like this.
 Let's say you can access `self.label`. Following example aligns two icons for github and twitter.
 
 ```objective-c
+#import "NSString+FontAwesome.h"
+```
+
+```objective-c
 id github  = [NSString fontAwesomeIconStringForEnum:FAIconGithub];
 id twitter = [NSString fontAwesomeIconStringForEnum:FAIconTwitter];
 self.label.font = [UIFont fontWithName:kFontAwesomeFamilyName size:32.f];

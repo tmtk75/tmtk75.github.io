@@ -43,6 +43,10 @@ Xcode-4.6.3で試しました。
 githubとtwitterのアイコンを並べる例です。
 
 ```objective-c
+#import "NSString+FontAwesome.h"
+```
+
+```objective-c
 id github  = [NSString fontAwesomeIconStringForEnum:FAIconGithub];
 id twitter = [NSString fontAwesomeIconStringForEnum:FAIconTwitter];
 self.label.font = [UIFont fontWithName:kFontAwesomeFamilyName size:32.f];
