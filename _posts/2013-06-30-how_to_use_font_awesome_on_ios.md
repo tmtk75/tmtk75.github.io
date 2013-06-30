@@ -17,11 +17,13 @@ FontAwesome+iOS helps us to use, <https://github.com/alexdrone/ios-fontawesome>.
 ## Steps to use
 It's a few steps to use.
 
-- Add .ttf to your project
+- Copy `fontawesome-webfont.ttf` to your project
 - Add font name to .plist
-- Add .h and .m files to your project
+- Copy .h and .m files to your project
 - Import `NSString+FontAwesome.h`
 - Add a piece of code to use
+
+I did on Xcode-4.6.3.
 
 ## Copy the font resource
 Copy `fontawesome-webfont.ttf` to your project. The file is contained in [here](https://github.com/alexdrone/ios-fontawesome/tree/master/Resources).
