@@ -1,7 +1,9 @@
-<!doctype html>
+doctype html
 html
   head
-    meta.aaa charset="utf-8"
+    meta charset="utf-8"
+    link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"
+
   body
     
     #main role="main"
@@ -22,3 +24,6 @@ html
       ol
         - blog.articles.group_by {|a| a.date.year }.each do |year, articles|
           | <li>#{link_to year, blog_year_path(year)} (#{articles.size})
+
+  script src="//code.jquery.com/jquery-2.0.3.min.js"
+  script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"
