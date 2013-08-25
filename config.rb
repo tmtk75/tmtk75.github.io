@@ -1,6 +1,17 @@
 ###
 # Compass
 ###
+Slim::Engine.set_default_options :pretty => true
+# shortcut
+Slim::Engine.set_default_options :shortcut => {
+  '#' => {:tag => 'div', :attr => 'id'},
+  '.' => {:tag => 'div', :attr => 'class'},
+  '&' => {:tag => 'input', :attr => 'type'}
+}
+
+# Markdown settings
+set :markdown_engine, :redcarpet
+set :markdown, :tables => true, :autolink => true, :gh_blockcode => true, :fenced_code_blocks => true, :with_toc_data => true
 
 # Change Compass configuration
 # compass_config do |config|
