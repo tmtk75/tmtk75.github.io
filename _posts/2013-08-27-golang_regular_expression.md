@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Go言語 正規表現
-tags:
-lang: 
+tags: golang go
+lang: ja
 creation-date: 2013-08-27 22:40:17 +0900
 modified-date: 2013-08-27 22:40:17 +0900
 ---
