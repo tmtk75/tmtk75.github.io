@@ -28,15 +28,15 @@ func main() {
     panic(err)
   }
   tx, _ := db.Begin()
-  stmt, _ := tx.Prepare("select id, name from users")
-  rows, _ := stmt.Query()
+  stmt, _ := tx.Prepare("select name, age from users where id = ?")
+  rows, _ := stmt.Query(1234)
   cols, _ := rows.Columns()
   fmt.Println(cols)
   for rows.Next() {
-    var id int
     var name string
-    err := rows.Scan(&id, &name)
-    fmt.Println(id, name, err)
+    var age int
+    err := rows.Scan(&name, &age)
+    fmt.Println(name, age, err)
   }
 }
 ```
