@@ -6,7 +6,7 @@ lang: ja
 creation-date: 2013-09-01 18:46:03 +0900
 modified-date: 2013-09-01 18:46:03 +0900
 ---
-[flag](http://golang.org/pkg/flag/)packageを使う。
+[flag](http://golang.org/pkg/flag/) packageを使う。
 
 オプション定義には次の２つの形式が型それぞれにある。
 - ポインタを返す形式 ex) flag.String, flag.Float64

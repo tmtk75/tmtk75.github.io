@@ -6,9 +6,11 @@ lang: ja
 creation-date: 2013-09-01 18:48:06 +0900
 modified-date: 2013-09-01 18:48:06 +0900
 ---
-[flag](http://golang.org/pkg/flag/)packageを使います。
+[flag](http://golang.org/pkg/flag/) packageを使います。
 
-ひとつハマったことがあって、FlatSet.Parseは`os.Args[1:]`を受け取る。
+型のバリエーションなどは[Go言語 コマンドラインオプション解析](/2013/09/01/golang_flag.html)を見てください。
+
+ひとつハマったことがあって、FlatSet.Parseには`os.Args[1:]`を渡す。
 `os.Args`をそのまま渡すとオプションの認識をしてくれないみたい。
 
 ```go
