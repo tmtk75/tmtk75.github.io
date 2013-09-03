@@ -1,6 +1,6 @@
 ---
 layout: post
-title: golang exec ls
+title: Go言語 os/exec ls実行
 tags:
 lang: 
 creation-date: 2013-09-03 10:04:14 +0900
