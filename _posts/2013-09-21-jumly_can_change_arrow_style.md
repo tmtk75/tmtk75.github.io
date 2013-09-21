@@ -11,11 +11,11 @@ It can change styles whatever you want even arrows.
 
 Here is a simple example.
 
-<img style='box-shadow:none' src='https://s3-ap-northeast-1.amazonaws.com/tmtk75.github.com/2013-09-21/simple.png'>
+<a href='http://jumly.herokuapp.com/public/examples/simple.html'><img style='box-shadow:none' src='https://s3-ap-northeast-1.amazonaws.com/tmtk75.github.com/2013-09-21/simple.png'></a>
 
 On the other hand, here is a styled one.
 
-<img style='box-shadow:none' src='https://s3-ap-northeast-1.amazonaws.com/tmtk75.github.com/2013-09-21/styled.png'>
+<a href='http://jumly.herokuapp.com/public/examples/styling-arrow.html'><img style='box-shadow:none' src='https://s3-ap-northeast-1.amazonaws.com/tmtk75.github.com/2013-09-21/styled.png'></a>
 
 Here is the style. Put this in your &lt;style&gt;
 
