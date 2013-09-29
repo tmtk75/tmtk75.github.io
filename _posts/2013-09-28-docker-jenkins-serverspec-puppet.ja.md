@@ -48,8 +48,8 @@ Dockerのgitのような履歴の取り回しのよさは魅力的だし、同�
 入門Puppet、入門Chef Soloはサーバサイドに関わるエンジニア必読の二冊と思う。
 puppetからchefへ移る人は多そうだけど、逆はあまりいなさそうな雰囲気がある。気のせいかな。
 
-<a href="http://www.amazon.co.jp/gp/product/B00BSPH158/ref=as_li_ss_il?ie=UTF8&camp=247&creative=7399&creativeASIN=B00BSPH158&linkCode=as2&tag=t00b1-22"><img border="0" src="http://ws-fe.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B00BSPH158&Format=_SL110_&ID=AsinImage&MarketPlace=JP&ServiceVersion=20070822&WS=1&tag=t00b1-22" ></a>
-<a href="http://www.amazon.co.jp/gp/product/B00CL92JC0/ref=as_li_ss_il?ie=UTF8&camp=247&creative=7399&creativeASIN=B00CL92JC0&linkCode=as2&tag=t00b1-22"><img border="0" src="http://ws-fe.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B00CL92JC0&Format=_SL110_&ID=AsinImage&MarketPlace=JP&ServiceVersion=20070822&WS=1&tag=t00b1-22" ></a>
+<a target='_blank' href="http://www.amazon.co.jp/gp/product/B00BSPH158/ref=as_li_ss_il?ie=UTF8&camp=247&creative=7399&creativeASIN=B00BSPH158&linkCode=as2&tag=t00b1-22"><img border="0" src="http://ws-fe.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B00BSPH158&Format=_SL110_&ID=AsinImage&MarketPlace=JP&ServiceVersion=20070822&WS=1&tag=t00b1-22" ></a>
+<a target='_blank' href="http://www.amazon.co.jp/gp/product/B00CL92JC0/ref=as_li_ss_il?ie=UTF8&camp=247&creative=7399&creativeASIN=B00CL92JC0&linkCode=as2&tag=t00b1-22"><img border="0" src="http://ws-fe.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B00CL92JC0&Format=_SL110_&ID=AsinImage&MarketPlace=JP&ServiceVersion=20070822&WS=1&tag=t00b1-22" ></a>
 
 ちなみに「puppetは古い」って思ってる人もいるかもしれないけど（実は私もそうでした）、ちゃんと知ってからはエンタープライズではpuppetオススメだと思っている。
 外部DSLってのはchefみたいな内部DSLに比べて自由度ないけど、言い換えれば誰が書いても一定の枠組み以内の書き方に収まる。
