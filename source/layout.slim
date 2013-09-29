@@ -1,6 +1,10 @@
 doctype html
 html
   head
+    - if current_page.respond_to?(:title)
+      title #{current_page.title}
+    - else
+      title Undefined Title
     meta charset="utf-8"
     meta name="viewport" content="width=device-width, initial-scale=1.0"
     link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" media="screen"
