@@ -6,10 +6,10 @@ tags: docker jenkins serverspec puppet manifests ci sshd vagrant
 creation-date: 2013-09-28 20:58:12
 ---
 <style>
-h1 { margin-top: 3em }
-h2 { margin-top: 2.5em }
-h3 { margin-top: 2em }
-.content p { margin-top: 1.5em }
+.post h1 { margin-top: 3em }
+.post h2 { margin-top: 2.5em }
+.post h3 { margin-top: 2em }
+.post .content p { margin-top: 1.5em }
 </style>
 
 puppetのCIが運用レベルに到達したのでちゃんとまとめておこうと思う。
