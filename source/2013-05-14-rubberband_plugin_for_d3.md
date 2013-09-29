@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Rubberband plugin for d3
-tags: d3 rubberband plugin
+tags: d3, rubberband, plugin
 lang: 
 creation-date: 2013-05-14 09:39:38 +0900
 modified-date: 2013-05-14 09:39:38 +0900

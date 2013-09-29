@@ -1,7 +1,7 @@
 ---
 layout: post
 title: JUMLY is being improved for robustness diagram
-tags: JUMLY robustness
+tags: JUMLY, robustness
 lang: 
 creation-date: 2013-03-29 08:42:01 +0900
 modified-date: 2013-03-29 08:42:01 +0900

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Go言語 コマンドラインオプション解析(FlagSet)
-tags: golang flagset parseoptions cli
+tags: golang, flagset, parseoptions, cli
 lang: ja
 creation-date: 2013-09-01 18:48:06 +0900
 modified-date: 2013-09-01 18:48:06 +0900

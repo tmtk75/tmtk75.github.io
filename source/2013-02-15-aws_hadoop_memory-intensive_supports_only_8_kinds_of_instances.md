@@ -1,7 +1,7 @@
 ---
 layout: post
 title: AWS Hadoop Memory-Intensive supports only 8 kinds of instances
-tags: AWS hadoop EMR
+tags: AWS, hadoop, EMR
 lang: 
 creation-date: 2013-02-15 08:11:43 +0900
 modified-date: 2013-02-15 08:11:43 +0900

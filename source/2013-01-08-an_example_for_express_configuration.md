@@ -1,7 +1,7 @@
 ---
 layout: post
 title: An example for express configuration
-tags: express JUMLY gist
+tags: express, JUMLY, gist
 creation-date: 2013-01-08  8:14:58
 ---
 [express](http://expressjs.com/) is a very useful web application framework for node.js.

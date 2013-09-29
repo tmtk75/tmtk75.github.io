@@ -1,7 +1,7 @@
 ---
 layout: post
 title: could not find module Control.Monad.Writer
-tags: haskell ghc-pkg
+tags: haskell, ghc-pkg
 creation-date: 2013-01-14 22:43:25
 ---
 I use [GHCi](http://www.haskell.org/ghc/) version 7.4.2 on MacOSX 10.8.2 and also [Haskell Platform](http://www.haskell.org/platform/mac.html).

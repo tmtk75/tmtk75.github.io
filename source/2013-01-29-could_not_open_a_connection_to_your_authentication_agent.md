@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Could not open a connection to your authentication agent.
-tags: sshd ssh-agent ssh-add
+tags: sshd, ssh-agent, ssh-add
 creation-date: 2013-01-29 11:59:03
 ---
 

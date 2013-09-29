@@ -1,7 +1,7 @@
 ---
 layout: post
 title: jekyll didn't start after removing MacPorts
-tags: jekyll ruby rvm gem
+tags: jekyll, ruby, rvm, gem
 lang: 
 creation-date: 2013-03-09 19:47:07 +0900
 modified-date: 2013-03-09 19:47:07 +0900

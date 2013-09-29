@@ -1,7 +1,7 @@
 ---
 layout: post
 title: foldr and foldl of Haskell
-tags: haskell foldr foldl
+tags: haskell, foldr, foldl
 creation-date: 2013-01-14 15:10:58
 ---
 A difference of foldr and foldl.

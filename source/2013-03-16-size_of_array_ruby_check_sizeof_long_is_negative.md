@@ -1,7 +1,7 @@
 ---
 layout: post
 title: size of array ruby_check_sizeof_long is negative in case of installing mysql2 gem
-tags: ruby gem mysql
+tags: ruby, gem, mysql
 lang: 
 creation-date: 2013-03-16 08:31:28 +0900
 modified-date: 2013-03-16 08:31:28 +0900

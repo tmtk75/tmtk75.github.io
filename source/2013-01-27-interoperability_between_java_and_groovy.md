@@ -1,7 +1,7 @@
 ---
 layout: post
 title: interoperability between Java and Groovy
-tags: java groovy
+tags: java, groovy
 creation-date: 2013-01-27 21:54:32
 ---
 If you want to invoke a groovy script from Java, you can use [ScriptEngine][scriptengine].

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: How to know whether it's loaded as module or top-level on Node.js
-tags: nodejs python
+tags: nodejs, python
 lang: 
 creation-date: 2013-06-08 11:31:16 +0900
 modified-date: 2013-06-08 11:31:16 +0900

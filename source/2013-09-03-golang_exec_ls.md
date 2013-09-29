@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Go言語 os/exec ls実行
-tags: golan exec
+tags: golan, exec
 lang: ja
 creation-date: 2013-09-03 10:04:14 +0900
 modified-date: 2013-09-03 10:04:14 +0900

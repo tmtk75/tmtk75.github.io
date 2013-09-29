@@ -1,7 +1,7 @@
 ---
 layout: post
 title: iOSのUIWindow上でモーションイベントを受け取る
-tags: iOS motionEvent
+tags: iOS, motionEvent
 lang: ja
 creation-date: 2013-03-31 22:43:02 +0900
 modified-date: 2013-04-01 08:40:02 +0900

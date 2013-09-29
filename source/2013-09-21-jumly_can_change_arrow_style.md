@@ -1,7 +1,7 @@
 ---
 layout: post
 title: JUMLY can change arrow style
-tags: JUMLY style css svg JML
+tags: JUMLY, style, css, svg, JML
 lang: en
 creation-date: 2013-09-21 10:23:35 +0900
 modified-date: 2013-09-21 10:23:35 +0900

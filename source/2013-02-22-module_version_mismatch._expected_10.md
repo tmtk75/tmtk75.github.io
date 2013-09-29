@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Module version mismatch. Expected 10, got 1
-tags: sqlit3 nodejs
+tags: sqlit3, nodejs
 lang: 
 creation-date: 2013-02-22 10:47:15 +0900
 modified-date: 2013-02-22 10:47:15 +0900

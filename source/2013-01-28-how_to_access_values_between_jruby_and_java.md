@@ -1,7 +1,7 @@
 ---
 layout: post
 title: How to access values between JRuby and Java
-tags: java jruby interop
+tags: java, jruby, interop
 creation-date: 2013-01-28 10:40:16
 ---
 This is a similar post of [the post for Java and Groovy][interopjavagroovy].

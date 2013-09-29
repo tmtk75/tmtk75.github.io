@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Template Gallery for Google Drive
-tags: googledrive template manage-apps
+tags: googledrive, template, manage-apps
 lang: 
 creation-date: 2013-04-06 09:38:55 +0900
 modified-date: 2013-04-06 09:38:55 +0900

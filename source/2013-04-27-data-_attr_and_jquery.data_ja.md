@@ -1,7 +1,7 @@
 ---
 layout: post
 title: data- 属性とjQuery.data
-tags: html5 jquery
+tags: html5, jquery
 lang: ja
 creation-date: 2013-04-28 08:32:21 +0900
 modified-date: 2013-04-28 08:32:21 +0900

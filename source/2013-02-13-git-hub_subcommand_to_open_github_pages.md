@@ -1,7 +1,7 @@
 ---
 layout: post
 title: git-hub subcommand to open github with browser from terminal
-tags: git github extension
+tags: git, github, extension
 lang: 
 creation-date: 2013-02-13 08:08:24 +0900
 modified-date: 2013-02-14 08:08:24 +0900

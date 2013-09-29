@@ -2,7 +2,7 @@
 layout: post
 title: node.jsで書くコマンドラインツールのPython-likeイディオム
 description: node.jsで書かれたコマンドをライブラリとしても使いたいとき、もしくはその逆のときに使える
-tags: nodejs cli
+tags: nodejs, cli
 lang: ja
 creation-date: 2013-02-23 10:48:21 +0900
 modified-date: 2013-02-23 10:48:21 +0900

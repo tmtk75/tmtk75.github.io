@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Go言語 コマンドライン引数
-tags: golang go
+tags: golang, go
 lang: ja
 creation-date: 2013-08-27 13:17:01 +0900
 modified-date: 2013-08-27 13:17:01 +0900

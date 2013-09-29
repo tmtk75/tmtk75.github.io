@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Go言語 os/exec sed実行
-tags: golang exec command
+tags: golang, exec, command
 lang: ja
 creation-date: 2013-09-03 10:08:45 +0900
 modified-date: 2013-09-03 10:08:45 +0900

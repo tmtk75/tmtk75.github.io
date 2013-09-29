@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "warning: possible EventEmitter memory leak detected"
-tags: nodejs eventemitter
+tags: nodejs, eventemitter
 lang: 
 creation-date: 2013-06-09 22:15:44 +0900
 modified-date: 2013-06-09 22:15:44 +0900

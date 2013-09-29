@@ -1,7 +1,7 @@
 ---
 layout: post
 title: JUMLY is tested working on jQuery-2.0.0
-tags: jumly jquery
+tags: jumly, jquery
 lang: 
 creation-date: 2013-04-22 10:00:46 +0900
 modified-date: 2013-04-22 10:00:46 +0900

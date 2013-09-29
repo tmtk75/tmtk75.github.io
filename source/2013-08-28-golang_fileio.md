@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Go言語 ファイル読み込み
-tags:
+tags: 
 lang: ja
 creation-date: 2013-08-28 09:20:32 +0900
 modified-date: 2013-08-28 09:20:32 +0900

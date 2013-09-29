@@ -1,7 +1,7 @@
 ---
 layout: post
 title: My stuck point for fluent-plugin-s3 configuration
-tags: fluentd s3 plugin
+tags: fluentd, s3, plugin
 lang: 
 creation-date: 2013-04-24 14:51:53 +0900
 modified-date: 2013-04-24 14:51:53 +0900

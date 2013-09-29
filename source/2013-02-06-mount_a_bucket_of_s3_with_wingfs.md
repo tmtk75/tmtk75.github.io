@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Mount a bucket of S3 with WingFS
-tags: MacOSX S3 WingFS
+tags: MacOSX, S3, WingFS
 lang:
 creation-date: 2013-02-06 22:28:41
 ---

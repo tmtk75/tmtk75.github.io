@@ -1,7 +1,7 @@
 ---
 layout: post
 title: List of property for WebPage of PhantomJS
-tags: webpage phantomjs
+tags: webpage, phantomjs
 lang: 
 creation-date: 2013-05-16 06:48:31 +0900
 modified-date: 2013-05-16 06:48:31 +0900

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Font AwesomeをiOSで使う
-tags: iOS font tips
+tags: iOS, font, tips
 lang: ja
 creation-date: 2013-06-30 12:06:06 +0900
 modified-date: 2013-06-30 12:06:06 +0900

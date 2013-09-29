@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Replaced canvas with svg for JUMLY
-tags: canvas svg jumly
+tags: canvas, svg, jumly
 lang:
 creation-date: 2013-05-21 09:54:43 +0900
 modified-date: 2013-05-21 09:54:43 +0900

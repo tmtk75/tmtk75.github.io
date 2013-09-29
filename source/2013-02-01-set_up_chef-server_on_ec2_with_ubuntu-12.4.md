@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Set up chef-server on EC2 with Ubuntu 12.04
-tags: chef installation aws ec2 ubuntu
+tags: chef, installation, aws, ec2, ubuntu
 creation-date: 2013-02-01  8:33:03
 ---
 This post says very useful instruction

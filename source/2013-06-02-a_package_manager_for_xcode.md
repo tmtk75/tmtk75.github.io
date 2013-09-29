@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Installed a Package Manager for Xcode
-tags: xcode packagemanager
+tags: xcode, packagemanager
 lang: 
 creation-date: 2013-06-02 15:55:49 +0900
 modified-date: 2013-06-02 15:55:49 +0900

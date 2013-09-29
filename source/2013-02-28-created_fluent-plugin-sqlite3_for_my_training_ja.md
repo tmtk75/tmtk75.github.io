@@ -1,7 +1,7 @@
 ---
 layout: post
 title: fluentdのsqlite3用プラグイン書いた
-tags: fluentd sqlite3 plugin
+tags: fluentd, sqlite3, plugin
 lang: ja
 creation-date: 2013-02-28 09:06:29 +0900
 modified-date: 2013-02-28 09:06:29 +0900

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Use a Datomic archive for clojure REPL
-tags: datomic clojure REPL
+tags: datomic, clojure, REPL
 creation-date: 2013-01-30 11:43:19
 ---
 <div class="alert alert-info">

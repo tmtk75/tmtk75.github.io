@@ -1,7 +1,7 @@
 ---
 layout: post
 title: RequestTimeTooSkewed
-tags: aws s3 ruby
+tags: aws, s3, ruby
 creation-date: 2013-01-29 14:39:16
 ---
 I ran into an above error, `AWS::S3::Errors::RequestTimeTooSkewed`, when I tried to download an object from S3 using aws-sdk of ruby.

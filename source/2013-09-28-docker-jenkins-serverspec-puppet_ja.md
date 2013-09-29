@@ -2,7 +2,7 @@
 layout: post
 title: Docker + Jenkins + serverspecでpuppetのmanifestをCIする
 lang: ja
-tags: docker jenkins serverspec puppet manifests ci sshd vagrant
+tags: docker, jenkins, serverspec, puppet, manifests, ci, sshd, vagrant
 creation-date: 2013-09-28 20:58:12
 ---
 <style>

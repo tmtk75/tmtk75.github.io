@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Installation of gems for td-agent
-tags: td-agent fluentd plugin
+tags: td-agent, fluentd, plugin
 lang: 
 creation-date: 2013-03-07 18:42:36 +0900
 modified-date: 2013-03-07 18:42:36 +0900

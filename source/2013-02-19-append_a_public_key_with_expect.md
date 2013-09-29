@@ -1,7 +1,7 @@
 ---
 layout: post
 title: expectで公開鍵を登録する
-tags: expect publickey ssh
+tags: expect, publickey, ssh
 lang: ja
 creation-date: 2013-02-19 10:52:32 +0900
 modified-date: 2013-02-20 11:17:00 +0900

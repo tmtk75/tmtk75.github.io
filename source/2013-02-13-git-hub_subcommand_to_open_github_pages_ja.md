@@ -1,7 +1,7 @@
 ---
 layout: post
 title: githubのページをterminalから開くgit-hubサブコマンド
-tags: git github extension
+tags: git, github, extension
 lang: ja
 creation-date: 2013-02-13  8:08:24
 modified-date: 2013-02-13  8:08:24

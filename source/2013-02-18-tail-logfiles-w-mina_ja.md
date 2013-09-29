@@ -1,7 +1,7 @@
 ---
 layout: post
 title: minaでログファイルをtailするまで
-tags: mina Ruby
+tags: mina, Ruby
 lang: ja
 creation-date: 2013-02-18 21:21:15 +0900
 modified-date: 2013-02-18 21:21:15 +0900

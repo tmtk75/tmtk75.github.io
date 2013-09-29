@@ -1,7 +1,7 @@
 ---
 layout: post
 title: NullPointerException with a Hive script
-tags: troubleshooting hive NPE
+tags: troubleshooting, hive, NPE
 creation-date: 2013-01-10  8:36:08
 ---
 I encountered a NullPointerException when using hive-0.8.1 on local like:

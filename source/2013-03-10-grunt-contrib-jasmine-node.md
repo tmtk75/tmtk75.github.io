@@ -1,7 +1,7 @@
 ---
 layout: post
 title: grunt-contrib-jasmine-node
-tags: grunt jasmine-node
+tags: grunt, jasmine-node
 lang: 
 creation-date: 2013-03-10 12:14:39 +0900
 modified-date: 2013-03-10 12:14:39 +0900

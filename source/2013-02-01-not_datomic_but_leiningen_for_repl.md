@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Not datomic but Leiningen for REPL
-tags: clojure leiningen repl
+tags: clojure, leiningen, repl
 creation-date: 2013-02-01 16:39:49
 ---
 I described [Datomic provides a better REPL](/2013/01/30/use_datomic_for_clojure_repl.html) which we can use command history and line-edit in.

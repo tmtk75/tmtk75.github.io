@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Node.jsでrequireされたかどうかを調べるには
-tags: nodejs python
+tags: nodejs, python
 lang: ja
 creation-date: 2013-06-08 11:31:16 +0900
 modified-date: 2013-06-08 11:31:16 +0900

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Go言語 データベース MySQL EXEC
-tags: golang database mysql exec
+tags: golang, database, mysql, exec
 lang: ja
 creation-date: 2013-08-31 15:32:39 +0900
 modified-date: 2013-08-31 15:32:39 +0900

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Go言語 データベース MySQL SELECT
-tags: MySQL database golang
+tags: MySQL, database, golang
 lang: ja
 creation-date: 2013-08-31 09:13:30 +0900
 modified-date: 2013-08-31 09:13:30 +0900

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: How to build kestrel with sbt-0.12.2
-tags: HowTo install build kestrel sbt
+tags: HowTo, install, build, kestrel, sbt
 lang: 
 creation-date: 2013-02-11 15:37:37
 modified-date: 2013-02-11 15:37:37

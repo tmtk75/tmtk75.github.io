@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Python-like idiom for node.js command line
-tags: nodejs cli
+tags: nodejs, cli
 lang: 
 creation-date: 2013-02-22 10:48:21 +0900
 modified-date: 2013-02-22 10:48:21 +0900

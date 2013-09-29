@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Try to remove .npm if npm install fails
-tags: npm node
+tags: npm, node
 lang: 
 creation-date: 2013-02-19 13:46:20 +0900
 modified-date: 2013-02-19 13:46:20 +0900
