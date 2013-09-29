@@ -1,6 +1,8 @@
 ###
 # Blog settings
 ###
+require "slim"
+
 Slim::Engine.set_default_options :pretty => true
 # shortcut
 Slim::Engine.set_default_options :shortcut => {
