@@ -6,9 +6,9 @@ tags: docker jenkins serverspec puppet manifests ci sshd vagrant
 creation-date: 2013-09-28 20:58:12
 ---
 <style>
-.post h1 { margin-top: 3em }
-.post h2 { margin-top: 2.5em }
-.post h3 { margin-top: 2em }
+.post .content h1 { margin-top: 3em }
+.post .content h2 { margin-top: 2.5em }
+.post .content h3 { margin-top: 2em }
 .post .content p { margin-top: 1.5em }
 </style>
 
