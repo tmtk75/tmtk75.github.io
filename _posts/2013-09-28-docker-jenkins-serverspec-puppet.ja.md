@@ -299,7 +299,7 @@ puppet applyが成功したら`rake`でserverspecを実行する。
 振り返ってみると、やってることは大したことしてない。Docker走らせて、rsyncして、puppet applyして、serverspec流してるだけ。
 
 ただ、これをover sshでやるところでところどころハマりポイントがあった。ホストバリデーションで`Are you sure you want to continue connecting (yes/no)? `
-とか聞かれて止まるとか、sudoしようとすると`sudo: sorry,you must have a tty to run sudo.`とか、Dockerへのssh接続が`Connection closed`といきなりsshの接続が切れるとか。
+とか聞かれて止まるとか、sudoしようとすると`sudo: sorry,you must have a tty to run sudo.`とか、Dockerへのssh接続が`Connection closed`といきなり切れるとか。
 
 まあ、とりあえず動いているようなのでテストの充実とマニフェストのリファクタリングをしていこうかと。
 
