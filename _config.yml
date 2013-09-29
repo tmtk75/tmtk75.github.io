@@ -15,9 +15,9 @@ redcarpet:
 title: Undefined Title
 url: http://tmtk75.github.io
 images:
-  url: https://s3-ap-northeast-1.amazonaws.com/tmtk75.github.io
+  url: https://s3-ap-northeast-1.amazonaws.com/tmtk75.github.com
 icons:
-  url: https://s3-ap-northeast-1.amazonaws.com/tmtk75.github.io/icons
+  url: https://s3-ap-northeast-1.amazonaws.com/tmtk75.github.com/icons
 public:
   url: /public
 css:
