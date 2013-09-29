@@ -305,7 +305,7 @@ puppet applyが成功したら`rake`でserverspecを実行する。
 
 
 課題はclean upかなあ。
-`sudo dokcer ps -a`で見るとジョブごとにcontainerが作成されるので大量のcontainerが残っているのが見える。2週間くらい運用してて、50GBくらい使用しているっぽい。
+`sudo docker ps -a`で見るとジョブごとにcontainerが作成されるので大量のcontainerが残っているのが見える。2週間くらい運用してて、50GBくらい使用しているっぽい。
 Ephemeral diskの15%くらいを消費しているので、数ヶ月くらいでdisk fullだ。まあ、バッチで古いcontainerから消していけばいいかな。
 
 
