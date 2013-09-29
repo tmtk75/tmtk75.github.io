@@ -16,6 +16,8 @@ Slim::Engine.set_default_options :shortcut => {
 set :markdown_engine, :redcarpet
 set :markdown, :tables => true, :autolink => true, :gh_blockcode => true, :fenced_code_blocks => true, :with_toc_data => true
 
+activate :syntax
+
 # Time.zone = "UTC"
 
 activate :blog do |blog|
