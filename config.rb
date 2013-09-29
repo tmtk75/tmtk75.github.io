@@ -2,6 +2,7 @@
 # Blog settings
 ###
 require "slim"
+require "stylus"
 
 Slim::Engine.set_default_options :pretty => true
 # shortcut
