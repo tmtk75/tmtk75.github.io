@@ -39,7 +39,7 @@ puppetだと[@gosukenator](https://twitter.com/gosukenator)さんのこの辺が
 - [Ukigumo と serverspec で Puppet の継続的インテグレーション](http://mizzy.org/blog/2013/03/27/1/)
 
 両記事とも本当に参考にさせて頂きました。
-で、AWS + Jenkijnsとか、Vagrant + Jenkinsとか、Docker + Ukigumoとかいろいろ試したんだけど、
+で、AWS + Jenkinsとか、Vagrant + Jenkinsとか、Docker + Ukigumoとかいろいろ試したんだけど、
 Dockerのgitのような履歴の取り回しのよさは魅力的だし、同僚達も使い慣れたJenkinsがやはりよかったので
 最終的に Docker + Jenkinsの組み合わせに落ち着いた。
 
