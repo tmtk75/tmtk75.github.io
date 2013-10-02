@@ -262,6 +262,17 @@ sshのportはREST APIで取得する。
    | ruby -e 'require "json"; print (JSON.parse STDIN.read)["NetworkSettings"]["PortMapping"]["Tcp"]["22"], "\n"'
 ```
 
+2013/10/02追記:
+<blockquote class="twitter-tweet"><p>Jenkins + Docker での Puppet CI、docker run -v $WORKSPACE:/tmp ってな感じで、rsync とかしなくてもリポジトリから取得した manifests やら modules やらがコンテナから見えるようにしてる。</p>&mdash; Gosuke Miyashita (@gosukenator) <a href="https://twitter.com/gosukenator/statuses/385403243179675648">October 2, 2013</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+こんなツイートが。なるほど、`-v`オプションなんてあるのね。うちでも使えないか試してみよう。
+
+```
+-v=map[]: Bind mount a volume (e.g. from the host: -v /host:/container, from docker: -v /container)
+```
+
+
 ### docker-apply
 [docker-apply](https://github.com/tmtk75/ci-puppet/blob/master/test/ci-server/docker-apply)でpuppet applyを実行する。
 
