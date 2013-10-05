@@ -14,30 +14,15 @@ html
   body class="#{current_page.data.lang}"
 
     aside
-      a target="_blank" href="https://twitter.com/tmtk75": i.icon-twitter-sign
-      a target="_blank" href="https://github.com/tmtk75": i.icon-github-sign
-      a target="_blank" href="https://www.facebook.com/tomotaka.sakuma": i.icon-facebook-sign
-      a target="_blank" href="https://plus.google.com/u/0/112810316775699020282/": i.icon-google-plus-sign
-      a target="_blank" href="http://www.linkedin.com/profile/view?id=88237980&trk=tab_pro": i.icon-linkedin-sign
+      = partial "sns"
 
     #main
       == yield
 
-    //aside
-    //  h2 Recent Articles
-    //  ol
-    //    - blog.articles[0...10].each do |article|
-    //      | <li>#{link_to article.title, article} <span>#{article.date.strftime('%b %e')}</span></li>
-    //
-    //  h2 Tags
-    //  ol
-    //    - blog.tags.each do |tag, articles|
-    //      | <li>#{link_to tag, tag_path(tag)} (#{articles.size})
-    //
-    //  h2 By Year
-    //  ol
-    //    - blog.articles.group_by {|a| a.date.year }.each do |year, articles|
-    //      | <li>#{link_to year, blog_year_path(year)} (#{articles.size})
+    aside
+      = partial "recent"
+      = partial "tags"
+      = partial "by_year"
 
   script src="//code.jquery.com/jquery-2.0.3.min.js"
   //script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"
