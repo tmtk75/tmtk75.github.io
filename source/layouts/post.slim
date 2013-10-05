@@ -4,9 +4,7 @@
   header
     h1
       .date
-        .day   #{current_page.date.strftime('%d')}
-        .month #{current_page.date.strftime('%b')}
-        .year  #{current_page.date.strftime('%Y')}
+        #{current_page.date.strftime('%Y')}-#{current_page.date.strftime('%m')}-#{current_page.date.strftime('%d')}
       .title #{current_page.title}
 
   == yield
