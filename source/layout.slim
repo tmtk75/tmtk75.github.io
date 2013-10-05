@@ -23,21 +23,21 @@ html
     #main
       == yield
 
-    aside
-      h2 Recent Articles
-      ol
-        - blog.articles[0...10].each do |article|
-          | <li>#{link_to article.title, article} <span>#{article.date.strftime('%b %e')}</span></li>
-
-      h2 Tags
-      ol
-        - blog.tags.each do |tag, articles|
-          | <li>#{link_to tag, tag_path(tag)} (#{articles.size})
-
-      h2 By Year
-      ol
-        - blog.articles.group_by {|a| a.date.year }.each do |year, articles|
-          | <li>#{link_to year, blog_year_path(year)} (#{articles.size})
+    //aside
+    //  h2 Recent Articles
+    //  ol
+    //    - blog.articles[0...10].each do |article|
+    //      | <li>#{link_to article.title, article} <span>#{article.date.strftime('%b %e')}</span></li>
+    //
+    //  h2 Tags
+    //  ol
+    //    - blog.tags.each do |tag, articles|
+    //      | <li>#{link_to tag, tag_path(tag)} (#{articles.size})
+    //
+    //  h2 By Year
+    //  ol
+    //    - blog.articles.group_by {|a| a.date.year }.each do |year, articles|
+    //      | <li>#{link_to year, blog_year_path(year)} (#{articles.size})
 
   script src="//code.jquery.com/jquery-2.0.3.min.js"
   //script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"
