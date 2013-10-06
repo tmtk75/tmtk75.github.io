@@ -7,3 +7,23 @@ li class='googleplus'
 li class='hatena'
  a class='hatena-bookmark-button' data-hatena-bookmark-layout='simple-balloon' data-hatena-bookmark-title='{{page.title}}({{site.title}})' href='http://b.hatena.ne.jp/entry/{{site.url}}/{{page.title}}'
    img height='20' src='http://b.st-hatena.com/images/entry-button/button-only.gif' style='border: none;' width='20'
+
+#fb-root
+script
+  |(function(d, s, id) {
+  |  var js, fjs = d.getElementsByTagName(s)[0];
+  |  if (d.getElementById(id)) return;
+  |  js = d.createElement(s); js.id = id;
+  |  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+  |  fjs.parentNode.insertBefore(js, fjs);
+  |}(document, 'script', 'facebook-jssdk'));
+script async='async' charset='utf-8' src='http://b.st-hatena.com/js/bookmark_button.js'
+script async='async'
+  | !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+script async='async'
+  |(function() {
+  |  var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+  |  po.src = 'https://apis.google.com/js/plusone.js';
+  |  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+  |})();
+
