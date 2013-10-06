@@ -1,11 +1,2 @@
 js_dir: /vendor
 s3_url: https://s3-ap-northeast-1.amazonaws.com/tmtk75.github.com
-
-## Site preference
-#socials:
-#  twitter: url: https://twitter.com/tmtk75
-#  facebook: url: https://www.facebook.com/tomotaka.sakuma
-#  github: url: https://github.io/tmtk75
-#  googleplus: url: https://plus.google.com/u/0/112810316775699020282/
-#  linkedin: url: http://www.linkedin.com/profile/view?id=88237980&trk=tab_pro
-#  zerply: url: https://zerply.com/tmtk
