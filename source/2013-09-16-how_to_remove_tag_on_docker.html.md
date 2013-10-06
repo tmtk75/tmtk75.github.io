@@ -14,6 +14,8 @@ Let's say you already have some images.
     user/fizbiz  9c4f77f7388406f5ad3cfbc673e2f1bb27fe3d29   6b9184c7d178        11 hours ago        12.29 kB (virtual 1.299 GB)
     ...
 
+READMORE
+
 Then you can tag to any image IDs with `tag` command.
 
     $ docker tag c4480f1b user/foobar latest

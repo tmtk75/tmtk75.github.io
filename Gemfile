@@ -7,6 +7,7 @@ gem "middleman-syntax"
 gem "redcarpet"
 gem "slim"
 gem "stylus"
+gem "nokogiri"
 
 # For feed.xml.builder
 gem "builder", "~> 3.0.0"

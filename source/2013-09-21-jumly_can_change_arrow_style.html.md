@@ -13,6 +13,8 @@ Here is a simple example.
 
 <a href='http://jumly.herokuapp.com/public/examples/simple.html'><img style='box-shadow:none' src='https://s3-ap-northeast-1.amazonaws.com/tmtk75.github.com/2013-09-21/simple.png'></a>
 
+READMORE
+
 On the other hand, here is a styled one.
 
 <a href='http://jumly.herokuapp.com/public/examples/styling-arrow.html'><img style='box-shadow:none' src='https://s3-ap-northeast-1.amazonaws.com/tmtk75.github.com/2013-09-21/styled.png'></a>

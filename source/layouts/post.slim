@@ -1,12 +1,15 @@
 ---
 ---
 - wrap_layout :layout do
+  header
+    h1 Undefined Title
+
   .ThePost.Post
     header
-      h1
-        .date
-          #{current_page.date.strftime('%Y')}-#{current_page.date.strftime('%m')}-#{current_page.date.strftime('%d')}
+      h2
         .title #{current_page.title}
+      .date
+        #{current_page.date.strftime('%Y')}-#{current_page.date.strftime('%m')}-#{current_page.date.strftime('%d')}
 
     == yield
 
