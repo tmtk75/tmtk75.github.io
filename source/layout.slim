@@ -16,27 +16,35 @@ html
     //aside
     //  = partial "sns"
 
-    = partial "includes/social"
-
     main
       == yield
 
-    //aside
-    //  = partial "recent"
-    //  = partial "tags"
-    //  = partial "by_year"
+      aside.SocialButtons = partial "includes/social"
+
+      #disqus_thread_container
+        #disqus_thread
+        script src="#{data.config.js_dir}/disqus.js"
+        //a.dsq-brlink href='http://disqus.com' blog comments powered by <span class="logo-disqus">Disqus</span>
+
+      //aside
+      //  = partial "recent"
+      //  = partial "tags"
+      //  = partial "by_year"
 
     footer
+      aside.SocialIcons
+        a.twitter    target="_blank" href="https://twitter.com/tmtk75": i.icon-twitter-sign
+        a.github     target="_blank" href="https://github.com/tmtk75": i.icon-github-sign
+        a.facebook   target="_blank" href="https://www.facebook.com/tomotaka.sakuma": i.icon-facebook-sign
+        a.googleplus target="_blank" href="https://plus.google.com/u/0/112810316775699020282/": i.icon-google-plus-sign
+        a.linked-in  target="_blank" href="http://www.linkedin.com/profile/view?id=88237980&trk=tab_pro": i.icon-linkedin-sign
+
       aside
-        a target="_blank" href="https://twitter.com/tmtk75": i.icon-twitter-sign
-        a target="_blank" href="https://github.com/tmtk75": i.icon-github-sign
-        a target="_blank" href="https://www.facebook.com/tomotaka.sakuma": i.icon-facebook-sign
-        a target="_blank" href="https://plus.google.com/u/0/112810316775699020282/": i.icon-google-plus-sign
-        a target="_blank" href="http://www.linkedin.com/profile/view?id=88237980&trk=tab_pro": i.icon-linkedin-sign
-      aside
-        .copyright &copy; 2012 Tomotaka Sakuma
-        .privacy-policy This site utilizes Google Analytics (GA) and provides first party cookie of GA to your browser. I just only use the data, which is collected by GA, in order to improve the contents, accessibility, usability and readability of this site. And also about the data, I never disclose and use it for another purpose.
-        = partial "includes/license"
+        .Privacy-policy This site utilizes Google Analytics (GA) and provides first party cookie of GA to your browser. I just only use the data, which is collected by GA, in order to improve the contents, accessibility, usability and readability of this site. And also about the data, I never disclose and use it for another purpose.
+
+        .License = partial "includes/license"
+
+        .Copyright &copy; 2012 Tomotaka Sakuma
 
   script src="//code.jquery.com/jquery-2.0.3.min.js"
   //script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"
