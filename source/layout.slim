@@ -13,16 +13,16 @@ html
 
   body class="#{current_page.data.lang}"
 
-    aside
-      = partial "sns"
+    //aside
+    //  = partial "sns"
 
-    #main
+    main
       == yield
 
-    aside
-      = partial "recent"
-      = partial "tags"
-      = partial "by_year"
+    //aside
+    //  = partial "recent"
+    //  = partial "tags"
+    //  = partial "by_year"
 
   script src="//code.jquery.com/jquery-2.0.3.min.js"
   //script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"

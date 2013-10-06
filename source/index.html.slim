@@ -2,16 +2,23 @@
 pageable: true
 per_page: 10
 ---
-- if paginate
-  p Page #{page_number} of #{num_pages}
+.PostIndex
+  header
+    h1 Undefined Title
 
-  - if prev_page
-    p #{link_to 'Previous page', prev_page}
+  .ThePosts
+    - page_articles.each_with_index do |article, i|
+      article.Post
+        header
+          h2 #{link_to article.title, article}
+          .date #{article.date.strftime('%Y')}-#{article.date.strftime('%m')}-#{article.date.strftime('%d')}
+        .Body = article.body
 
-- page_articles.each_with_index do |article, i|
-  h2 #{link_to article.title, article} <span>#{article.date.strftime('%b %e')}
-  = article.body
+  - if paginate
+    p Page #{page_number} of #{num_pages}
+    - if prev_page
+      p #{link_to 'Previous page', prev_page}
 
-- if paginate
-  - if next_page
-    p #{link_to 'Next page', next_page}
+  - if paginate
+    - if next_page
+      p #{link_to 'Next page', next_page}

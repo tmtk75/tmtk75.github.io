@@ -30,15 +30,6 @@ i[class^="icon-"]
   line-height 2rem
   margin-right 1px
 
-//
-body
-  margin 0 20px
-  
-h1
-  font-size 1rem*1.5
-  line-height 1
-  margin-bottom 1rem*1.5
-
 p, pre, ul, ol
   margin-bottom 1rem
 
@@ -47,10 +38,9 @@ ul
   margin-left 20px
 
 //
-header
-  .date
-    font-family Questrial
-
+main
+  margin 0 20px
+  
 pre, code
   font-family Menlo, Monaco, Consolas, "Courier New", monospace
   font-size 1rem*0.9
@@ -77,6 +67,52 @@ a
   &:hover, &:focus
     color #2a6496
 
+
+//
+main
+  margin-top 1rem
+
+.date
+  font-family Questrial
+
+.PostIndex
+  header
+    text-align center
+    margin-bottom 1rem*1.5
+    .date
+      font-size 1rem*1.2
+      line-height 1rem*1.5
+  h1
+    font-family Michroma
+    font-size 1rem*1.5
+  h2
+    font-size 1rem*1.414
+    line-height 1rem*1.5
+  h3
+    font-size 1rem*1.2
+    line-height 1rem*1.5
+
+  .Post
+    margin-top 1rem*1.5
+  
+
+.Post
+  header
+    width 90%
+    margin 0 auto
+    text-align center
+    margin-bottom 1rem*1.5
+
+
+//
+.ThePost
+  h1
+    font-size 1rem*1.5
+    line-height 1
+    margin-bottom 1rem*1.5
+
+
+//
 @media (min-width: 1024px)
   body
     margin 0 0 0 40px

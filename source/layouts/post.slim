@@ -1,12 +1,13 @@
 ---
 ---
 - wrap_layout :layout do
-  header
-    h1
-      .date
-        #{current_page.date.strftime('%Y')}-#{current_page.date.strftime('%m')}-#{current_page.date.strftime('%d')}
-      .title #{current_page.title}
+  .ThePost.Post
+    header
+      h1
+        .date
+          #{current_page.date.strftime('%Y')}-#{current_page.date.strftime('%m')}-#{current_page.date.strftime('%d')}
+        .title #{current_page.title}
 
-  == yield
+    == yield
 
-  script src="#{data.config.js_dir}/disqus.js"
+    script src="#{data.config.js_dir}/disqus.js"
