@@ -2,7 +2,7 @@
 ---
 - wrap_layout :layout do
 
-  .ThePost.Post
+  .ThePost.Post class="#{current_page.data.lang}"
     header
       h2
         .title #{current_page.title}
