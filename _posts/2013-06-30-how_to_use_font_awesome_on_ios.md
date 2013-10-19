@@ -1,7 +1,8 @@
 ---
-layout: post
+layout: redirect
 title: How to use Font Awesome on iOS
 tags: iOS font tips
+moved: yes
 lang: 
 creation-date: 2013-06-30 12:06:06 +0900
 modified-date: 2013-06-30 12:06:06 +0900

@@ -1,7 +1,8 @@
 ---
-layout: post
+layout: redirect
 title: SSL_connect certificate verify failed
 tags: ruby gem bundler SSL
+moved: yes
 lang: en
 creation-date: 2013-10-03 22:22:35 +0900
 modified-date: 2013-10-03 22:22:35 +0900
