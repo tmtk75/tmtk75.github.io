@@ -1,7 +1,8 @@
 ---
-layout: post
+layout: redirect
 title: Font AwesomeをiOSで使う
 tags: iOS font tips
+moved: yes
 lang: ja
 creation-date: 2013-06-30 12:06:06 +0900
 modified-date: 2013-06-30 12:06:06 +0900
