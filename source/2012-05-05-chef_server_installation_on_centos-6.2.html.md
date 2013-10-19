@@ -33,6 +33,6 @@ chef-solo -c solo.rb -j ~/chef.json -r http://s3.amazonaws.com/chef-solo/bootstr
 
 In case finishing without error, open <http://localhost:4000> with your browser.
 
-<img src="{{site.images.url}}/2012-05-05/chef-server-webui.jpg" alt="chef-server-webui.jpg" width="256px"/>
+<img src="https://s3-ap-northeast-1.amazonaws.com/tmtk75.github.com/2012-05-05/chef-server-webui.jpg" alt="chef-server-webui.jpg" width="256px"/>
 
 If you can see above, installation is succeeded!

@@ -50,7 +50,7 @@ http://guide.macports.org/#project.tickets
 
 Oh, oops, not yet. What do I need…? Ah, yes, [Command Line Tools](https://developer.apple.com/downloads/index.action) is maybe. That guess was right. It's released for Mountain Lion.
 
-<img src="{{site.images.url}}/2012-08-19/CommandLineTools4MountainLion.png" width="386px"/>
+<img src="https://s3-ap-northeast-1.amazonaws.com/tmtk75.github.com/2012-08-19/CommandLineTools4MountainLion.png" width="386px"/>
 
 After installation, I tried upgrade for just expat.
 
