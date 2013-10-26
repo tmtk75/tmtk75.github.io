@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: redirect
 title: failed to install ruby 1.9.3-p194 with RVM
 creation-date: 2012-09-05 11:27:51
 ---

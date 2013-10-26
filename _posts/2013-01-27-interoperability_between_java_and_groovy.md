@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: redirect
 title: interoperability between Java and Groovy
 tags: java groovy
 creation-date: 2013-01-27 21:54:32

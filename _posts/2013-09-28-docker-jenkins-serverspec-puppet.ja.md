@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: redirect
 title: Docker + Jenkins + serverspecでpuppetのmanifestをCIする
 lang: ja
 tags: docker jenkins serverspec puppet manifests ci sshd vagrant

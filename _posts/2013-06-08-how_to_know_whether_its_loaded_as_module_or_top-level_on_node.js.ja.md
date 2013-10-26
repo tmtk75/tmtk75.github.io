@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: redirect
 title: Node.jsでrequireされたかどうかを調べるには
 tags: nodejs python
 lang: ja

@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: redirect
 title: How to tag and remove tag on docker
 tags: docker
 lang: en

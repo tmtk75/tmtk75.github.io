@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: redirect
 title: LTSV style access log in tomcat
 tags: LTSV accesslog tomcat
 lang: 

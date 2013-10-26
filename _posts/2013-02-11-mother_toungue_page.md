@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: redirect
 title: 日本語ページ作った with Jekyll on gh-pages
 tags: Jekyll Liquid gh-pages
 lang: ja

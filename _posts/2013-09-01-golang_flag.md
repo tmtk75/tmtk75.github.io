@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: redirect
 title: Go言語 コマンドラインオプション解析
 tags: golang flagset flag parseoptions cli
 lang: ja

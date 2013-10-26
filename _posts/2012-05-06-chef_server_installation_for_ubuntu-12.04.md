@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: redirect
 title: Chef server installation for ubuntu-12.04
 creation-date: 2012-05-06  1:15:59
 ---

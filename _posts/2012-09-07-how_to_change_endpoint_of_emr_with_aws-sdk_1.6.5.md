@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: redirect
 title: How to change endpoint of EMR with aws-sdk 1.6.5
 creation-date: 2012-09-07 14:24:11
 ---

@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: redirect
 title: TomcatのアクセスログをLTSVにする
 tags: LTSV accesslog tomcat
 lang: ja

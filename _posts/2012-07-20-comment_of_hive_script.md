@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: redirect
 title: comment of hive script
 creation-date: 2012-07-20 17:40:11
 ---

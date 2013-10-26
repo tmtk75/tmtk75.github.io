@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: redirect
 title: Indentation with Jackson in springframework using annotation configuration
 creation-date: 2012-07-03 10:47:20
 ---

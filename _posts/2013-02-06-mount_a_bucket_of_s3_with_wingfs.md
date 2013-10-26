@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: redirect
 title: Mount a bucket of S3 with WingFS
 tags: MacOSX S3 WingFS
 lang:

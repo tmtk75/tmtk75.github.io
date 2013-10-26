@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: redirect
 title: "warning: possible EventEmitter memory leak detected"
 tags: nodejs eventemitter
 lang: 

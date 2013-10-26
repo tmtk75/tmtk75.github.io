@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: redirect
 title: bitly API was changed to v3, and legacy API went wrong...
 creation-date: 2012-06-03 11:41:55
 ---

@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: redirect
 title: How to install chef server on CentOS-6.2 using yum
 creation-date: 2012-05-05 15:03:55
 ---

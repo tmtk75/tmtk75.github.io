@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: redirect
 title: chef's definition to download tarball
 creation-date: 2012-08-29  8:52:13
 ---

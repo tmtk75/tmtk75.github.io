@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: redirect
 title: Testcase using tentative ApplicationContext of springframework
 creation-date: 2012-07-16 12:44:25
 ---

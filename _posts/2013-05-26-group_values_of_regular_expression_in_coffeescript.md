@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: redirect
 title: Group values of regular expression in CoffeeScript
 tags: coffeescript, regex
 lang: 

@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: redirect
 title: JUMLY Reference Manual r1
 creation-date: 2012-12-10  8:39:28
 ---

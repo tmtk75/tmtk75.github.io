@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: redirect
 title: How to build kestrel with sbt-0.12.2
 tags: HowTo install build kestrel sbt
 lang: 

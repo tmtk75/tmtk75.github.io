@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: redirect
 title: jekyll didn't start after removing MacPorts
 tags: jekyll ruby rvm gem
 lang: 

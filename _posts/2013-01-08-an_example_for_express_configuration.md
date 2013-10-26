@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: redirect
 title: An example for express configuration
 tags: express JUMLY gist
 creation-date: 2013-01-08  8:14:58

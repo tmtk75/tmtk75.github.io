@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: redirect
 title: jQuery css return different value for WebKit and Gecko
 tag: unresolved
 creation-date: 2012-11-26 22:41:40

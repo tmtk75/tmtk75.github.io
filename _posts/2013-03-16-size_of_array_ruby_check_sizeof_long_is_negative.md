@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: redirect
 title: size of array ruby_check_sizeof_long is negative in case of installing mysql2 gem
 tags: ruby gem mysql
 lang: 

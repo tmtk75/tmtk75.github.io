@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: redirect
 title: Go言語 環境変数 展開
 tags: golang env environ expand
 lang: ja

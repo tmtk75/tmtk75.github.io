@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: redirect
 title: iOSのUIWindow上でモーションイベントを受け取る
 tags: iOS motionEvent
 lang: ja

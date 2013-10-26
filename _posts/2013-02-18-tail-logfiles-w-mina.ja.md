@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: redirect
 title: minaでログファイルをtailするまで
 tags: mina Ruby
 lang: ja

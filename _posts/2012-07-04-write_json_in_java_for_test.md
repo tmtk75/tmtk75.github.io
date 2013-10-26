@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: redirect
 title: Notation of JSON in Java for test
 creation-date: 2012-07-04 15:59:43
 ---

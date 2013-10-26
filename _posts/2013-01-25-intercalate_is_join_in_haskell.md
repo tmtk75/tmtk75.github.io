@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: redirect
 title: intercalate is join in Haskell
 tags: haskell
 creation-date: 2013-01-25 18:34:54

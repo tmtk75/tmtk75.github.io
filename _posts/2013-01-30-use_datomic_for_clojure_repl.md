@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: redirect
 title: Use a Datomic archive for clojure REPL
 tags: datomic clojure REPL
 creation-date: 2013-01-30 11:43:19

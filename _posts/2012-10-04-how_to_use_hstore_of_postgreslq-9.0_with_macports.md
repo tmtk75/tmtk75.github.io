@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: redirect
 title: How to use hstore of postgreslq-9.0 with MacPorts
 creation-date: 2012-10-04  9:48:29
 ---

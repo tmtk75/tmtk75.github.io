@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: redirect
 title: import a git repository as subtree keeping history
 tags: git
 lang: 

@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: redirect
 title: visitor pattern in generics of Java
 creation-date: 2012-07-03 10:30:21
 ---

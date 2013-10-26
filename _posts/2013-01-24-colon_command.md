@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: redirect
 title: colon command
 tags: bash
 creation-date: 2013-01-24  8:50:16

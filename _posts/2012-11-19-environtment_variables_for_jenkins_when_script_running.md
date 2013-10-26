@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: redirect
 title: Environtment variables for jenkins when script running
 creation-date: 2012-11-19 14:07:07
 ---

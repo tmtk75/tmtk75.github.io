@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: redirect
 title: Python-like idiom for node.js command line
 tags: nodejs cli
 lang: 

@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: redirect
 title: grunt-contrib-jasmine-nodeを書きました
 tags: grunt jasmine-node
 lang: ja

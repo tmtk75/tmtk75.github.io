@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: redirect
 title: AWS Hadoop Memory-Intensive supports only 8 kinds of instances
 tags: AWS hadoop EMR
 lang: 

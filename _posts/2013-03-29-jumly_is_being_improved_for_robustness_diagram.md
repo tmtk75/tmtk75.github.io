@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: redirect
 title: JUMLY is being improved for robustness diagram
 tags: JUMLY robustness
 lang: 

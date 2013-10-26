@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: redirect
 title: data- 属性とjQuery.data
 tags: html5 jquery
 lang: ja

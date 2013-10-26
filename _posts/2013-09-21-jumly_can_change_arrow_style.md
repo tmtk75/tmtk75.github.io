@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: redirect
 title: JUMLY can change arrow style
 tags: JUMLY style css svg JML
 lang: en

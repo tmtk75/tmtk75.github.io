@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: redirect
 title: RequestTimeTooSkewed
 tags: aws s3 ruby
 creation-date: 2013-01-29 14:39:16

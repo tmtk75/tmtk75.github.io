@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: redirect
 title: An oneliner to format XML in pretty print with Ruby
 tags: Ruby oneliner prettyprint XML
 lang: 

@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: redirect
 title: RequestTimeTooSkewedが出たら
 tags: S3 AWS
 lang: ja

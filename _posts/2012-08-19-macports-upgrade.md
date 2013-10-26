@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: redirect
 title: MacPorts and Command Line Tools for Xcode
 creation-date: 2012-08-19 11:43:00
 ---

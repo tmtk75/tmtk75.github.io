@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: redirect
 title: Replaced canvas with svg for JUMLY
 tags: canvas svg jumly
 lang:

@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: redirect
 title: Invoke the recipe of chef you want whereever you want
 creation-date: 2012-11-05  7:04:53
 ---

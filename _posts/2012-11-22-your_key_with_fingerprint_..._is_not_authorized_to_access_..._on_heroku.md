@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: redirect
 title: Your key with fingerprint ... is not authorized to access ... on heroku
 creation-date: 2012-11-22 12:09:56
 ---

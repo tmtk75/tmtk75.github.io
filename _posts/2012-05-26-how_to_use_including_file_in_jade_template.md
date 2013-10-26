@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: redirect
 title: How to use including file in jade template of express
 creation-date: 2012-05-26  7:12:14
 ---

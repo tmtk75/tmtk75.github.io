@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: redirect
 title: A directory layout of node module
 tags: nodejs npm node_modules
 creation-date: 2013-01-17  9:52:27

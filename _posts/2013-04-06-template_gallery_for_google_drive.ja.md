@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: redirect
 title: Google Driveテンプレートギャラリー
 tags: googledrive template manage-apps
 lang: ja

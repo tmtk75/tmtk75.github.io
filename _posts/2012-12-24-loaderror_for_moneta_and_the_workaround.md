@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: redirect
 title: LoadError for moneta and the workaround
 creation-date: 2012-12-24 10:55:04
 ---

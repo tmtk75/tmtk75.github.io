@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: redirect
 title: expectで公開鍵を登録する
 tags: expect publickey ssh
 lang: ja

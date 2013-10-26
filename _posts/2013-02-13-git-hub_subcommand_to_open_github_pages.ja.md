@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: redirect
 title: githubのページをterminalから開くgit-hubサブコマンド
 tags: git github extension
 lang: ja

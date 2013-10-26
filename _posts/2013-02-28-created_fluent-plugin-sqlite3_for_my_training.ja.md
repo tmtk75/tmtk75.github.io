@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: redirect
 title: fluentdのsqlite3用プラグイン書いた
 tags: fluentd sqlite3 plugin
 lang: ja

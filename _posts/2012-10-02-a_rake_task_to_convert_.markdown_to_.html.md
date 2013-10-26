@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: redirect
 title: A rake task to convert .markdown to .html
 creation-date: 2012-10-02 15:13:25
 ---

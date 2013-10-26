@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: redirect
 title: How to load YAML in Node.js
 creation-date: 2012-05-27 17:08:52
 ---

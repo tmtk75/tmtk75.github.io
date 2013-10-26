@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: redirect
 title: My stuck point for fluent-plugin-s3 configuration
 tags: fluentd s3 plugin
 lang: 

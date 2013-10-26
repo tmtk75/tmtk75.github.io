@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: redirect
 title: open console for SQL on heroku
 creation-date: 2012-10-05 11:45:54
 ---

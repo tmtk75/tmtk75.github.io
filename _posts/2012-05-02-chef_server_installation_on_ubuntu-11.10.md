@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: redirect
 title: How to install chef server on ubuntu-11.10 using apt-get
 creation-date: 2012-05-02 20:22:19
 ---

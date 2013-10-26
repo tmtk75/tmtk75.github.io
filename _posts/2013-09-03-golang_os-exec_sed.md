@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: redirect
 title: Go言語 os/exec sed実行
 tags: golang exec command
 lang: ja

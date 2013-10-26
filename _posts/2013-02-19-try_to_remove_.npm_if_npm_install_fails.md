@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: redirect
 title: Try to remove .npm if npm install fails
 tags: npm node
 lang: 

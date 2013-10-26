@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: redirect
 title: enable apache2 and PHP5 on MacOSX 10.8.x
 creation-date: 2012-11-19 16:42:32
 ---

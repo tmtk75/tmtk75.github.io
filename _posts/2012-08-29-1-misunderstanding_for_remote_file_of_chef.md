@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: redirect
 title: misunderstanding for remote_file of chef
 creation-date: 2012-08-29  7:50:15
 ---

@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: redirect
 title: node-canvas is awesome!
 creation-date: 2012-05-20 11:39:53
 ---

@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: redirect
 title: Installation of gems for td-agent
 tags: td-agent fluentd plugin
 lang: 

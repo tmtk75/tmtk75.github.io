@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: redirect
 title: How to access values between JRuby and Java
 tags: java jruby interop
 creation-date: 2013-01-28 10:40:16

@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: redirect
 title: Installed a Package Manager for Xcode
 tags: xcode packagemanager
 lang: 

@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: redirect
 title: JUMLY is tested working on jQuery-2.0.0
 tags: jumly jquery
 lang: 

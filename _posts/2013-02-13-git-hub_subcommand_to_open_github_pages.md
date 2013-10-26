@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: redirect
 title: git-hub subcommand to open github with browser from terminal
 tags: git github extension
 lang: 

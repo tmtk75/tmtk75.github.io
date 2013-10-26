@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: redirect
 title: Rubberband plugin for d3
 tags: d3 rubberband plugin
 lang: 

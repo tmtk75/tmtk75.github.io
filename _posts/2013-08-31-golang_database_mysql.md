@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: redirect
 title: Go言語 データベース MySQL SELECT
 tags: MySQL database golang
 lang: ja

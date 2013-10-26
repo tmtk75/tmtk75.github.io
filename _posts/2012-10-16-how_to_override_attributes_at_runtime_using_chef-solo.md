@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: redirect
 title: How to override attributes at runtime using chef-solo
 creation-date: 2012-10-16 14:50:14
 ---

@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: redirect
 title: EC2 Instance Types (table format)
 creation-date: 2012-09-07  6:56:19
 ---

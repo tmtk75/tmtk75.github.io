@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: redirect
 title: How see the process listening on a port
 creation-date: 2012-11-21 11:05:44
 ---

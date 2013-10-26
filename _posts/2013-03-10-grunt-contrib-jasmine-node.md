@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: redirect
 title: grunt-contrib-jasmine-node
 tags: grunt jasmine-node
 lang: 

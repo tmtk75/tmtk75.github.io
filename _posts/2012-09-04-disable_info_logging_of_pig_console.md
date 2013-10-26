@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: redirect
 title: disable info logging of pig console
 creation-date: 2012-09-04  7:53:05
 modified-date: 2013-02-19  7:05:05

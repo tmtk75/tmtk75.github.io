@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: redirect
 title: node-jquery which supports dom, jquery and xhr on node
 creation-date: 2012-10-09 18:25:08
 ---

@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: redirect
 title: Installation of postgresql-9.x on CentOS6 with yum
 creation-date: 2012-10-28  8:14:26
 ---

@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: redirect
 title: could not find module Control.Monad.Writer
 tags: haskell ghc-pkg
 creation-date: 2013-01-14 22:43:25

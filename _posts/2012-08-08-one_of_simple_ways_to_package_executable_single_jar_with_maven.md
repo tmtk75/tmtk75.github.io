@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: redirect
 title: One of simple ways to package executable single jar with maven
 creation-date: 2012-08-08 10:50:54
 ---

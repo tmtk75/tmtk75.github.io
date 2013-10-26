@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: redirect
 title: data- attribute and jQuery.data
 tags: html5 jquery
 lang: 

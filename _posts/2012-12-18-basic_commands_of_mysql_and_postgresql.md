@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: redirect
 title: basic commands of CLI of MySQL and PostgreSQL
 creation-date: 2012-12-18  8:41:12
 ---

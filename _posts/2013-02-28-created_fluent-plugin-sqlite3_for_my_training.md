@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: redirect
 title: Created fluent-plugin-sqlite3 for my training
 tags: fluentd sqlite3 plugin
 lang: 

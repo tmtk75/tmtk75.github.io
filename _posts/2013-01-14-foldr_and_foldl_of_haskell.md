@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: redirect
 title: foldr and foldl of Haskell
 tags: haskell foldr foldl
 creation-date: 2013-01-14 15:10:58

@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: redirect
 title: git-hub command
 creation-date: 2012-09-02 21:35:02
 ---

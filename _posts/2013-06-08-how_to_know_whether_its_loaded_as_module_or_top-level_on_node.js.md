@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: redirect
 title: How to know whether it's loaded as module or top-level on Node.js
 tags: nodejs python
 lang: 

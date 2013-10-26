@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: redirect
 title: List of property for WebPage of PhantomJS
 tags: webpage phantomjs
 lang: 

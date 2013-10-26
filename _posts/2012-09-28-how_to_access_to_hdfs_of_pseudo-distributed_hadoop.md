@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: redirect
 title: How to access to HDFS of Pseudo-Distributed Hadoop
 creation-date: 2012-09-28 18:33:57
 ---

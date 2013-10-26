@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: redirect
 title: Rewrite JUMLY's site on Node.js from Ruby
 creation-date: 2012-05-22  9:37:29
 ---

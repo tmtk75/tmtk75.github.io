@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: redirect
 title: node.jsで書くコマンドラインツールのPython-likeイディオム
 description: node.jsで書かれたコマンドをライブラリとしても使いたいとき、もしくはその逆のときに使える
 tags: nodejs cli

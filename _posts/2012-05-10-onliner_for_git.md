@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: redirect
 title: An oneliner for git
 creation-date: 2012-05-10  9:24:11
 ---

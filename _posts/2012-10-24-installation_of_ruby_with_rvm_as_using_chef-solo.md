@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: redirect
 title: Installation of ruby with rvm to be available of chef-solo
 creation-date: 2012-10-24 12:54:20
 ---

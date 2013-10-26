@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: redirect
 title: Go言語 データベース MySQL EXEC
 tags: golang database mysql exec
 lang: ja

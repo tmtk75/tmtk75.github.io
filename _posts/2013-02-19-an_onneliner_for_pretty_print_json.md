@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: redirect
 title: An oneliner to format JSON in pretty-print with Ruby
 tags: onenliner Ruby JSON prettyprint
 lang: 
