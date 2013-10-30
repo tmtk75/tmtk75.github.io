@@ -182,7 +182,7 @@ Jenkins自体は[git plugin](https://wiki.jenkins-ci.org/display/JENKINS/Git+Plu
 全部入力したら保存し、おもむろにビルド実行してみよう。コンソール出力に以下のように出ていたら期待通りだ。
 テストケース２件中１件失敗するはず。
 
-<pre style='width:120%'>
+<pre>
 Started by user anonymous
 Building in workspace /var/lib/jenkins/jobs/webapp.example.com/workspace
   .
