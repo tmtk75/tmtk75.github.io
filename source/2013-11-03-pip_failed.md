@@ -6,6 +6,8 @@ lang: en
 creation-date: 2013-11-03 10:15:10 +0900
 modified-date: 2013-11-03 10:15:10 +0900
 ---
+I got following error from pip.
+
 ```
 $ pip
 Traceback (most recent call last):
@@ -20,7 +22,9 @@ Traceback (most recent call last):
 pkg_resources.DistributionNotFound: pip==1.4.1
 ```
 
-I got above error from pip. There is a way to fix in [a thread of StackOverflow](http://stackoverflow.com/questions/6200056/pip-broke-how-to-fix-distributionnotfound-error).
+READMORE
+
+There is a way to fix in [a thread of StackOverflow](http://stackoverflow.com/questions/6200056/pip-broke-how-to-fix-distributionnotfound-error).
 
 ```
 easy_install --upgrade pip
