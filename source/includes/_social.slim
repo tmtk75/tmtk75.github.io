@@ -8,6 +8,8 @@ ul
   li class='hatena'
    a class='hatena-bookmark-button' data-hatena-bookmark-layout='vertical-balloon' data-hatena-bookmark-title='{{page.title}}({{site.title}})' href='http://b.hatena.ne.jp/entry/{{site.url}}/{{page.title}}'
      img height='20' src='http://b.st-hatena.com/images/entry-button/button-only.gif' style='border: none;' width='20'
+  li class='pocket'
+    a data-pocket-label="pocket" data-pocket-count="vertical" class="pocket-btn" data-lang="en"
 
 #fb-root
 script async="async"
@@ -27,4 +29,5 @@ script async='async'
   |  po.src = 'https://apis.google.com/js/plusone.js';
   |  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
   |})();
-
+script async='async' type="text/javascript"
+  |!function(d,i){if(!d.getElementById(i)){var j=d.createElement("script");j.id=i;j.src="https://widgets.getpocket.com/v1/j/btn.js?v=1";var w=d.getElementById(i);d.body.appendChild(j);}}(document,"pocket-btn-js");
