@@ -1,5 +1,6 @@
-h2 Tags
-ol
-  - blog.tags.each do |tag, articles|
-    - if tag.present?
-      <li>#{link_to tag, tag_path(tag)} (#{articles.size})
+.AllTags
+  h2 All Tags
+  ul
+    - blog.tags.each do |tag, articles|
+      - if tag.present?
+        <li>#{link_to tag, tag_path(tag)} (#{articles.size})

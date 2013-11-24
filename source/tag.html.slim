@@ -1,6 +1,6 @@
-.TheTag
-  h2 Posts tagged '#{tagname}'
+.PostsTagged
+  h2 Posts Tagged '#{tagname}'
 
   ul
     - page_articles.each_with_index do |article, i|
-      li #{link_to article.title, article} <span>#{article.date.strftime('%b %e')}
+      li #{link_to article.title, article} <span>#{article.date.strftime('%b %e %Y')}
