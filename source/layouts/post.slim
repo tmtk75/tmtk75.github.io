@@ -10,3 +10,6 @@
         #{current_page.date.strftime('%Y')}-#{current_page.date.strftime('%m')}-#{current_page.date.strftime('%d')}
 
     == yield
+
+    aside.SocialButtons = partial "includes/social-buttons"
+    aside               = partial "includes/disqus"
