@@ -25,12 +25,8 @@ html
     main
       == yield
 
-      aside.SocialButtons = partial "includes/social"
-
-      #disqus_thread_container
-        #disqus_thread
-        script async="async" src="#{data.config.js_dir}/disqus.js"
-        //a.dsq-brlink href='http://disqus.com' blog comments powered by <span class="logo-disqus">Disqus</span>
+      aside.SocialButtons = partial "includes/social-buttons"
+      aside               = partial "includes/disqus"
 
       //aside
       //  = partial "recent"
@@ -38,12 +34,7 @@ html
       //  = partial "by_year"
 
     footer
-      aside.SocialIcons
-        a.twitter    target="_blank" href="https://twitter.com/tmtk75": i.icon-twitter-sign
-        a.github     target="_blank" href="https://github.com/tmtk75": i.icon-github-sign
-        a.facebook   target="_blank" href="https://www.facebook.com/tomotaka.sakuma": i.icon-facebook-sign
-        a.googleplus target="_blank" href="https://plus.google.com/u/0/112810316775699020282/": i.icon-google-plus-sign
-        a.linked-in  target="_blank" href="http://www.linkedin.com/profile/view?id=88237980&trk=tab_pro": i.icon-linkedin-sign
+      aside.SocialIcons = partial "includes/social-icons"
 
       aside
         .Privacy-policy This site utilizes Google Analytics (GA) and provides first party cookie of GA to your browser. I just only use the data, which is collected by GA, in order to improve the contents, accessibility, usability and readability of this site. And also about the data, I never disclose and use it for another purpose.
