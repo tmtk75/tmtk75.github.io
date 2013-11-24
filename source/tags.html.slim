@@ -1,4 +1,5 @@
 h2 Tags
 ol
   - blog.tags.each do |tag, articles|
-    | <li>#{link_to tag, tag_path(tag)} (#{articles.size})
+    - if tag.present?
+      <li>#{link_to tag, tag_path(tag)} (#{articles.size})

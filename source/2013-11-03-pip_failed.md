@@ -1,7 +1,7 @@
 ---
 layout: post
 title: pip execution fails and the recovery
-tags: pip python installation Mavericks
+tags: pip, python, installation, Mavericks
 lang: en
 creation-date: 2013-11-03 10:15:10 +0900
 modified-date: 2013-11-03 10:15:10 +0900

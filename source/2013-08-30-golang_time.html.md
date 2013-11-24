@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Go言語 Time/Date
-tags: 
+tags: golang
 lang: ja
 creation-date: 2013-08-30 08:34:45 +0900
 modified-date: 2013-08-30 08:34:45 +0900
