@@ -2,9 +2,9 @@ task :default => [:stylus, :tags]
 
 desc "Given a title as an argument, create a new post file."
 task :post, [:title] do |t, args|
-  filename = "#{Time.now.strftime '%Y-%m-%d'}-#{args.title.gsub(/\s/, '_').downcase}.md"
+  filename = "#{Time.now.strftime '%Y-%m-%d'}-#{args.title.gsub(/\s/, '_').downcase}.html.md"
   now = Time.now.to_s
-  path = File.join "_posts", filename
+  path = File.join "source", filename
   if File.exist? path then raise "Won't clobber #{path}" end
   File.open(path, 'w') do |file|
     file.write <<EOF
