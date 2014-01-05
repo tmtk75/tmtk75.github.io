@@ -121,14 +121,18 @@ configure :build do
   # set :http_path, "/Content/images/"
 end
 
-# Activate sync extension
-activate :sync do |sync|
-  sync.fog_provider = 'AWS' # Your storage provider
-  sync.fog_directory = 'blog.tmtk.net' # Your bucket name
-  sync.fog_region = 'ap-northeast-1' # The region your storage bucket is in (eg us-east-1, us-west-1, eu-west-1, ap-southeast-1 )
-  sync.aws_access_key_id = ENV['AWS_ACCESS_KEY_ID'] # Your Amazon S3 access key
-  sync.aws_secret_access_key = ENV['AWS_SECRET_ACCESS_KEY'] # Your Amazon S3 access secret
-  sync.existing_remote_files = 'keep' # What to do with your existing remote files? ( keep or delete )
-  # sync.gzip_compression = false # Automatically replace files with their equivalent gzip compressed version
-  #   # sync.after_build = false # Disable sync to run after Middleman build ( defaults to true )
+# Activate s3_sync extension
+# https://github.com/fredjean/middleman-s3_sync#usage
+activate :s3_sync do |s3_sync|
+  s3_sync.bucket                     = 'blog.tmtk.net'
+  s3_sync.region                     = 'ap-northeast-1'
+  s3_sync.aws_access_key_id          = ENV['AWS_ACCESS_KEY_ID']
+  s3_sync.aws_secret_access_key      = ENV['AWS_SECRET_ACCESS_KEY']
+  s3_sync.delete                     = false # We delete stray files by default.
+  s3_sync.after_build                = false # We do not chain after the build step by default.
+  s3_sync.prefer_gzip                = true
+  s3_sync.path_style                 = true
+  s3_sync.reduced_redundancy_storage = false
+  s3_sync.acl                        = 'public-read'
+  s3_sync.encryption                 = false
 end
