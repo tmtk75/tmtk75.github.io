@@ -38,3 +38,15 @@ How to reproduce it,
 2. Execute `docker run centos /bin/echo hello`. It should work.
 3. Pull a repository, `docker pull tmtk75/puppet-3.4.1`. It was registered by me, [here](https://index.docker.io/u/tmtk75/puppet-3.4.1/).
 4. Execute again `docker run centos /bin/echo hello`. It fails somehow with above error :-(
+
+
+P.S.
+
+When I reinstalled docker and tried above again pulling [tmtk75/ruby-2.0.0p353](https://index.docker.io/u/tmtk75/ruby-2.0.0p353/) instead of tmtk75/puppet-3.4.1,
+I got a different error like:
+
+```
+2014/01/05 03:57:17 Error: create: mkdir /var/lib/docker/devicemapper/mnt/5c2ae65fd1ff3ea34ea1031e52c23199344dbb0dda94ed457c0dd6a5b93e7964-init/rootfs: input/output error
+```
+
+Mh... what's happening...
