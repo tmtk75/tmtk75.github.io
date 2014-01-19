@@ -87,7 +87,7 @@ h1.logo
 .ThePosts .Post, .ThePost
   margin-top 1rem
 
-.PostIndex .ThePosts .Post .ReadMore
+.PostIndex .ThePosts .Post
   margin-bottom 2rem
 
 .ThePost
@@ -167,7 +167,19 @@ body > footer
     line-height 1.5rem
 
 //
+@media (min-width: 480px)
+  .PostIndex .ThePosts .Post
+    margin-bottom 3rem
+
+//
 @media (min-width: 640px)
   main
     margin 0 auto
     width 80px*8
+
+  .Post.ja p
+    font-size 95%
+
+  .PostIndex .ThePosts .Post
+    margin-bottom 4rem
+
