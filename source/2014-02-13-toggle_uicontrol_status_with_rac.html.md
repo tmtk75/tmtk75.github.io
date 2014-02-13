@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Toggle UIControl status with ReacativeCocoa
-tags: iOS cocoa ReactiveCocoa
+tags: iOS, cocoa, ReactiveCocoa
 lang: en
 creation-date: 2014-02-13 08:22:38 +0900
 modified-date: 2014-02-13 08:22:38 +0900

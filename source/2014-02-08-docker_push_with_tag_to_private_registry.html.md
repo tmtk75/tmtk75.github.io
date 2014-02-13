@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Docker プライベートのイメージレジストリにタグ付きでpushする方法
-tags: docker docker-registry
+tags: docker, docker-registry
 lang: ja
 creation-date: 2014-02-08 17:21:19 +0900
 eodified-date: 2014-02-08 17:21:19 +0900

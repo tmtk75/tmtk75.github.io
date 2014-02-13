@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Filtering instance IDs of aws ec2 with jq
-tags: aws ec2 cli jq
+tags: aws, ec2, cli, jq
 lang: 
 creation-date: 2014-01-04 19:36:45 +0900
 modified-date: 2014-01-04 19:36:45 +0900
