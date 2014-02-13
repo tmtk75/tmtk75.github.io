@@ -12,6 +12,8 @@ Then there is a way to implement easily using [ReactiveCocoa](https://github.com
 `rac_textSignal` property helps us to toggle butotn status like below.
 
 ```objective-c
+#import <ReactiveCocoa.h>
+
 UITextView _text = ...;
 UIButton _ok = ...;
 

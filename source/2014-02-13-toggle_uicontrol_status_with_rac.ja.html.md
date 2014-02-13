@@ -1,6 +1,6 @@
 ---
 layout: post
-title: UIControlのステータスをトグル処理にReacativeCocoaを使う
+title: UIControlのステータスのトグル処理にReacativeCocoaを使う
 tags: iOS cocoa ReactiveCocoa
 lang: ja
 creation-date: 2014-02-13 08:22:38 +0900
