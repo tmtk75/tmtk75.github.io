@@ -30,4 +30,4 @@ Tagの値でフィルタ
       --filter Name=tag-key,Values=<タグ2> Name=tag-value,Values=<タグ2の値> \
       ...
 
---filterオプションを複数並べまることもできます。
+--filterオプションを複数並べることもできます。
