@@ -1,6 +1,6 @@
 ---
 layout: post
-title: AWS Static Website Hostingで404ページを設定する
+title: awscliでAWS Static Website Hostingの404ページを設定する
 tags: aws 404 s3
 lang: ja
 creation-date: 2014-05-24 15:11:46 +0900
