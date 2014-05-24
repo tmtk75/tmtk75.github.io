@@ -1,7 +1,5 @@
-build:
-	./bin/middleman build
-
 upload:
+	./bin/middleman build
 	./bin/middleman s3_sync
 
 setup_s3:
