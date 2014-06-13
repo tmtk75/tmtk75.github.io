@@ -8,7 +8,7 @@ modified-date: 2014-06-13 05:55:34 +0900
 ---
 
 Focuslight <https://github.com/focuslight/focuslight> のdockerイメージ作った。
-dockerの環境あればFocuslightがすぐに試せるMakefileを用意しました。イメージのダウンロードにちょっと時間かかるけど。
+dockerの環境あればFocuslightがすぐに試せる[Makefile](https://github.com/tmtk75/Dockerfiles/blob/master/focuslight/Makefile)を用意しました。イメージのダウンロードにちょっと時間かかるけど。
 
 実質ワンステップでfocuslightが起動します。boot2docker使用時はツーステップ。5125でlistenします。
 
